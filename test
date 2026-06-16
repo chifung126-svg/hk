@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-HK">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>日本 eSIM｜4G/5G高速・數據無限｜香港人去日本旅行必備</title>
+  <meta name="description" content="香港人去日本旅行必備日本eSIM。4G/5G數據無限套餐，適合東京、大阪、京都、福岡、北海道、沖繩旅行。出發前購買，QR Code簡單設定，免換SIM卡，無需插卡，支援LINE/WhatsApp/IG/TikTok/Google Map。" />
+
+  <link rel="canonical" href="https://www.easygosim.us/products/japan-esim-unlimited-data" />
+
+  <meta property="og:title" content="日本 eSIM｜4G/5G高速・數據無限｜香港出發前買定" />
+  <meta property="og:description" content="東京、大阪、京都、北海道、沖繩旅行上網必備。數據無限日本eSIM，QR Code簡單設定，免換SIM卡。" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.easygosim.us/products/japan-esim-unlimited-data" />
+  <meta property="og:site_name" content="EasyGoSim Japan eSIM" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="theme-color" content="#ec4899" />
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          animation: {
+            'fade-up': 'fadeUp 0.75s cubic-bezier(0.16, 1, 0.3, 1) forwards',
+            'fade-in': 'fadeIn 1s ease-out forwards',
+            'pulse-slow': 'pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+            'float': 'float 4.5s ease-in-out infinite',
+            'shine': 'shine 2.6s linear infinite',
+            'bounce-soft': 'bounceSoft 2s ease-in-out infinite'
+          },
+          keyframes: {
+            fadeUp: {
+              '0%': { opacity: '0', transform: 'translateY(20px)' },
+              '100%': { opacity: '1', transform: 'translateY(0)' }
+            },
+            fadeIn: {
+              '0%': { opacity: '0' },
+              '100%': { opacity: '1' }
+            },
+            float: {
+              '0%, 100%': { transform: 'translateY(0)' },
+              '50%': { transform: 'translateY(-12px)' }
+            },
+            shine: {
+              '0%': { transform: 'translateX(-120%) rotate(12deg)' },
+              '100%': { transform: 'translateX(220%) rotate(12deg)' }
+            },
+            bounceSoft: {
+              '0%, 100%': { transform: 'translateY(0)' },
+              '50%': { transform: 'translateY(-6px)' }
+            }
+          }
+        }
+      }
+    };
+  </script>
+
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
+    .delay-100 { animation-delay: 100ms; }
+    .delay-200 { animation-delay: 200ms; }
+    .delay-300 { animation-delay: 300ms; }
+    .delay-400 { animation-delay: 400ms; }
+    .delay-500 { animation-delay: 500ms; }
+    .delay-600 { animation-delay: 600ms; }
+
+    .animate-fade-up,
+    .animate-fade-in {
+      opacity: 0;
+    }
+
+    .glass {
+      background: rgba(255, 255, 255, 0.72);
+      backdrop-filter: blur(18px);
+      -webkit-backdrop-filter: blur(18px);
+    }
+
+    .jp-grid {
+      background-image:
+        radial-gradient(circle at 1px 1px, rgba(236, 72, 153, 0.2) 1px, transparent 0),
+        linear-gradient(rgba(56, 189, 248, 0.07) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(168, 85, 247, 0.07) 1px, transparent 1px);
+      background-size: 22px 22px, 48px 48px, 48px 48px;
+    }
+
+    .noise {
+      background-image:
+        radial-gradient(circle at 20% 20%, rgba(255,255,255,0.5), transparent 28%),
+        radial-gradient(circle at 80% 10%, rgba(236,72,153,0.2), transparent 24%),
+        radial-gradient(circle at 60% 80%, rgba(56,189,248,0.18), transparent 26%);
+    }
+
+    .shine-wrap {
+      position: relative;
+      overflow: hidden;
+    }
+
+    .shine-wrap::after {
+      content: "";
+      position: absolute;
+      top: -40%;
+      left: 0;
+      width: 45%;
+      height: 180%;
+      background: linear-gradient(90deg, transparent, rgba(255,255,255,0.45), transparent);
+      animation: shine 2.6s linear infinite;
+      pointer-events: none;
+    }
+
+    details summary::-webkit-details-marker {
+      display: none;
+    }
+  </style>
+</head>
+
+<body class="min-h-screen bg-zinc-950 font-sans text-zinc-100 selection:bg-pink-300 selection:text-zinc-950 overflow-x-hidden pb-24 md:pb-0">
+
+  <header class="fixed top-0 left-0 right-0 z-50 border-b border-white/20 glass">
+    <div class="max-w-7xl mx-auto px-5 lg:px-8 h-16 flex items-center justify-between">
+      <a href="#" class="flex items-center gap-2 font-black text-zinc-950 tracking-tight" aria-label="Japan eSIM home">
+        <span class="w-9 h-9 rounded-2xl bg-gradient-to-br from-pink-500 via-fuchsia-500 to-sky-400 flex items-center justify-center text-white shadow-lg shadow-pink-500/30">
+          <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+            <path stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M13 2 3 14h9l-1 8 10-12h-9l1-8Z" />
+          </svg>
+        </span>
+        Japan eSIM
+      </a>
+
+      <nav class="hidden md:flex items-center gap-8 text-sm font-extrabold text-zinc-700" aria-label="Main navigation">
+        <a href="#hot-plan" class="hover:text-pink-600 transition-colors">熱門套餐</a>
+        <a href="#how" class="hover:text-pink-600 transition-colors">安裝教學</a>
+        <a href="#reviews" class="hover:text-pink-600 transition-colors">用家評價</a>
+        <a href="#faq" class="hover:text-pink-600 transition-colors">FAQ</a>
+      </nav>
+
+      <a href="#hot-plan" class="shine-wrap inline-flex items-center justify-center bg-zinc-950 text-white text-sm font-black px-5 py-2.5 rounded-full hover:bg-zinc-800 active:scale-95 transition-all">
+        HK$55起 即刻揀
+      </a>
+    </div>
+  </header>
+
+  <section class="relative pt-28 pb-16 lg:pt-32 lg:pb-24 px-6 lg:px-8 overflow-hidden jp-grid">
+    <div class="absolute inset-0 bg-gradient-to-b from-pink-50 via-fuchsia-50 to-sky-50 -z-20"></div>
+    <div class="absolute inset-0 noise -z-10"></div>
+
+    <div class="absolute top-0 right-0 -translate-y-20 translate-x-1/3 w-96 h-96 lg:w-[760px] lg:h-[760px] bg-gradient-to-tr from-pink-300 via-fuchsia-200 to-sky-200 rounded-full blur-3xl opacity-70 -z-10"></div>
+    <div class="absolute bottom-0 left-0 translate-y-1/3 -translate-x-1/4 w-80 h-80 lg:w-[520px] lg:h-[520px] bg-gradient-to-tr from-sky-200 to-pink-200 rounded-full blur-3xl opacity-60 -z-10"></div>
+
+    <div class="max-w-7xl mx-auto flex flex-col lg:flex-row items-center gap-14">
+
+      <div class="flex-1 text-center lg:text-left">
+        <div class="animate-fade-up inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/80 text-pink-700 text-sm font-black mb-6 border border-pink-100 shadow-sm">
+          <span class="flex h-2 w-2 rounded-full bg-pink-500 animate-pulse"></span>
+          香港出發・日本旅行上網必備
+        </div>
+
+        <h1 class="animate-fade-up delay-100 text-5xl sm:text-6xl lg:text-8xl font-black tracking-tight mb-6 text-zinc-950 leading-[0.98]">
+          免拆香港 SIM 卡！<br class="sm:hidden" />
+          <span class="relative inline-block">
+            <span class="text-transparent bg-clip-text bg-gradient-to-r from-pink-600 via-fuchsia-600 to-sky-500">
+              日本5G 無限數據
+            </span>
+            <span class="absolute -right-7 -top-5 text-3xl animate-bounce-soft">🇯🇵</span>
+          </span>
+          <br />
+          <span class="text-3xl sm:text-5xl lg:text-6xl">
+            掃 Code 即用。
+          </span>
+        </h1>
+
+        <p class="animate-fade-up delay-200 text-lg lg:text-xl text-zinc-700 mb-8 max-w-2xl mx-auto lg:mx-0 leading-relaxed font-bold">
+          去東京、大阪、京都、北海道、沖繩旅行，唔想到埗先搵卡？香港出發前買定日本 eSIM，QR Code 簡單設定，落機即連線。
+        </p>
+
+        <div class="animate-fade-up delay-400 mb-9 max-w-2xl mx-auto lg:mx-0">
+          <div class="bg-white/95 backdrop-blur-xl rounded-[2rem] border border-white shadow-2xl shadow-pink-900/10 p-4 sm:p-5">
+            <div class="flex items-center justify-between gap-3 mb-4">
+              <div class="text-left">
+                <p class="text-xs font-black text-pink-600 tracking-widest uppercase">
+                  Hong Kong Traveller Picks
+                </p>
+                <p class="text-sm font-black text-zinc-500 mt-1">
+                  東京大阪短Trip，3日/5日/7日最常用
+                </p>
+              </div>
+            </div>
+
+            <div class="grid grid-cols-3 gap-3">
+              <a href="https://easygosim.us/cart/add?id=48748094423195&quantity=1&return_to=/cart" class="group rounded-3xl bg-zinc-50 hover:bg-pink-50 border border-zinc-100 hover:border-pink-200 p-3 text-center transition-all active:scale-95">
+                <div class="text-xs font-black text-zinc-500">10MAX</div>
+                <div class="text-lg font-black text-zinc-950 mt-1">3日</div>
+                <div class="mt-1 flex flex-col items-center justify-center">
+                  <span class="text-[10px] text-zinc-400 line-through">原價 HK$88</span>
+                  <span class="text-xl sm:text-2xl font-black text-pink-600">HK$55</span>
+                </div>
+                <div class="mt-1 text-[11px] font-black text-red-500 bg-red-50 px-2 py-0.5 rounded-md mx-auto w-fit">超抵玩</div>
+              </a>
+
+              <a href="https://easygosim.us/cart/add?id=48748094750875&quantity=1&return_to=/cart" class="shine-wrap group relative rounded-3xl bg-gradient-to-br from-pink-600 via-fuchsia-600 to-sky-500 border border-pink-400 p-3 text-center transition-all active:scale-95 overflow-hidden shadow-xl shadow-pink-500/25">
+                <div class="absolute top-2 right-2 bg-white text-pink-600 text-[10px] font-black px-2 py-0.5 rounded-full">推介</div>
+                <div class="text-xs font-black text-white/80">5G 無限</div>
+                <div class="text-lg font-black text-white mt-1">5日</div>
+                <div class="mt-1 flex flex-col items-center justify-center">
+                  <span class="text-[10px] text-white/60 line-through">原價 HK$158</span>
+                  <span class="text-xl sm:text-2xl font-black text-white">HK$108</span>
+                </div>
+                <div class="mt-1 text-[11px] font-black text-white bg-white/20 px-2 py-0.5 rounded-md mx-auto w-fit">熱門No.1</div>
+              </a>
+
+              <a href="https://easygosim.us/cart/add?id=48748094816411&quantity=1&return_to=/cart" class="group rounded-3xl bg-zinc-50 hover:bg-sky-50 border border-zinc-100 hover:border-sky-200 p-3 text-center transition-all active:scale-95">
+                <div class="text-xs font-black text-zinc-500">5G 無限</div>
+                <div class="text-lg font-black text-zinc-950 mt-1">7日</div>
+                <div class="mt-1 flex flex-col items-center justify-center">
+                  <span class="text-[10px] text-zinc-400 line-through">原價 HK$218</span>
+                  <span class="text-xl sm:text-2xl font-black text-sky-600">HK$150</span>
+                </div>
+                <div class="mt-1 text-[11px] font-black text-sky-600 bg-sky-50 px-2 py-0.5 rounded-md mx-auto w-fit">一星期首選</div>
+              </a>
+            </div>
+            
+            <div class="mt-4 pt-3 border-t border-zinc-100 flex flex-wrap justify-center items-center gap-3 opacity-60 grayscale hover:grayscale-0 transition-all">
+                <span class="text-[10px] font-black text-zinc-400">支援付款:</span>
+                <span class="text-xs font-bold text-zinc-600">Apple Pay</span>
+                <span class="text-xs font-bold text-zinc-600">PayMe</span>
+                <span class="text-xs font-bold text-zinc-600">AlipayHK</span>
+                <span class="text-xs font-bold text-zinc-600">轉數快</span>
+                <span class="text-xs font-bold text-zinc-600">Visa/Master</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="animate-fade-up delay-500 flex flex-col items-center lg:items-start gap-3">
+          <div class="flex flex-col sm:flex-row gap-4 justify-center w-full sm:w-auto">
+            <a href="#hot-plan" class="shine-wrap group w-full sm:w-auto inline-flex justify-center items-center gap-2 bg-zinc-950 hover:bg-zinc-800 text-white font-black py-4 px-8 rounded-full text-lg transition-all hover:shadow-xl hover:shadow-zinc-900/20 active:scale-95">
+              即刻揀日本eSIM
+            </a>
+            <a href="https://line.me/R/ti/p/@712unbyr" target="_blank" rel="noopener noreferrer" class="w-full sm:w-auto inline-flex justify-center items-center gap-2 bg-green-500 hover:bg-green-600 text-white font-black py-4 px-8 rounded-full text-lg transition-all active:scale-95">
+              LINE 查詢客服
+            </a>
+          </div>
+          <p class="text-sm text-pink-600 font-black mt-1 bg-pink-50 px-4 py-1.5 rounded-full inline-flex items-center gap-2">
+            <span class="w-2 h-2 rounded-full bg-pink-500 animate-pulse"></span>
+            系統 24 小時運作：付款後 5 分鐘自動 Email 發出 QR Code
+          </p>
+        </div>
+      </div>
+
+      <div class="flex-1 hidden lg:flex justify-center relative animate-fade-up delay-200">
+        <div class="relative w-[340px] h-[660px] bg-white/50 backdrop-blur-xl rounded-[2.8rem] border border-white/80 shadow-2xl overflow-hidden flex flex-col z-10 p-2 animate-float">
+            <div class="w-full h-full bg-zinc-950 rounded-[2.25rem] overflow-hidden flex flex-col relative">
+              <div class="absolute top-0 inset-x-0 h-7 bg-black rounded-b-2xl w-36 mx-auto z-20"></div>
+              <div class="flex-1 bg-gradient-to-b from-zinc-950 via-fuchsia-950 to-pink-950 p-6 flex flex-col text-white relative overflow-hidden">
+                <div class="relative z-10 mt-20 text-center">
+                    <p class="text-sm text-white/50 font-bold mb-2">Connected to</p>
+                    <h3 class="text-3xl font-black text-transparent bg-clip-text bg-gradient-to-r from-pink-400 to-sky-400">Japan 5G</h3>
+                    <div class="mt-8 mx-auto w-32 h-32 rounded-full border-4 border-pink-500/30 flex items-center justify-center relative">
+                        <div class="absolute inset-0 rounded-full border-4 border-pink-500 border-t-transparent animate-spin"></div>
+                        <span class="text-2xl">⚡️</span>
+                    </div>
+                    <p class="mt-8 text-xl font-black">Data Unlimited</p>
+                </div>
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="hot-plan" class="py-24 px-6 bg-gradient-to-b from-white via-pink-50 to-white text-zinc-900">
+    <div class="max-w-7xl mx-auto">
+      <div class="text-center mb-16">
+        <span class="inline-flex px-4 py-2 rounded-full bg-pink-100 text-pink-700 font-black text-sm mb-4">
+          Hot Plans
+        </span>
+        <h2 class="text-4xl lg:text-6xl font-black text-zinc-950 mb-4">
+          去日本，<br class="sm:hidden" />3日、5日、7日最啱用。
+        </h2>
+        <p class="text-zinc-500 text-lg max-w-3xl mx-auto font-bold leading-relaxed">
+          無論係週末東京快閃，定係北海道自駕遊，我哋都有最適合你嘅無限數據套餐。
+        </p>
+      </div>
+
+      <div class="grid lg:grid-cols-3 gap-6 items-stretch mb-16">
+        <div class="bg-white rounded-[2rem] p-7 border border-pink-100 shadow-xl shadow-pink-900/5 flex flex-col">
+          <div class="flex items-center justify-between mb-5">
+            <span class="inline-flex px-3 py-1 rounded-full bg-blue-50 text-blue-700 text-xs font-black">平玩之選</span>
+            <span class="text-xs font-black text-zinc-400">10MAX Unlimited</span>
+          </div>
+          <h3 class="text-3xl font-black text-zinc-950 mb-2">10MAX 3日套餐</h3>
+          <p class="text-zinc-500 font-bold mb-6">全程10Mbps無限數據，週末東京、大阪短Trip、快閃旅行。</p>
+          <div class="mb-6 flex items-baseline gap-2">
+            <span class="text-2xl font-bold text-zinc-400 line-through">HK$88</span>
+            <span class="text-5xl font-black text-pink-600">HK$55</span>
+          </div>
+          <ul class="space-y-4 mb-8 flex-1 text-sm font-bold text-zinc-600">
+            <li>✓ 3日10Mbps數據無限</li>
+            <li>✓ 地圖導航、WhatsApp、IG 適用</li>
+            <li>✓ 免換實體SIM卡，唔怕跌原卡</li>
+          </ul>
+          <a href="https://easygosim.us/cart/add?id=48748094423195&quantity=1&return_to=/cart" class="block text-center w-full py-4 px-5 rounded-2xl font-black text-zinc-900 bg-zinc-100 hover:bg-zinc-200 transition-colors">加入購物車</a>
+        </div>
+
+        <div class="relative bg-zinc-950 rounded-[2rem] p-7 border border-pink-500 shadow-2xl flex flex-col overflow-hidden text-white">
+          <div class="absolute inset-0 bg-gradient-to-br from-pink-600/25 to-sky-500/20"></div>
+          <div class="relative z-10 flex-1 flex flex-col">
+            <div class="absolute -top-2 left-1/2 transform -translate-x-1/2 bg-gradient-to-r from-pink-500 to-sky-400 text-white text-sm font-black px-6 py-1.5 rounded-full shadow-lg">熱門No.1</div>
+            <div class="flex items-center justify-between mb-5 mt-6">
+              <span class="inline-flex px-3 py-1 rounded-full bg-white text-pink-600 text-xs font-black">高速5G</span>
+            </div>
+            <h3 class="text-3xl font-black mb-2">5G 5日套餐</h3>
+            <p class="text-zinc-300 font-bold mb-6">東京大阪自由行、拍片打卡、導航最安心。</p>
+            <div class="mb-6 flex items-baseline gap-2">
+              <span class="text-2xl font-bold text-zinc-500 line-through">HK$158</span>
+              <span class="text-5xl font-black">HK$108</span>
+            </div>
+            <ul class="space-y-4 mb-8 flex-1 text-sm font-bold text-zinc-300">
+              <li>✓ 5日5G數據無限，不降速</li>
+              <li>✓ IG限動、TikTok、Reels 無難度</li>
+              <li>✓ 免插卡，免拆香港SIM</li>
+            </ul>
+            <a href="https://easygosim.us/cart/add?id=48748094750875&quantity=1&return_to=/cart" class="shine-wrap block text-center w-full py-4 px-5 rounded-2xl font-black text-white bg-gradient-to-r from-pink-600 to-sky-500 shadow-lg">加入購物車</a>
+          </div>
+        </div>
+
+        <div class="bg-white rounded-[2rem] p-7 border border-sky-100 shadow-xl flex flex-col">
+          <div class="flex items-center justify-between mb-5">
+            <span class="inline-flex px-3 py-1 rounded-full bg-sky-50 text-sky-700 text-xs font-black">一星期旅行</span>
+          </div>
+          <h3 class="text-3xl font-black text-zinc-950 mb-2">5G 7日套餐</h3>
+          <p class="text-zinc-500 font-bold mb-6">北海道、九州、關西深度遊。</p>
+          <div class="mb-6 flex items-baseline gap-2">
+            <span class="text-2xl font-bold text-zinc-400 line-through">HK$218</span>
+            <span class="text-5xl font-black text-sky-600">HK$150</span>
+          </div>
+          <ul class="space-y-4 mb-8 flex-1 text-sm font-bold text-zinc-600">
+            <li>✓ 7日5G數據無限</li>
+            <li>✓ JR、巴士、自駕導航必備</li>
+            <li>✓ 旅行前買定，落機即用</li>
+          </ul>
+          <a href="https://easygosim.us/cart/add?id=48748094816411&quantity=1&return_to=/cart" class="block text-center w-full py-4 px-5 rounded-2xl font-black text-white bg-sky-500 hover:bg-sky-400">加入購物車</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="how" class="py-24 px-6 bg-white text-zinc-900 border-t border-pink-100">
+    <div class="max-w-6xl mx-auto">
+      <div class="text-center mb-16">
+        <span class="inline-flex px-4 py-2 rounded-full bg-pink-100 text-pink-700 font-black text-sm mb-4">
+          Easy Setup
+        </span>
+        <h2 class="text-4xl lg:text-6xl font-black text-zinc-950 mb-4">
+          免 App，掃 QR Code 即裝。
+        </h2>
+        <p class="text-zinc-500 text-lg font-bold">
+          唔識電腦都識搞！只需 3 個步驟，喺香港屋企預先裝好，去到日本即刻有得上網。
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="bg-zinc-50 rounded-[2rem] p-6 border border-zinc-100 shadow-sm text-center">
+          <div class="w-full h-48 bg-white rounded-xl shadow-inner border border-zinc-200 mb-6 flex flex-col items-center justify-center p-4">
+            <div class="w-12 h-12 bg-pink-100 rounded-full flex items-center justify-center text-pink-500 text-2xl mb-2">🛒</div>
+            <div class="w-3/4 h-2 bg-zinc-200 rounded-full mb-2"></div>
+            <div class="w-1/2 h-2 bg-zinc-200 rounded-full"></div>
+          </div>
+          <div class="inline-flex items-center justify-center w-8 h-8 rounded-full bg-zinc-900 text-white font-black text-sm mb-3">1</div>
+          <h3 class="text-xl font-black text-zinc-900 mb-2">下單並付款</h3>
+          <p class="text-zinc-500 text-sm font-bold">選擇適合的日數套餐，支援多種香港常用支付方式，一鍵結帳。</p>
+        </div>
+
+        <div class="bg-zinc-50 rounded-[2rem] p-6 border border-zinc-100 shadow-sm text-center">
+          <div class="w-full h-48 bg-white rounded-xl shadow-inner border border-zinc-200 mb-6 flex flex-col items-center justify-center p-4 relative overflow-hidden">
+             <div class="absolute inset-0 bg-gradient-to-br from-white to-pink-50"></div>
+             <div class="relative z-10 w-24 h-24 border-4 border-zinc-900 rounded-lg p-2 bg-white flex flex-wrap gap-1">
+                 <div class="w-4 h-4 bg-zinc-900"></div><div class="w-4 h-4 bg-zinc-900"></div><div class="w-4 h-4 bg-zinc-200"></div>
+                 <div class="w-4 h-4 bg-zinc-900"></div><div class="w-4 h-4 bg-zinc-200"></div><div class="w-4 h-4 bg-zinc-900"></div>
+                 <div class="w-4 h-4 bg-zinc-200"></div><div class="w-4 h-4 bg-zinc-900"></div><div class="w-4 h-4 bg-zinc-900"></div>
+             </div>
+             <div class="relative z-10 mt-2 text-[10px] font-bold text-zinc-400">Email 收到專屬 QR Code</div>
+          </div>
+          <div class="inline-flex items-center justify-center w-8 h-8 rounded-full bg-zinc-900 text-white font-black text-sm mb-3">2</div>
+          <h3 class="text-xl font-black text-zinc-900 mb-2">5分鐘收 Email</h3>
+          <p class="text-zinc-500 text-sm font-bold">付款後系統自動發出 Email，內附 eSIM QR Code 及設定說明。</p>
+        </div>
+
+        <div class="bg-zinc-50 rounded-[2rem] p-6 border border-zinc-100 shadow-sm text-center">
+          <div class="w-full h-48 bg-zinc-900 rounded-xl shadow-inner border border-zinc-800 mb-6 flex flex-col items-center justify-center p-4">
+             <div class="w-full max-w-[140px] bg-zinc-800 rounded-lg p-3">
+                <div class="text-[10px] text-zinc-400 font-bold mb-2">設定 > 行動服務</div>
+                <div class="w-full bg-blue-500 text-white text-xs font-bold py-1.5 rounded text-center">加入 eSIM</div>
+                <div class="w-full bg-zinc-700 text-white text-xs font-bold py-1.5 rounded text-center mt-2">掃描行動條碼</div>
+             </div>
+          </div>
+          <div class="inline-flex items-center justify-center w-8 h-8 rounded-full bg-pink-500 text-white font-black text-sm mb-3">3</div>
+          <h3 class="text-xl font-black text-zinc-900 mb-2">掃描即安裝</h3>
+          <p class="text-zinc-500 text-sm font-bold">用手機掃描 QR Code 即可加入 eSIM。到日本後開啟「數據漫遊」即可上網。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="reviews" class="py-24 px-6 bg-pink-50 text-zinc-900 border-t border-pink-100">
+    <div class="max-w-7xl mx-auto">
+      <div class="text-center mb-14">
+        <h2 class="text-4xl lg:text-5xl font-black text-zinc-950 mb-4">有圖有真相，香港旅客實測！</h2>
+      </div>
+
+      <div class="grid md:grid-cols-4 gap-4">
+        <div class="bg-white rounded-3xl p-3 shadow-lg flex flex-col">
+            <div class="w-full h-48 bg-zinc-200 rounded-2xl mb-3 relative overflow-hidden flex items-center justify-center">
+                <span class="text-4xl">🗼</span>
+                <div class="absolute bottom-2 left-2 bg-black/50 text-white text-[10px] px-2 py-1 rounded-full backdrop-blur-md">@東京鐵塔</div>
+            </div>
+            <div class="text-amber-400 text-sm mb-1">★★★★★</div>
+            <p class="text-sm font-bold text-zinc-700 mb-2 flex-1">「落機一開漫遊就連到網，唔使搞一輪，5G 睇地圖好順！」</p>
+            <div class="text-xs text-zinc-400 font-black">陳小姐 - 東京 5日</div>
+        </div>
+        <div class="bg-white rounded-3xl p-3 shadow-lg flex flex-col">
+            <div class="w-full h-48 bg-zinc-200 rounded-2xl mb-3 relative overflow-hidden flex items-center justify-center">
+                <span class="text-4xl">🍣</span>
+                <div class="absolute bottom-2 left-2 bg-black/50 text-white text-[10px] px-2 py-1 rounded-full backdrop-blur-md">@大阪心齋橋</div>
+            </div>
+            <div class="text-amber-400 text-sm mb-1">★★★★★</div>
+            <p class="text-sm font-bold text-zinc-700 mb-2 flex-1">「QR Code 安裝好簡單，第一次用 eSIM 都識搞，抵讚👍」</p>
+            <div class="text-xs text-zinc-400 font-black">Kelvin - 大阪 7日</div>
+        </div>
+        <div class="bg-white rounded-3xl p-3 shadow-lg flex flex-col">
+            <div class="w-full h-48 bg-zinc-200 rounded-2xl mb-3 relative overflow-hidden flex items-center justify-center">
+                <span class="text-4xl">🏂</span>
+                <div class="absolute bottom-2 left-2 bg-black/50 text-white text-[10px] px-2 py-1 rounded-full backdrop-blur-md">@二世古</div>
+            </div>
+            <div class="text-amber-400 text-sm mb-1">★★★★★</div>
+            <p class="text-sm font-bold text-zinc-700 mb-2 flex-1">「北海道山上收得好好！Share 俾 iPad 睇 Netflix 都冇問題。」</p>
+            <div class="text-xs text-zinc-400 font-black">梁生一家 - 北海道自駕</div>
+        </div>
+        <div class="bg-white rounded-3xl p-3 shadow-lg flex flex-col">
+            <div class="w-full h-48 bg-zinc-200 rounded-2xl mb-3 relative overflow-hidden flex items-center justify-center">
+                <span class="text-4xl">💬</span>
+                <div class="absolute inset-0 bg-green-50 flex flex-col items-center justify-center p-4 text-center">
+                    <p class="text-xs font-bold text-green-700">「唔該晒客服！好有耐性教我阿媽點樣 Scan 落部 iPhone 度🙏」</p>
+                </div>
+            </div>
+            <div class="text-amber-400 text-sm mb-1">★★★★★</div>
+            <p class="text-sm font-bold text-zinc-700 mb-2 flex-1">「LINE 客服覆得好快，真係有人答，非機械人，買得好安心。」</p>
+            <div class="text-xs text-zinc-400 font-black">Yumi - 福岡快閃</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-24 px-6 bg-zinc-950 text-center text-white relative overflow-hidden">
+    <div class="absolute inset-0 opacity-30 jp-grid"></div>
+    <div class="absolute -top-20 left-1/2 -translate-x-1/2 w-96 h-96 lg:w-[540px] lg:h-[540px] bg-pink-500/20 rounded-full blur-3xl"></div>
+
+    <div class="max-w-3xl mx-auto relative z-10">
+      <h2 class="text-4xl md:text-6xl font-black mb-6 leading-tight tracking-tight">
+        去日本前，上網要買定。
+      </h2>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a href="#hot-plan" class="shine-wrap inline-flex justify-center items-center gap-2 bg-white text-zinc-950 font-black py-5 px-10 rounded-full text-lg shadow-xl hover:scale-105 active:scale-95 transition-all">
+          查看日本eSIM套餐
+        </a>
+      </div>
+      <p class="text-sm text-pink-400 mt-6 font-bold">⚡ 支援 Apple Pay / PayMe，24小時自動發貨</p>
+    </div>
+  </section>
+
+  <footer class="py-10 px-6 bg-black text-zinc-500">
+    <div class="max-w-7xl mx-auto flex flex-col items-center gap-6">
+      <div class="flex items-center gap-2 text-white font-black">
+        <span class="w-8 h-8 rounded-2xl bg-gradient-to-br from-pink-500 to-sky-400 flex items-center justify-center text-white">
+          <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M13 2 3 14h9l-1 8 10-12h-9l1-8Z" /></svg>
+        </span>
+        Japan eSIM
+      </div>
+      <div class="flex flex-wrap justify-center gap-4 text-xs font-bold text-zinc-400">
+          <span>支援安全付款:</span>
+          <span>Apple Pay</span>
+          <span>Google Pay</span>
+          <span>PayMe</span>
+          <span>轉數快</span>
+          <span>AlipayHK</span>
+          <span>Visa</span>
+          <span>Mastercard</span>
+      </div>
+      <div class="text-sm font-bold">© 2026 EasyGoSim. All rights reserved.</div>
+    </div>
+  </footer>
+
+  <div class="fixed bottom-0 left-0 right-0 z-50 md:hidden bg-white/95 backdrop-blur-xl border-t border-pink-100 shadow-[0_-8px_30px_rgba(0,0,0,0.10)] px-4 pt-3 pb-[calc(0.75rem+env(safe-area-inset-bottom))]">
+    <div class="flex items-center gap-3">
+      <div class="flex-1 min-w-0">
+        <div class="flex items-baseline gap-2">
+          <span class="text-zinc-400 text-xs line-through">HK$88</span>
+          <span class="text-pink-600 font-black text-xl leading-none">HK$55起</span>
+        </div>
+        <p class="text-[11px] text-zinc-500 font-black mt-1 flex items-center gap-1">
+          <span>⚡ 付款後5分鐘收Email</span>
+        </p>
+      </div>
+
+      <a href="#hot-plan" class="shine-wrap flex-shrink-0 inline-flex items-center justify-center bg-gradient-to-r from-pink-600 to-sky-500 text-white text-sm font-black px-6 py-3 rounded-2xl shadow-lg active:scale-95 transition-all">
+        即刻買
+      </a>
+    </div>
+  </div>
+
+</body>
+</html>
