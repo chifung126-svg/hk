@@ -1,0 +1,991 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-HK">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>中國內地 eSIM｜免VPN用 WhatsApp、Google、YouTube、IG｜EasyGoSIM</title>
+  <meta name="description" content="香港人北上必備中國內地eSIM。China Mobile 4G/5G無限數據，免VPN使用WhatsApp、Google、YouTube及Instagram，免換SIM，QR Code簡單設定。">
+  <link rel="canonical" href="https://hk.easygosim.us/china_esim/">
+  <meta property="og:title" content="中國內地 eSIM｜免VPN上 WhatsApp、Google、YouTube、IG">
+  <meta property="og:description" content="China Mobile 4G/5G無限數據，香港出發前買定，QR Code設定，北上即用。">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://hk.easygosim.us/china_esim/">
+  <meta property="og:site_name" content="EasyGoSIM">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="theme-color" content="#e53935">
+
+  <!-- Google Analytics 4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-JL0CSDTY8D"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-JL0CSDTY8D', { cookie_domain: 'easygosim.us' });
+  </script>
+
+  <style>
+    :root {
+      --ink: #171717;
+      --muted: #626262;
+      --line: #dedede;
+      --surface: #ffffff;
+      --soft: #f6f6f3;
+      --red: #d9342b;
+      --red-dark: #a91f1a;
+      --green: #087f5b;
+      --green-soft: #e9f7f1;
+      --blue: #1769aa;
+      --yellow: #f4c542;
+      --radius: 8px;
+      --shadow: 0 14px 36px rgba(20, 20, 20, 0.11);
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      color: var(--ink);
+      background: var(--surface);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang HK", "Noto Sans TC", Arial, sans-serif;
+      letter-spacing: 0;
+      line-height: 1.55;
+    }
+    a { color: inherit; text-decoration: none; }
+    button, input { font: inherit; letter-spacing: 0; }
+    button { cursor: pointer; }
+    .container { width: min(1160px, calc(100% - 40px)); margin: 0 auto; }
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      margin: 0 0 12px;
+      color: var(--red-dark);
+      font-size: 13px;
+      font-weight: 800;
+    }
+    .eyebrow::before { content: ""; width: 18px; height: 3px; background: var(--red); }
+    .section-title { margin: 0; font-size: 38px; line-height: 1.18; }
+    .section-copy { max-width: 720px; margin: 14px auto 0; color: var(--muted); font-size: 17px; }
+    .section-head { text-align: center; margin-bottom: 38px; }
+
+    .site-header {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      background: rgba(255,255,255,.96);
+      border-bottom: 1px solid var(--line);
+      backdrop-filter: blur(12px);
+    }
+    .header-inner { height: 64px; display: flex; align-items: center; justify-content: space-between; gap: 18px; }
+    .brand { display: flex; align-items: center; gap: 10px; font-weight: 900; white-space: nowrap; }
+    .brand-mark {
+      width: 34px;
+      height: 34px;
+      display: grid;
+      place-items: center;
+      color: white;
+      background: var(--red);
+      border-radius: 7px;
+      font-size: 19px;
+    }
+    .brand-sub { color: #777; font-weight: 700; }
+    .nav { display: flex; align-items: center; gap: 26px; font-size: 14px; font-weight: 750; }
+    .nav a:hover { color: var(--red); }
+    .header-cta, .primary-btn, .secondary-btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 44px;
+      padding: 0 20px;
+      border: 1px solid transparent;
+      border-radius: var(--radius);
+      font-weight: 850;
+    }
+    .header-cta, .primary-btn { color: white; background: var(--ink); }
+    .header-cta:hover, .primary-btn:hover { background: #303030; }
+    .secondary-btn { color: var(--ink); background: white; border-color: var(--line); }
+
+    .hero {
+      position: relative;
+      min-height: 680px;
+      overflow: hidden;
+      border-bottom: 1px solid var(--line);
+      background-color: #fffdf9;
+    }
+    .hero::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(255,253,249,.16);
+      pointer-events: none;
+    }
+    .hero-inner { position: relative; z-index: 2; padding: 86px 0 72px; }
+    .hero-copy { width: min(660px, 60%); }
+    .hero h1 { margin: 0; max-width: 650px; font-size: 62px; line-height: 1.06; }
+    .hero h1 .accent { color: var(--red); }
+    .hero-lead { margin: 22px 0 0; max-width: 620px; color: #444; font-size: 19px; font-weight: 650; }
+    .hero-points { display: flex; flex-wrap: wrap; gap: 10px; margin: 24px 0; }
+    .hero-point {
+      display: inline-flex;
+      align-items: center;
+      min-height: 38px;
+      padding: 7px 12px;
+      background: white;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      font-size: 13px;
+      font-weight: 800;
+    }
+    .hero-point strong { color: var(--green); margin-right: 5px; }
+    .hero-actions { display: flex; gap: 10px; margin-top: 22px; }
+    .hero-note { margin: 12px 0 0; color: var(--muted); font-size: 12px; font-weight: 700; }
+    .phone-visual {
+      position: absolute;
+      z-index: 3;
+      top: 74px;
+      right: max(4vw, calc((100vw - 1160px) / 2));
+      width: 330px;
+      height: 590px;
+      padding: 12px;
+      color: white;
+      background: #111;
+      border: 7px solid #252525;
+      border-radius: 42px;
+      box-shadow: 0 24px 56px rgba(0,0,0,.24);
+      transform: rotate(2deg);
+    }
+    .phone-screen {
+      height: 100%;
+      padding: 46px 20px 20px;
+      overflow: hidden;
+      background: #f5f1e7;
+      border-radius: 28px;
+      color: var(--ink);
+    }
+    .phone-notch { position: absolute; top: 16px; left: 50%; width: 104px; height: 24px; transform: translateX(-50%); background: #050505; border-radius: 0 0 14px 14px; }
+    .phone-status { color: var(--green); font-size: 12px; font-weight: 900; text-transform: uppercase; }
+    .phone-title { margin: 8px 0 2px; font-size: 29px; line-height: 1.1; }
+    .phone-sub { color: var(--muted); font-size: 13px; }
+    .connection {
+      margin-top: 22px;
+      padding: 18px;
+      color: white;
+      background: var(--red);
+      border-radius: var(--radius);
+    }
+    .connection strong { display: block; font-size: 22px; }
+    .connection span { font-size: 12px; opacity: .88; }
+    .app-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-top: 14px; }
+    .app-tile { padding: 13px 10px; background: white; border: 1px solid #ddd7ca; border-radius: var(--radius); font-weight: 850; font-size: 13px; }
+    .app-tile small { display: block; color: var(--green); font-weight: 900; margin-top: 3px; }
+    .no-vpn { margin-top: 14px; padding: 13px; background: var(--green-soft); border: 1px solid #b8dfce; border-radius: var(--radius); color: #075f45; font-size: 13px; font-weight: 850; }
+
+    .quick-plans { position: relative; z-index: 4; margin-top: -52px; }
+    .quick-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
+    .quick-card { position: relative; padding: 20px; background: white; border: 1px solid var(--line); border-radius: var(--radius); box-shadow: var(--shadow); }
+    .quick-card.popular { color: white; background: var(--ink); border-color: var(--ink); }
+    .badge { display: inline-block; padding: 4px 8px; background: var(--yellow); color: #1d1d1d; border-radius: 999px; font-size: 11px; font-weight: 900; }
+    .quick-card h3 { margin: 12px 0 4px; font-size: 21px; }
+    .quick-card p { margin: 0; color: #777; font-size: 13px; }
+    .quick-card.popular p { color: #c9c9c9; }
+    .quick-price { margin-top: 14px; font-size: 27px; font-weight: 900; }
+
+    .trust-band { padding: 78px 0 56px; }
+    .trust-grid { display: grid; grid-template-columns: repeat(4, 1fr); border: 1px solid var(--line); border-radius: var(--radius); overflow: hidden; }
+    .trust-item { padding: 22px; background: var(--soft); border-right: 1px solid var(--line); }
+    .trust-item:last-child { border-right: 0; }
+    .trust-item strong { display: block; margin-bottom: 5px; font-size: 17px; }
+    .trust-item span { color: var(--muted); font-size: 13px; }
+
+    .plans { padding: 76px 0; background: var(--soft); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+    .plan-tool { display: grid; grid-template-columns: 1fr 360px; gap: 24px; align-items: start; }
+    .plan-controls { padding: 24px; background: white; border: 1px solid var(--line); border-radius: var(--radius); }
+    .control-label { display: block; margin-bottom: 10px; font-size: 14px; font-weight: 850; }
+    .segments { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+    .segment {
+      min-height: 52px;
+      padding: 10px 14px;
+      color: var(--ink);
+      background: white;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      font-weight: 850;
+    }
+    .segment[aria-pressed="true"] { color: white; background: var(--ink); border-color: var(--ink); }
+    .segment small { display: block; color: inherit; opacity: .68; font-size: 11px; }
+    .day-label { margin-top: 24px; }
+    .day-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 8px; }
+    .day-button {
+      min-height: 60px;
+      padding: 8px;
+      background: white;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      font-weight: 850;
+    }
+    .day-button[aria-pressed="true"] { border: 2px solid var(--red); background: #fff4f2; color: var(--red-dark); }
+    .day-button small { display: block; color: var(--muted); font-size: 11px; }
+    .day-button[aria-pressed="true"] small { color: inherit; }
+    .calendar-warning { margin-top: 20px; padding: 14px; border-left: 4px solid var(--yellow); background: #fff9df; font-size: 13px; font-weight: 750; }
+    .selection { position: sticky; top: 84px; padding: 24px; background: var(--ink); color: white; border-radius: var(--radius); box-shadow: var(--shadow); }
+    .selection-kicker { color: #bbb; font-size: 12px; font-weight: 850; }
+    .selection h3 { margin: 8px 0 4px; font-size: 25px; }
+    .selection-price { margin: 18px 0; font-size: 38px; font-weight: 900; }
+    .selection-list { margin: 0 0 20px; padding: 0; list-style: none; color: #d7d7d7; font-size: 14px; }
+    .selection-list li { margin: 8px 0; }
+    .buy-button { width: 100%; min-height: 50px; border: 0; border-radius: var(--radius); font-weight: 900; }
+    .buy-button:disabled { cursor: not-allowed; color: #555; background: #e3e3e3; }
+    .pending-note { margin: 10px 0 0; color: #aaa; font-size: 11px; text-align: center; }
+
+    .dual-plans { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; align-items: stretch; }
+    .plan-card {
+      min-width: 0;
+      padding: 30px;
+      background: white;
+      border: 1px solid var(--line);
+      border-radius: 30px;
+      box-shadow: var(--shadow);
+    }
+    .plan-card.dark { color: white; background: #09090b; border-color: #27272a; }
+    .plan-card-head { display: flex; align-items: flex-start; justify-content: space-between; gap: 18px; }
+    .plan-card-tag { display: inline-flex; padding: 5px 10px; border-radius: 999px; color: #1d4ed8; background: #eff6ff; font-size: 11px; font-weight: 900; }
+    .plan-card.dark .plan-card-tag { color: #18181b; background: #facc15; }
+    .plan-card h3 { margin: 12px 0 0; font-size: 30px; line-height: 1.15; }
+    .plan-from { flex-shrink: 0; text-align: right; }
+    .plan-from small { display: block; color: #a1a1aa; font-size: 11px; }
+    .plan-from strong { font-size: 26px; }
+    .plan-card-copy { min-height: 52px; margin: 24px 0; color: #6b7280; font-size: 14px; font-weight: 700; }
+    .plan-card.dark .plan-card-copy { color: #d4d4d8; }
+    .plan-price-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; }
+    .plan-price-button {
+      min-height: 74px;
+      padding: 12px;
+      text-align: left;
+      color: var(--ink);
+      background: #fafafa;
+      border: 1px solid transparent;
+      border-radius: 16px;
+      font-weight: 850;
+    }
+    .plan-price-button span { display: block; margin-top: 2px; color: #db2777; font-size: 13px; }
+    .plan-price-button.featured { background: #fdf2f8; border-color: #fbcfe8; }
+    .plan-card.dark .plan-price-button { color: white; background: #27272a; }
+    .plan-card.dark .plan-price-button span { color: #5eead4; }
+    .plan-card.dark .plan-price-button.featured { background: #db2777; border-color: #f472b6; }
+    .plan-card.dark .plan-price-button.featured span { color: white; }
+    .plan-price-button:disabled { cursor: not-allowed; opacity: 1; }
+    .plan-card-cta { width: 100%; min-height: 56px; margin-top: 24px; border: 0; border-radius: 16px; font-weight: 900; }
+    .plan-card-cta:disabled { color: #555; background: #f1f1f1; cursor: not-allowed; }
+    .plan-card.dark .plan-card-cta:disabled { color: white; background: linear-gradient(90deg, #db2777, #c026d3, #0ea5e9); opacity: .72; }
+    .legacy-selector { display: none; }
+
+    .comparison { padding: 76px 0; }
+    .compare-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; }
+    .compare-block { padding: 26px; border: 1px solid var(--line); border-radius: var(--radius); }
+    .compare-block.dark { color: white; background: var(--ink); border-color: var(--ink); }
+    .compare-block h3 { margin: 0 0 6px; font-size: 27px; }
+    .compare-price { color: var(--red); font-weight: 900; }
+    .compare-block.dark .compare-price { color: var(--yellow); }
+    .feature-list { margin: 20px 0 0; padding: 0; list-style: none; }
+    .feature-list li { margin: 10px 0; }
+
+    .steps { padding: 72px 0; background: #111; color: white; }
+    .steps .section-copy { color: #bdbdbd; }
+    .step-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+    .step { padding: 24px; border: 1px solid #3a3a3a; border-radius: var(--radius); }
+    .step-number { color: var(--yellow); font-size: 13px; font-weight: 900; }
+    .step h3 { margin: 8px 0; }
+    .step p { margin: 0; color: #bdbdbd; font-size: 14px; }
+
+    .details-section { padding: 76px 0; }
+    .details-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+    .info-panel { padding: 26px; border: 1px solid var(--line); border-radius: var(--radius); }
+    .info-panel h3 { margin: 0 0 14px; }
+    .info-panel ul { margin: 0; padding-left: 20px; color: var(--muted); }
+    .info-panel li { margin: 9px 0; }
+    .danger { border-color: #efb8b5; background: #fff4f3; }
+    .danger strong { color: var(--red-dark); }
+
+    .faq { padding: 76px 0; background: var(--soft); border-top: 1px solid var(--line); }
+    .faq-list { width: min(820px, 100%); margin: 0 auto; }
+    details { margin-bottom: 10px; background: white; border: 1px solid var(--line); border-radius: var(--radius); }
+    summary { padding: 18px 20px; cursor: pointer; font-weight: 850; }
+    details p { margin: 0; padding: 0 20px 20px; color: var(--muted); }
+
+    .contact { padding: 70px 0; text-align: center; }
+    .contact-actions { display: flex; justify-content: center; gap: 10px; margin-top: 24px; }
+    .footer { padding: 30px 0 98px; color: #aaa; background: #0d0d0d; font-size: 13px; }
+    .footer-inner { display: flex; justify-content: space-between; gap: 20px; align-items: center; }
+    .footer-links { display: flex; gap: 18px; }
+    .mobile-sticky { display: none; }
+
+    @media (max-width: 900px) {
+      .nav { display: none; }
+      .hero { min-height: auto; }
+      .hero::after { background: rgba(255,253,249,.52); }
+      .hero-inner { padding: 48px 0 150px; }
+      .hero-copy { width: 100%; }
+      .hero h1 { max-width: 620px; font-size: 50px; }
+      .phone-visual { top: auto; right: 30px; bottom: -235px; width: 250px; height: 450px; opacity: .34; transform: rotate(5deg); }
+      .quick-plans { margin-top: -84px; }
+      .plan-tool { grid-template-columns: 1fr; }
+      .selection { position: static; }
+      .trust-grid { grid-template-columns: 1fr 1fr; }
+      .trust-item:nth-child(2) { border-right: 0; }
+      .trust-item:nth-child(-n+2) { border-bottom: 1px solid var(--line); }
+    }
+
+    @media (max-width: 640px) {
+      body { padding-bottom: 78px; }
+      .container { width: min(100% - 28px, 1160px); }
+      .header-inner { height: 58px; }
+      .brand-sub { display: none; }
+      .header-cta { min-height: 38px; padding: 0 12px; font-size: 12px; }
+      .hero-inner { padding: 36px 0 124px; }
+      .hero h1 { font-size: 40px; }
+      .hero-lead { font-size: 16px; }
+      .hero-point { padding: 6px 10px; font-size: 12px; }
+      .hero-actions { display: none; }
+      .phone-visual { right: -68px; bottom: -250px; }
+      .quick-plans { margin-top: -72px; }
+      .quick-grid { grid-template-columns: 1fr 1fr; }
+      .quick-card { padding: 16px; }
+      .quick-card.popular { grid-column: 1 / -1; grid-row: 1; }
+      .quick-card h3 { font-size: 17px; }
+      .quick-price { font-size: 22px; }
+      .trust-band, .plans, .comparison, .steps, .details-section, .faq, .contact { padding: 54px 0; }
+      .section-title { font-size: 30px; }
+      .section-copy { font-size: 15px; }
+      .trust-grid { grid-template-columns: 1fr; }
+      .trust-item { border-right: 0; border-bottom: 1px solid var(--line); }
+      .trust-item:last-child { border-bottom: 0; }
+      .plan-controls { padding: 18px; }
+      .day-grid { grid-template-columns: repeat(3, 1fr); }
+      .compare-grid, .step-grid, .details-grid { grid-template-columns: 1fr; }
+      .dual-plans { grid-template-columns: 1fr; }
+      .plan-card { padding: 22px; }
+      .plan-card h3 { font-size: 25px; }
+      .plan-price-grid { grid-template-columns: repeat(3, 1fr); }
+      .plan-price-button { min-height: 66px; padding: 10px; }
+      .footer-inner { flex-direction: column; align-items: flex-start; }
+      .mobile-sticky {
+        position: fixed;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 60;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 12px;
+        padding: 10px 14px calc(10px + env(safe-area-inset-bottom));
+        background: rgba(255,255,255,.97);
+        border-top: 1px solid var(--line);
+        box-shadow: 0 -8px 24px rgba(0,0,0,.1);
+      }
+      .mobile-sticky strong { display: block; font-size: 18px; }
+      .mobile-sticky span { display: block; color: var(--muted); font-size: 10px; }
+      .mobile-sticky a { min-height: 44px; padding: 0 18px; color: white; background: var(--red); border-radius: var(--radius); font-weight: 900; }
+    }
+
+    /* EasyGoSIM Korea-style visual system */
+    :root {
+      --red: #db2777;
+      --red-dark: #be185d;
+      --green: #16a34a;
+      --green-soft: #ecfdf5;
+      --blue: #0ea5e9;
+      --yellow: #fbbf24;
+      --soft: #faf5ff;
+      --line: #f0d7e7;
+      --radius: 24px;
+      --shadow: 0 18px 42px rgba(157, 23, 77, .12);
+    }
+    body { background: #09090b; }
+    main { background: #fff; }
+    .site-header {
+      background: rgba(255,255,255,.82);
+      border-bottom-color: rgba(255,255,255,.65);
+      backdrop-filter: blur(18px);
+    }
+    .brand-mark {
+      border-radius: 14px;
+      background: linear-gradient(135deg, #ec4899, #d946ef 52%, #38bdf8);
+      box-shadow: 0 8px 20px rgba(219,39,119,.28);
+    }
+    .header-cta, .primary-btn, .secondary-btn { border-radius: 999px; }
+    .header-cta, .primary-btn { background: #18181b; }
+
+    .hero {
+      min-height: 720px;
+      background-color: #fdf2f8;
+      background-image:
+        linear-gradient(rgba(236,72,153,.08) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(56,189,248,.08) 1px, transparent 1px),
+        linear-gradient(135deg, #fdf2f8 0%, #fae8ff 52%, #e0f2fe 100%);
+      background-size: 44px 44px, 44px 44px, 100% 100%;
+      border-bottom: 0;
+    }
+    .hero::after {
+      background: linear-gradient(90deg, rgba(253,242,248,.97) 0%, rgba(253,242,248,.72) 58%, rgba(224,242,254,.08) 82%);
+    }
+    .hero-inner { padding-top: 96px; }
+    .eyebrow {
+      padding: 8px 14px;
+      background: rgba(255,255,255,.76);
+      border: 1px solid rgba(244,114,182,.24);
+      border-radius: 999px;
+      box-shadow: 0 5px 16px rgba(219,39,119,.07);
+    }
+    .eyebrow::before { width: 8px; height: 8px; border-radius: 50%; background: #ec4899; }
+    .hero h1 { font-weight: 950; }
+    .hero h1 .accent {
+      color: transparent;
+      background: linear-gradient(90deg, #db2777, #c026d3, #0ea5e9);
+      -webkit-background-clip: text;
+      background-clip: text;
+    }
+    .hero-point {
+      padding: 9px 14px;
+      border-radius: 999px;
+      border-color: rgba(236,72,153,.18);
+      box-shadow: 0 8px 18px rgba(157,23,77,.06);
+    }
+    .phone-visual {
+      width: 350px;
+      height: 620px;
+      padding: 8px;
+      border: 0;
+      border-radius: 46px;
+      background: rgba(255,255,255,.56);
+      backdrop-filter: blur(18px);
+      box-shadow: 0 26px 64px rgba(88,28,135,.24);
+    }
+    .phone-screen {
+      color: white;
+      border-radius: 38px;
+      background: linear-gradient(180deg, #18181b 0%, #3b0764 52%, #831843 100%);
+    }
+    .phone-sub { color: #d4d4d8; }
+    .connection { background: linear-gradient(90deg, #db2777, #c026d3, #0ea5e9); border-radius: 20px; }
+    .app-tile { color: white; background: rgba(255,255,255,.1); border-color: rgba(255,255,255,.15); border-radius: 18px; }
+    .app-tile small { color: #86efac; }
+    .no-vpn { color: #dcfce7; background: rgba(34,197,94,.15); border-color: rgba(134,239,172,.3); border-radius: 18px; }
+
+    .quick-plans { margin-top: -76px; }
+    .quick-card { border-radius: 30px; border-color: rgba(244,114,182,.18); box-shadow: 0 18px 44px rgba(157,23,77,.12); }
+    .quick-card.popular { background: linear-gradient(135deg, #db2777, #c026d3 55%, #0ea5e9); border: 0; }
+    .badge { background: #fef3c7; border-radius: 999px; }
+    .quick-price { font-weight: 950; }
+
+    .trust-band { background: #fff; }
+    .trust-grid { border: 0; border-radius: 30px; box-shadow: 0 16px 38px rgba(24,24,27,.07); }
+    .trust-item { background: #fff; border-color: #f4e4ef; }
+    .trust-item:first-child { background: #fdf2f8; }
+    .trust-item:nth-child(2) { background: #f0f9ff; }
+    .trust-item:nth-child(3) { background: #f0fdf4; }
+    .trust-item:nth-child(4) { background: #fffbeb; }
+
+    .plans {
+      background: linear-gradient(180deg, #fff 0%, #fdf2f8 50%, #f0f9ff 100%);
+      border: 0;
+    }
+    .plan-controls { border-radius: 30px; border-color: rgba(244,114,182,.2); box-shadow: var(--shadow); }
+    .segment, .day-button { border-radius: 16px; }
+    .segment[aria-pressed="true"] { background: #18181b; border-color: #18181b; }
+    .day-button[aria-pressed="true"] { color: #be185d; border-color: #ec4899; background: #fdf2f8; box-shadow: 0 6px 15px rgba(219,39,119,.12); }
+    .calendar-warning { border-radius: 16px; border-left: 0; border: 1px solid #fde68a; }
+    .selection { border-radius: 30px; background: #18181b; box-shadow: 0 22px 54px rgba(24,24,27,.24); }
+    .buy-button { border-radius: 16px; }
+
+    .comparison { background: #fff; }
+    .compare-block { border-radius: 30px; border-color: rgba(244,114,182,.2); box-shadow: 0 14px 34px rgba(24,24,27,.06); }
+    .compare-block:first-child { background: #fff; }
+    .compare-block.dark { background: #18181b; }
+    .steps { background: linear-gradient(135deg, #18181b, #3b0764 58%, #172554); }
+    .step { border-radius: 24px; background: rgba(255,255,255,.06); border-color: rgba(255,255,255,.13); }
+    .info-panel { border-radius: 30px; box-shadow: 0 14px 34px rgba(24,24,27,.05); }
+    .danger { background: #fff1f2; border-color: #fecdd3; }
+    .faq { background: linear-gradient(180deg, #fff, #fdf2f8); border-top: 0; }
+    details { border-radius: 20px; border-color: #f3d6e7; box-shadow: 0 7px 18px rgba(157,23,77,.04); }
+    .contact { background: #fff; }
+    .footer { background: #09090b; }
+
+    @media (max-width: 900px) {
+      .hero::after { background: rgba(253,242,248,.7); }
+      .phone-visual { opacity: .42; }
+    }
+    @media (max-width: 640px) {
+      .hero { min-height: auto; }
+      .hero-inner { padding-top: 42px; }
+      .quick-card { border-radius: 26px; }
+      .quick-card.popular { padding: 20px; }
+      .mobile-sticky { border-top-color: #f3d6e7; background: rgba(255,255,255,.95); backdrop-filter: blur(18px); }
+      .mobile-sticky a { border-radius: 16px; background: linear-gradient(90deg, #db2777, #c026d3, #0ea5e9); box-shadow: 0 8px 18px rgba(219,39,119,.22); }
+    }
+  </style>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    "name": "中國內地 4G/5G 無限數據 eSIM",
+    "description": "China Mobile 4G/5G無限數據eSIM，免VPN使用WhatsApp、Google、YouTube及Instagram。",
+    "brand": { "@type": "Brand", "name": "EasyGoSIM" },
+    "offers": {
+      "@type": "AggregateOffer",
+      "priceCurrency": "HKD",
+      "lowPrice": "20.00",
+      "highPrice": "1173.00",
+      "offerCount": "26",
+      "availability": "https://schema.org/PreOrder"
+    }
+  }
+  </script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#top" class="brand" aria-label="EasyGoSIM 中國eSIM首頁">
+        <span class="brand-mark">易</span>
+        <span>EasyGoSIM <span class="brand-sub">| 中國eSIM</span></span>
+      </a>
+      <nav class="nav" aria-label="主要導覽">
+        <a href="#plans">套餐</a>
+        <a href="#compare">4G/5G比較</a>
+        <a href="#how">使用方法</a>
+        <a href="#faq">常見問題</a>
+      </nav>
+      <a class="header-cta" href="#plans">HK$20.00起 揀套餐</a>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <p class="eyebrow">香港人北上・中國內地上網</p>
+          <h1>返內地，<br><span class="accent">WhatsApp、Google</span><br>照常用。</h1>
+          <p class="hero-lead">China Mobile 4G/5G無限數據，免VPN使用WhatsApp、Google、YouTube及Instagram。出發前買定，QR Code設定，免換SIM。</p>
+          <div class="hero-points">
+            <span class="hero-point"><strong>✓</strong>免VPN</span>
+            <span class="hero-point"><strong>✓</strong>真正無限數據</span>
+            <span class="hero-point"><strong>✓</strong>China Mobile</span>
+            <span class="hero-point"><strong>✓</strong>港幣定價</span>
+          </div>
+          <div class="hero-actions">
+            <a class="primary-btn" href="#plans">立即選擇套餐</a>
+            <a class="secondary-btn" href="#how">睇使用方法</a>
+          </div>
+          <p class="hero-note">Data Only，不含中國電話號碼、SMS或語音通話。產品不支援熱點分享。</p>
+        </div>
+      </div>
+
+      <div class="phone-visual" aria-hidden="true">
+        <div class="phone-notch"></div>
+        <div class="phone-screen">
+          <div class="phone-status">Connected · China Mobile</div>
+          <h2 class="phone-title">中國eSIM</h2>
+          <div class="phone-sub">Unlimited 5G Data</div>
+          <div class="connection"><strong>已連線</strong><span>深圳 · China Mobile 5G</span></div>
+          <div class="app-grid">
+            <div class="app-tile">WhatsApp<small>可使用</small></div>
+            <div class="app-tile">Google<small>可使用</small></div>
+            <div class="app-tile">YouTube<small>可使用</small></div>
+            <div class="app-tile">Instagram<small>可使用</small></div>
+          </div>
+          <div class="no-vpn">毋須另外安裝VPN</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="quick-plans" aria-label="熱門套餐">
+      <div class="container quick-grid">
+        <article class="quick-card popular">
+          <span class="badge">人氣抵玩</span>
+          <h3>4G無限 · 3日</h3>
+          <p>短Trip、深圳廣州、日常通訊</p>
+          <div class="quick-price">HK$60.00</div>
+        </article>
+        <article class="quick-card">
+          <span class="badge">高速升級</span>
+          <h3>5G無限 · 3日</h3>
+          <p>影片、社交平台、重度使用</p>
+          <div class="quick-price">HK$121.00</div>
+        </article>
+        <article class="quick-card">
+          <span class="badge">即日北上</span>
+          <h3>4G無限 · 1日</h3>
+          <p>一日遊、工作、探親</p>
+          <div class="quick-price">HK$20.00</div>
+        </article>
+      </div>
+    </section>
+
+    <section class="trust-band">
+      <div class="container trust-grid">
+        <div class="trust-item"><strong>免VPN使用常用Apps</strong><span>WhatsApp、Google、YouTube、IG照用</span></div>
+        <div class="trust-item"><strong>4G/5G無限數據</strong><span>沒有每日高速流量或公平使用限制</span></div>
+        <div class="trust-item"><strong>QR Code簡單設定</strong><span>購買後以電郵發送設定資料</span></div>
+        <div class="trust-item"><strong>不支援熱點分享</strong><span>只供安裝eSIM的手機使用</span></div>
+      </div>
+    </section>
+
+    <section id="plans" class="plans">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">中國內地無限數據套餐</p>
+          <h2 class="section-title">4G抵玩，5G高速。</h2>
+          <p class="section-copy">所有日數和價格一次過睇清楚。4G適合一般通訊與導航；5G適合影片、頻繁上載及重度手機使用。</p>
+        </div>
+
+        <div class="dual-plans">
+          <article class="plan-card">
+            <div class="plan-card-head">
+              <div>
+                <span class="plan-card-tag">抵玩實用</span>
+                <h3>4G China Mobile套餐</h3>
+              </div>
+              <div class="plan-from"><small>from</small><strong>HK$20.00</strong></div>
+            </div>
+            <p class="plan-card-copy">WhatsApp、Google Maps、WeChat、支付寶、搜尋及一般社交平台，北上日常使用夠實用。</p>
+            <div id="fourGPlanGrid" class="plan-price-grid" aria-label="4G套餐日數及價格"></div>
+            <button id="fourGCta" class="plan-card-cta" type="button" disabled>商品上架後開放購買</button>
+          </article>
+
+          <article class="plan-card dark">
+            <div class="plan-card-head">
+              <div>
+                <span class="plan-card-tag">高速體驗</span>
+                <h3>5G China Mobile套餐</h3>
+              </div>
+              <div class="plan-from"><small>from</small><strong>HK$56.00</strong></div>
+            </div>
+            <p class="plan-card-copy">YouTube、影片、社交平台頻繁上載及重度手機使用，適合需要更高速體驗的旅客。</p>
+            <div id="fiveGPlanGrid" class="plan-price-grid" aria-label="5G套餐日數及價格"></div>
+            <button id="fiveGCta" class="plan-card-cta" type="button" disabled>商品上架後開放購買</button>
+          </article>
+        </div>
+
+        <div class="calendar-warning" style="max-width:860px;margin:24px auto 0;">
+          <strong>日數計算要留意：</strong>每一日按香港時間00:00–23:59計算。即使晚上才啟用，當日亦會計作一日。
+        </div>
+
+        <div class="plan-tool legacy-selector" aria-hidden="true">
+          <div class="plan-controls">
+            <span class="control-label">1. 選擇網絡</span>
+            <div class="segments" role="group" aria-label="選擇網絡">
+              <button class="segment" type="button" data-network="4G" aria-pressed="true">4G無限<small>抵玩實用</small></button>
+              <button class="segment" type="button" data-network="5G" aria-pressed="false">5G無限<small>高速體驗</small></button>
+            </div>
+
+            <span class="control-label day-label">2. 選擇使用日數</span>
+            <div id="dayGrid" class="day-grid" role="group" aria-label="選擇使用日數"></div>
+
+            <div class="calendar-warning">
+              <strong>日數計算要留意：</strong>每一日按香港時間00:00–23:59計算。即使晚上才啟用，當日亦會計作一日。
+            </div>
+          </div>
+
+          <aside class="selection" aria-live="polite">
+            <div class="selection-kicker">你已選擇</div>
+            <h3 id="selectedName">中國內地4G無限 · 3日</h3>
+            <div id="selectedPrice" class="selection-price">HK$60.00</div>
+            <ul class="selection-list">
+              <li>✓ China Mobile網絡</li>
+              <li>✓ 無限數據、免VPN</li>
+              <li>✓ WhatsApp、Google、YouTube、IG可用</li>
+              <li>× 不支援熱點分享</li>
+            </ul>
+            <button id="buyButton" class="buy-button" type="button" disabled>商品上架後開放購買</button>
+            <p class="pending-note">稍後加入Shopify商品編號後，按鈕會直接前往安全結帳。</p>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <section id="compare" class="comparison">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">4G定5G？</p>
+          <h2 class="section-title">按使用習慣揀，唔使估。</h2>
+        </div>
+        <div class="compare-grid">
+          <article class="compare-block">
+            <h3>4G無限</h3>
+            <div class="compare-price">HK$20.00起</div>
+            <ul class="feature-list">
+              <li>✓ WhatsApp、Google Maps、搜尋</li>
+              <li>✓ WeChat、支付寶及一般社交平台</li>
+              <li>✓ 一日遊、短Trip、工作探親</li>
+              <li>✓ 價格優先的抵玩選擇</li>
+            </ul>
+          </article>
+          <article class="compare-block dark">
+            <h3>5G無限</h3>
+            <div class="compare-price">HK$56.00起</div>
+            <ul class="feature-list">
+              <li>✓ 高速5G體驗</li>
+              <li>✓ YouTube、影片及頻繁上載</li>
+              <li>✓ 重度手機使用及較長旅程</li>
+              <li>✓ 覆蓋及速度視乎當地網絡與手機</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="how" class="steps">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">Easy Setup</p>
+          <h2 class="section-title">三步完成，北上即用。</h2>
+          <p class="section-copy">不用到門市、不用拆香港SIM卡，出發前完成設定即可。</p>
+        </div>
+        <div class="step-grid">
+          <article class="step"><div class="step-number">STEP 01</div><h3>選擇套餐</h3><p>按行程日數及使用量選擇4G或5G無限數據。</p></article>
+          <article class="step"><div class="step-number">STEP 02</div><h3>電郵收QR Code</h3><p>付款後會收到eSIM QR Code或手動設定資料。</p></article>
+          <article class="step"><div class="step-number">STEP 03</div><h3>到內地開啟</h3><p>將中國eSIM設為流動數據並開啟數據漫遊即可使用。</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="details-section">
+      <div class="container details-grid">
+        <article class="info-panel">
+          <h3>購買前請確認</h3>
+          <ul>
+            <li>手機支援eSIM並已解除SIM鎖。</li>
+            <li>本產品為Data Only，不含電話號碼、SMS或語音通話。</li>
+            <li>建議出發前安裝，到中國內地後才啟用流動數據。</li>
+            <li>接駁有問題時不要刪除eSIM，先聯絡客服。</li>
+          </ul>
+        </article>
+        <article class="info-panel danger">
+          <h3>兩項重要限制</h3>
+          <ul>
+            <li><strong>不支援熱點分享：</strong>不可將數據分享給其他手機或電腦。</li>
+            <li><strong>按自然日計算：</strong>每個香港時間曆日計作一日，晚上啟用亦會消耗一日。</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section id="faq" class="faq">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">FAQ</p>
+          <h2 class="section-title">常見問題</h2>
+        </div>
+        <div class="faq-list">
+          <details><summary>需要VPN先用到WhatsApp、Google或YouTube嗎？</summary><p>不需要。使用此eSIM數據時，可直接使用WhatsApp、Google、YouTube及Instagram。</p></details>
+          <details><summary>數據真係無限嗎？</summary><p>是。套餐沒有每日高速流量或公平使用限制；實際速度仍會受手機型號、5G覆蓋、地區及網絡繁忙程度影響。</p></details>
+          <details><summary>可以分享熱點嗎？</summary><p>不可以。本產品不支援熱點分享，只供安裝eSIM的手機使用。</p></details>
+          <details><summary>套餐日數如何計算？</summary><p>每一日按香港時間00:00至23:59計算。即使在晚上啟用，當日亦會計作一日，請按行程安排啟用時間。</p></details>
+          <details><summary>使用哪間電訊商？</summary><p>使用China Mobile網絡。5G連線需視乎手機支援、所在地區覆蓋及當時網絡情況。</p></details>
+          <details><summary>需要更換香港SIM卡嗎？</summary><p>不需要。eSIM可直接加入支援的手機，香港SIM可以保留在手機內。</p></details>
+          <details><summary>WeChat及支付寶可以使用嗎？</summary><p>可以。WeChat、支付寶及其他需要流動數據的內地應用程式均可使用。</p></details>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact">
+      <div class="container">
+        <p class="eyebrow">需要協助？</p>
+        <h2 class="section-title">出發前問清楚，北上更安心。</h2>
+        <p class="section-copy">購買前想確認手機支援、套餐日數或設定方法，可以透過電郵或LINE聯絡。</p>
+        <div class="contact-actions">
+          <a class="primary-btn" href="mailto:sales@easygosim.com?subject=China%20eSIM%20Inquiry">電郵查詢</a>
+          <a class="secondary-btn" href="https://line.me/R/ti/p/@712unbyr" target="_blank" rel="noopener noreferrer">LINE查詢</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <strong>EasyGoSIM | 中國eSIM</strong>
+      <span>© 2026 EasyGoSIM. All rights reserved.</span>
+      <div class="footer-links">
+        <a href="https://easygosim.us/policies/terms-of-service">服務條款</a>
+        <a href="https://easygosim.us/policies/privacy-policy">私隱政策</a>
+      </div>
+    </div>
+  </footer>
+
+  <div class="mobile-sticky">
+    <div><strong>4G 3日 HK$60.00</strong><span>人氣抵玩・免VPN・無限數據</span></div>
+    <a href="#plans">揀套餐</a>
+  </div>
+
+  <script>
+    const PRICES = {
+      '4G': {
+        1: 20, 2: 40, 3: 60, 4: 80, 5: 100,
+        6: 120, 7: 140, 8: 150, 9: 170, 10: 190,
+        15: 280, 20: 370, 30: 550
+      },
+      '5G': {
+        1: 56, 2: 80, 3: 121, 4: 159, 5: 199,
+        6: 237, 7: 275, 8: 315, 9: 354, 10: 394,
+        15: 588, 20: 783, 30: 1173
+      }
+    };
+
+    // Add Shopify variant IDs later, for example: '4G-3': '1234567890'.
+    const VARIANT_IDS = {
+      '4G-1': '', '4G-2': '', '4G-3': '', '4G-4': '', '4G-5': '',
+      '4G-6': '', '4G-7': '', '4G-8': '', '4G-9': '', '4G-10': '',
+      '4G-15': '', '4G-20': '', '4G-30': '',
+      '5G-1': '', '5G-2': '', '5G-3': '', '5G-4': '', '5G-5': '',
+      '5G-6': '', '5G-7': '', '5G-8': '', '5G-9': '', '5G-10': '',
+      '5G-15': '', '5G-20': '', '5G-30': ''
+    };
+
+    const DAYS = [1,2,3,4,5,6,7,8,9,10,15,20,30];
+    let selectedNetwork = '4G';
+    let selectedDays = 3;
+
+    const dayGrid = document.getElementById('dayGrid');
+    const selectedName = document.getElementById('selectedName');
+    const selectedPrice = document.getElementById('selectedPrice');
+    const buyButton = document.getElementById('buyButton');
+
+    function formatPrice(value) {
+      return 'HK$' + value.toLocaleString('en-HK', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+    }
+
+    function trackAndOpenPlan(network, day, variantId) {
+      const price = PRICES[network][day];
+      if (typeof gtag === 'function') {
+        gtag('event', 'add_to_cart', {
+          currency: 'HKD',
+          value: price,
+          items: [{
+            item_id: variantId,
+            item_name: '中國eSIM ' + network + ' ' + day + '日',
+            item_category: '中國eSIM',
+            price: price,
+            quantity: 1
+          }]
+        });
+      }
+      window.location.href = 'https://easygosim.us/cart/add?id=' + variantId + '&quantity=1&return_to=/cart';
+    }
+
+    function renderPlanOverview(network, gridId, ctaId) {
+      const grid = document.getElementById(gridId);
+      const cta = document.getElementById(ctaId);
+      grid.innerHTML = '';
+
+      DAYS.forEach(function (day) {
+        const key = network + '-' + day;
+        const variantId = VARIANT_IDS[key];
+        const button = document.createElement('button');
+        button.type = 'button';
+        button.className = 'plan-price-button' + (day === 3 ? ' featured' : '');
+        button.innerHTML = day + '日<span>' + formatPrice(PRICES[network][day]) + '</span>';
+        button.disabled = !variantId;
+        if (variantId) {
+          button.addEventListener('click', function () {
+            trackAndOpenPlan(network, day, variantId);
+          });
+        }
+        grid.appendChild(button);
+      });
+
+      const popularVariant = VARIANT_IDS[network + '-3'];
+      cta.disabled = !popularVariant;
+      cta.textContent = popularVariant ? '人氣3日套餐立即購買' : '商品上架後開放購買';
+      cta.onclick = popularVariant ? function () {
+        trackAndOpenPlan(network, 3, popularVariant);
+      } : null;
+    }
+
+    function renderDays() {
+      dayGrid.innerHTML = '';
+      DAYS.forEach(function (day) {
+        const button = document.createElement('button');
+        button.type = 'button';
+        button.className = 'day-button';
+        button.setAttribute('aria-pressed', String(day === selectedDays));
+        button.innerHTML = day + '日<small>' + formatPrice(PRICES[selectedNetwork][day]) + '</small>';
+        button.addEventListener('click', function () {
+          selectedDays = day;
+          renderDays();
+          updateSelection();
+          if (typeof gtag === 'function') {
+            gtag('event', 'select_item', {
+              item_list_id: 'china_esim_plans',
+              item_list_name: 'China eSIM HK plans',
+              items: [{
+                item_id: selectedNetwork + '-' + selectedDays,
+                item_name: '中國eSIM ' + selectedNetwork + ' ' + selectedDays + '日',
+                item_category: '中國eSIM',
+                currency: 'HKD',
+                price: PRICES[selectedNetwork][selectedDays]
+              }]
+            });
+          }
+        });
+        dayGrid.appendChild(button);
+      });
+    }
+
+    function updateSelection() {
+      const key = selectedNetwork + '-' + selectedDays;
+      const variantId = VARIANT_IDS[key];
+      selectedName.textContent = '中國內地' + selectedNetwork + '無限 · ' + selectedDays + '日';
+      selectedPrice.textContent = formatPrice(PRICES[selectedNetwork][selectedDays]);
+      if (variantId) {
+        buyButton.disabled = false;
+        buyButton.textContent = '立即購買';
+        buyButton.onclick = function () {
+          if (typeof gtag === 'function') {
+            gtag('event', 'add_to_cart', {
+              currency: 'HKD',
+              value: PRICES[selectedNetwork][selectedDays],
+              items: [{
+                item_id: variantId,
+                item_name: '中國eSIM ' + selectedNetwork + ' ' + selectedDays + '日',
+                item_category: '中國eSIM',
+                price: PRICES[selectedNetwork][selectedDays],
+                quantity: 1
+              }]
+            });
+          }
+          window.location.href = 'https://easygosim.us/cart/add?id=' + variantId + '&quantity=1&return_to=/cart';
+        };
+      } else {
+        buyButton.disabled = true;
+        buyButton.textContent = '商品上架後開放購買';
+        buyButton.onclick = null;
+      }
+    }
+
+    document.querySelectorAll('.segment').forEach(function (button) {
+      button.addEventListener('click', function () {
+        selectedNetwork = button.dataset.network;
+        document.querySelectorAll('.segment').forEach(function (item) {
+          item.setAttribute('aria-pressed', String(item === button));
+        });
+        renderDays();
+        updateSelection();
+      });
+    });
+
+    document.querySelectorAll('a[href^="mailto:"], a[href*="line.me"]').forEach(function (link) {
+      link.addEventListener('click', function () {
+        if (typeof gtag === 'function') {
+          gtag('event', 'generate_lead', { method: link.href.includes('line.me') ? 'LINE' : 'email' });
+        }
+      });
+    });
+
+    renderDays();
+    updateSelection();
+    renderPlanOverview('4G', 'fourGPlanGrid', 'fourGCta');
+    renderPlanOverview('5G', 'fiveGPlanGrid', 'fiveGCta');
+  </script>
+</body>
+</html>
