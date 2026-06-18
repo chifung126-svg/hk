@@ -340,6 +340,37 @@
     .footer { padding: 30px 0 98px; color: #aaa; background: #0d0d0d; font-size: 13px; }
     .footer-inner { display: flex; justify-content: space-between; gap: 20px; align-items: center; }
     .footer-links { display: flex; gap: 18px; }
+    .whatsapp-offer {
+      position: fixed;
+      right: 18px;
+      bottom: 18px;
+      z-index: 70;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      min-height: 56px;
+      padding: 9px 15px 9px 10px;
+      color: #fff;
+      background: #128c4e;
+      border: 1px solid rgba(255,255,255,.35);
+      border-radius: 8px;
+      box-shadow: 0 12px 28px rgba(0,0,0,.22);
+      font-weight: 900;
+    }
+    .whatsapp-offer-mark {
+      display: grid;
+      place-items: center;
+      width: 36px;
+      height: 36px;
+      flex: 0 0 36px;
+      color: #128c4e;
+      background: #fff;
+      border-radius: 50%;
+      font-size: 12px;
+    }
+    .whatsapp-offer-text { display: flex; flex-direction: column; line-height: 1.2; }
+    .whatsapp-offer-text small { margin-top: 3px; color: #e9fff2; font-size: 11px; font-weight: 750; }
+    .whatsapp-offer:hover { background: #0e7540; transform: translateY(-1px); }
     .mobile-sticky { display: none; }
 
     @media (max-width: 900px) {
@@ -393,6 +424,8 @@
       .plan-price-grid { grid-template-columns: repeat(3, 1fr); }
       .plan-price-button { min-height: 66px; padding: 10px; }
       .footer-inner { flex-direction: column; align-items: flex-start; }
+      .whatsapp-offer { right: 12px; bottom: 88px; min-height: 52px; padding: 7px 12px 7px 8px; }
+      .whatsapp-offer-mark { width: 34px; height: 34px; flex-basis: 34px; }
       .mobile-sticky {
         position: fixed;
         left: 0;
@@ -884,6 +917,11 @@
     </div>
   </footer>
 
+  <a class="whatsapp-offer" href="https://wa.me/85251183010?text=%E4%BD%A0%E5%A5%BD%EF%BC%8C%E6%88%91%E6%83%B3%E7%B4%A2%E5%8F%96%E4%B8%AD%E5%9C%8BeSIM%2010%25%E7%B5%90%E8%B3%AC%E5%84%AA%E6%83%A0%E7%A2%BC" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp客服，即取10%結賬優惠碼">
+    <span class="whatsapp-offer-mark" aria-hidden="true">WA</span>
+    <span class="whatsapp-offer-text">WhatsApp 客服<small>即取10%結賬優惠碼</small></span>
+  </a>
+
   <div class="mobile-sticky">
     <div><strong>4G 3日 HK$60.00</strong><span>人氣抵玩・免VPN・無限數據</span></div>
     <a href="#plans">揀套餐</a>
@@ -1051,6 +1089,15 @@
           gtag('event', 'generate_lead', { method: link.href.includes('line.me') ? 'LINE' : 'email' });
         }
       });
+    });
+
+    document.querySelector('.whatsapp-offer').addEventListener('click', function () {
+      if (typeof gtag === 'function') {
+        gtag('event', 'contact', {
+          method: 'WhatsApp',
+          campaign: 'china_esim_10_percent_discount'
+        });
+      }
     });
 
     renderDays();
