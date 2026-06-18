@@ -120,12 +120,11 @@
       pointer-events: none;
     }
     .hero-inner { position: relative; z-index: 2; padding: 86px 0 72px; }
-    .hero-copy { width: min(660px, 60%); }
+    .hero-copy { width: min(660px, 60%); min-width: 0; }
     .hero h1 { margin: 0; max-width: 650px; font-size: 62px; line-height: 1.06; }
     .hero h1 .accent { color: var(--red); }
-    .hero-lead { margin: 22px 0 0; max-width: 620px; color: #444; font-size: 19px; font-weight: 650; }
+    .hero-lead { margin: 22px 0 0; max-width: 620px; color: #444; font-size: 19px; font-weight: 650; overflow-wrap: anywhere; }
     .hero-points { display: flex; flex-wrap: wrap; gap: 10px; margin: 24px 0; }
-    .payment-points { margin-top: -12px; }
     .hero-point {
       display: inline-flex;
       align-items: center;
@@ -138,9 +137,31 @@
       font-weight: 800;
     }
     .hero-point strong { color: var(--green); margin-right: 5px; }
+    .payment-methods { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; margin: -10px 0 24px; }
+    .payment-label { color: var(--muted); font-size: 12px; font-weight: 800; white-space: nowrap; }
+    .payment-badges { display: flex; flex-wrap: wrap; gap: 6px; }
+    .payment-badge {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 32px;
+      padding: 0 10px;
+      background: #fff;
+      border: 1px solid var(--line);
+      border-radius: 6px;
+      box-shadow: 0 3px 10px rgba(20,20,20,.06);
+      font-size: 12px;
+      font-weight: 900;
+      line-height: 1;
+      white-space: nowrap;
+    }
+    .payment-badge.alipay { color: #1677ff; border-color: #b8d6ff; }
+    .payment-badge.fps { color: #087f5b; border-color: #a9ddc9; }
+    .payment-badge.visa { color: #1434cb; border-color: #bdc7f5; font-style: italic; }
+    .payment-badge.mastercard { color: #b52b22; border-color: #f1c5a7; }
     .hero-actions { display: flex; gap: 10px; margin-top: 22px; }
-    .delivery-note { margin: 10px 0 0; color: var(--green); font-size: 13px; font-weight: 850; }
-    .hero-note { margin: 12px 0 0; color: var(--muted); font-size: 12px; font-weight: 700; }
+    .delivery-note { margin: 10px 0 0; color: var(--green); font-size: 13px; font-weight: 850; overflow-wrap: anywhere; }
+    .hero-note { margin: 12px 0 0; color: var(--muted); font-size: 12px; font-weight: 700; overflow-wrap: anywhere; }
     .phone-visual {
       position: absolute;
       z-index: 3;
@@ -343,13 +364,15 @@
       .header-inner { height: 58px; }
       .brand-sub { display: none; }
       .header-cta { min-height: 38px; padding: 0 12px; font-size: 12px; }
-      .hero-inner { padding: 36px 0 124px; }
-      .hero h1 { font-size: 40px; }
+      .hero-inner { padding: 36px 0 42px; }
+      .hero h1 { font-size: 36px; }
       .hero-lead { font-size: 16px; }
       .hero-point { padding: 6px 10px; font-size: 12px; }
+      .payment-methods { align-items: flex-start; margin-top: -8px; }
+      .payment-label { width: 100%; }
       .hero-actions { display: none; }
-      .phone-visual { right: -68px; bottom: -250px; }
-      .quick-plans { margin-top: -72px; }
+      .phone-visual { display: none; }
+      .quick-plans { margin-top: 0; }
       .quick-grid { grid-template-columns: 1fr 1fr; }
       .quick-card { padding: 16px; }
       .quick-card.popular { grid-column: 1 / -1; grid-row: 1; }
@@ -616,11 +639,14 @@
             <span class="hero-point"><strong>✓</strong>真正無限數據</span>
             <span class="hero-point"><strong>✓</strong>China Mobile</span>
           </div>
-          <div class="hero-points payment-points">
-            <span class="hero-point"><strong>✓</strong>Alipay</span>
-            <span class="hero-point"><strong>✓</strong>FPS</span>
-            <span class="hero-point"><strong>✓</strong>Visa</span>
-            <span class="hero-point"><strong>✓</strong>Mastercard</span>
+          <div class="payment-methods" aria-label="支援付款方式">
+            <span class="payment-label">支援付款</span>
+            <div class="payment-badges">
+              <span class="payment-badge alipay">Alipay</span>
+              <span class="payment-badge fps">FPS</span>
+              <span class="payment-badge visa">VISA</span>
+              <span class="payment-badge mastercard">Mastercard</span>
+            </div>
           </div>
           <div class="hero-actions">
             <a class="primary-btn" href="#plans">立即選擇套餐</a>
