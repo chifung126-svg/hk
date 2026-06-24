@@ -4,20 +4,20 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <title>泰國 TRUE eSIM｜香港客人即買即用</title>
-  <meta name="description" content="香港客人買泰國 TRUE Tourist eSIM，7日、10日、15日、30日方案，HK$45起。掃碼安裝，落地泰國即可上網。" />
+  <title>泰國 TRUE 5G eSIM｜落機即用｜支援 FPS / Alipay / Visa / Mastercard - EasyGoSIM</title>
+  <meta name="description" content="泰國 TRUE 5G eSIM，香港客人即買即用。落機即開網、秒速叫 Grab / Bolt，7日、10日、15日、30日方案，HK$45起，支援 FPS / Alipay / Visa / Mastercard。" />
   <meta name="robots" content="index,follow" />
   <link rel="canonical" href="https://easygosim.com/products/thailand-true-5g-esim" />
-  <meta property="og:title" content="泰國 TRUE 5G eSIM｜香港客人即買即用" />
-  <meta property="og:description" content="TRUE 泰國 Tourist 5G eSIM，7日、10日、15日、30日方案，全部5G。掃碼安裝，落地泰國即可上網。" />
+  <meta property="og:title" content="泰國 TRUE 5G eSIM｜落機即用" />
+  <meta property="og:description" content="泰國 TRUE 5G eSIM，落機即開網、秒速叫 Grab / Bolt。7日、10日、15日、30日方案，全部5G，HK$45起。" />
   <meta property="og:type" content="product" />
   <meta property="og:url" content="https://easygosim.com/products/thailand-true-5g-esim" />
   <meta property="og:site_name" content="EasyGoSIM" />
   <meta property="og:price:amount" content="902" />
   <meta property="og:price:currency" content="JPY" />
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="泰國 TRUE 5G eSIM｜香港客人即買即用" />
-  <meta name="twitter:description" content="香港客人買泰國 TRUE 5G eSIM，HK$45起，支援 7 / 10 / 15 / 30 日方案。" />
+  <meta name="twitter:title" content="泰國 TRUE 5G eSIM｜落機即用" />
+  <meta name="twitter:description" content="泰國 TRUE 5G eSIM，HK$45起。落機即開網，叫車、地圖、WhatsApp 即用。" />
   <meta name="theme-color" content="#ec4899" />
 
   <!-- Google Analytics 4 -->
@@ -115,6 +115,87 @@
       align-items: center;
       justify-content: center;
       box-shadow: 0 1px 2px rgba(0, 0, 0, 0.08);
+      background: #fff;
+      border: 1px solid rgba(226, 232, 240, 0.95);
+      font-weight: 900;
+      letter-spacing: 0;
+      line-height: 1;
+      flex: none;
+    }
+    .pay-fps {
+      color: #1677c7;
+      font-size: 0.58rem;
+      font-style: italic;
+    }
+    .pay-fps::before {
+      content: "";
+      width: 0.86rem;
+      height: 0.86rem;
+      display: block;
+      margin: 0 auto 0.12rem;
+      border-radius: 9999px;
+      background:
+        radial-gradient(circle at 62% 38%, #fff 0 18%, transparent 19%),
+        conic-gradient(from 230deg, #1677c7, #23a8e0, #1677c7);
+    }
+    .pay-alipay {
+      color: #1677c7;
+      font-size: 0.52rem;
+    }
+    .pay-alipay::before {
+      content: "支";
+      display: block;
+      color: #1677c7;
+      font-size: 0.68rem;
+      margin-bottom: 0.08rem;
+    }
+    .pay-visa {
+      color: #1434cb;
+      font-size: 0.78rem;
+      transform: skew(-8deg);
+    }
+    .pay-mastercard {
+      flex-direction: column;
+      gap: 0.06rem;
+      color: #4b5563;
+      font-size: 0.36rem;
+    }
+    .mc-circles {
+      position: relative;
+      width: 1.42rem;
+      height: 0.82rem;
+      display: block;
+    }
+    .mc-circles::before,
+    .mc-circles::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      width: 0.82rem;
+      height: 0.82rem;
+      border-radius: 9999px;
+    }
+    .mc-circles::before {
+      left: 0;
+      background: #ea001b;
+    }
+    .mc-circles::after {
+      right: 0;
+      background: #ff5f00;
+      opacity: 0.95;
+    }
+    .qr-pill {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 3.25rem;
+      padding: 0 1.35rem;
+      border-radius: 9999px;
+      background: rgba(255, 255, 255, 0.78);
+      border: 1px solid rgba(244, 114, 182, 0.24);
+      color: #db2777;
+      font-weight: 900;
+      box-shadow: 0 8px 22px rgba(219, 39, 119, 0.08);
     }
     .true-logo {
       display: inline-block;
@@ -161,7 +242,7 @@
     "mainEntity": [
       {
         "@type": "Question",
-        "name": "泰國 TRUE eSIM 係咪無限流量？",
+        "name": "泰國 TRUE 5G eSIM 係咪無限流量？",
         "acceptedAnswer": {
           "@type": "Answer",
           "text": "全部方案均為 TRUE 5G eSIM。7日及10日方案為5G無限流量，達到高速流量後會降速。15日及30日方案為5G網絡全速不降速。"
@@ -173,6 +254,22 @@
         "acceptedAnswer": {
           "@type": "Answer",
           "text": "不需要。eSIM 可透過 QR Code 加入手機，免插卡、免換卡。"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "使唔使實名登記？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "完成網上購買後即可收到 QR Code，唔使去門市排隊換卡。實際使用如有手機或地區設定要求，請以結帳頁及客服通知為準。"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "有冇泰國本地電話號碼？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "呢個方案主打數據上網，不包泰國本地電話號碼；不過 15日及30日方案支援免費接聽電話和收短信。"
         }
       },
       {
@@ -196,13 +293,13 @@
         <span class="w-12 h-9 rounded-2xl bg-white border border-zinc-100 flex items-center justify-center shadow-lg shadow-pink-500/20 overflow-hidden">
           <span class="true-logo true-logo-header" role="img" aria-label="TRUE 5G"></span>
         </span>
-        <span>EasyGoSIM <span class="hidden sm:inline text-zinc-500">| 泰國 TRUE eSIM</span></span>
+        <span>EasyGoSIM <span class="hidden sm:inline text-zinc-500">| 泰國 TRUE 5G eSIM</span></span>
       </a>
 
       <nav class="hidden md:flex items-center gap-8 text-sm font-extrabold text-zinc-700" aria-label="Main navigation">
         <a href="#hot-plan" class="hover:text-pink-600 transition-colors">熱門套餐</a>
         <a href="#compare" class="hover:text-pink-600 transition-colors">方案比較</a>
-        <a href="#steps" class="hover:text-pink-600 transition-colors">使用方法</a>
+        <a href="#setup-guide" class="hover:text-pink-600 transition-colors">設定教學</a>
         <a href="#faq" class="hover:text-pink-600 transition-colors">FAQ</a>
       </nav>
 
@@ -228,7 +325,7 @@
           </div>
 
           <h1 class="animate-fade-up delay-100 text-4xl sm:text-5xl lg:text-6xl font-black tracking-tight mb-5 text-zinc-950 leading-[1.08]">
-            泰國 TRUE eSIM<br />
+            泰國 TRUE 5G eSIM<br />
             <span class="text-transparent bg-clip-text bg-gradient-to-r from-pink-600 via-fuchsia-600 to-sky-500">
               掃碼即用
             </span>
@@ -239,8 +336,25 @@
           </h1>
 
           <p class="animate-fade-up delay-200 text-base lg:text-lg text-zinc-700 mb-5 max-w-2xl mx-auto lg:mx-0 leading-relaxed font-bold">
-            去曼谷、清邁、布吉、芭堤雅旅行，唔想落地先排隊買卡？TRUE Tourist eSIM 掃碼安裝，落地開數據即上網。
+            去曼谷、清邁、布吉、芭堤雅旅行，落機第一件事通常就係叫車。TRUE 5G eSIM 掃碼安裝，落地即開網，Grab / Bolt / 地圖 / WhatsApp 即刻用得。
           </p>
+
+          <div class="animate-fade-up delay-200 mb-5 max-w-2xl mx-auto lg:mx-0">
+            <div class="grid sm:grid-cols-3 gap-3">
+              <div class="rounded-3xl bg-white/90 border border-pink-100 shadow-sm p-4 text-left">
+                <div class="text-xs font-black text-pink-600 mb-1">落機即用</div>
+                <div class="text-sm font-bold text-zinc-700 leading-relaxed">一落地就開數據，直接叫 Grab / Bolt 去酒店。</div>
+              </div>
+              <div class="rounded-3xl bg-white/90 border border-sky-100 shadow-sm p-4 text-left">
+                <div class="text-xs font-black text-sky-600 mb-1">TRUE 5G</div>
+                <div class="text-sm font-bold text-zinc-700 leading-relaxed">全部方案都係 5G，主打曼谷、芭堤雅、布吉、清邁旅遊熱點。</div>
+              </div>
+              <div class="rounded-3xl bg-white/90 border border-green-100 shadow-sm p-4 text-left">
+                <div class="text-xs font-black text-green-600 mb-1">平靚正</div>
+                <div class="text-sm font-bold text-zinc-700 leading-relaxed">HK$45 起，唔使去機場排隊買卡，慳時間又慳手續。</div>
+              </div>
+            </div>
+          </div>
 
           <div class="animate-fade-up delay-300 mb-5 flex flex-wrap justify-center lg:justify-start gap-3 max-w-2xl mx-auto lg:mx-0">
             <span class="inline-flex items-center gap-2 px-4 py-2 bg-zinc-950 text-white rounded-full text-sm font-black shadow-lg shadow-zinc-900/20">
@@ -259,29 +373,11 @@
           </div>
 
           <div class="animate-fade-up delay-300 mb-5 flex flex-wrap justify-center lg:justify-start items-center gap-2 max-w-2xl mx-auto lg:mx-0">
-            <span class="text-xs font-black text-zinc-500 mr-1">支援 FPS / Alipay / Visa / Mastercard</span>
-            <span class="pay-badge bg-emerald-50 border border-emerald-100 text-emerald-600" title="FPS" aria-label="FPS">
-              <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-                <path d="M13 2L4 14h6l-1 8 9-12h-6l1-8Z" fill="currentColor"/>
-              </svg>
-            </span>
-            <span class="pay-badge bg-sky-50 border border-sky-100 text-sky-600" title="Alipay" aria-label="Alipay">
-              <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-                <rect x="4" y="4" width="16" height="16" rx="4" stroke="currentColor" stroke-width="1.8"/>
-                <path d="M7 8h4l2 8h4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
-              </svg>
-            </span>
-            <span class="pay-badge bg-indigo-50 border border-indigo-100 text-indigo-600" title="Visa" aria-label="Visa">
-              <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-                <rect x="3.5" y="5" width="17" height="12" rx="3" stroke="currentColor" stroke-width="1.8"/>
-              </svg>
-            </span>
-            <span class="pay-badge bg-orange-50 border border-orange-100" title="Mastercard" aria-label="Mastercard">
-              <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-                <circle cx="10" cy="12" r="5" fill="#EA001B" opacity="0.95"/>
-                <circle cx="14" cy="12" r="5" fill="#FF5F00" opacity="0.95"/>
-              </svg>
-            </span>
+            <span class="pay-badge pay-fps" title="FPS" aria-label="FPS">FPS</span>
+            <span class="pay-badge pay-alipay" title="Alipay" aria-label="Alipay">Alipay</span>
+            <span class="pay-badge pay-visa" title="Visa" aria-label="Visa">VISA</span>
+            <span class="pay-badge pay-mastercard" title="Mastercard" aria-label="Mastercard"><span class="mc-circles"></span><span>Mastercard</span></span>
+            <span class="qr-pill">付款後即發 QR Code</span>
           </div>
 
           <div class="animate-fade-up delay-400 mb-9 max-w-2xl mx-auto lg:mx-0">
@@ -338,30 +434,13 @@
 
               <div class="mt-4 bg-white/90 rounded-3xl p-4 border border-green-100 shadow-lg shadow-green-500/5 text-center">
                 <div class="flex items-center justify-center gap-2 text-green-500" aria-label="FPS Alipay Visa Mastercard">
-                  <span class="pay-badge bg-white border border-emerald-100" title="FPS" aria-label="FPS">
-                    <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-                      <path d="M13 2L4 14h6l-1 8 9-12h-6l1-8Z" fill="currentColor"/>
-                    </svg>
-                  </span>
-                  <span class="pay-badge bg-white border border-sky-100 text-sky-500" title="Alipay" aria-label="Alipay">
-                    <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-                      <rect x="4" y="4" width="16" height="16" rx="4" stroke="currentColor" stroke-width="1.8"/>
-                      <path d="M7 8h4l2 8h4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
-                  </span>
-                  <span class="pay-badge bg-white border border-indigo-100 text-indigo-500" title="Visa" aria-label="Visa">
-                    <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-                      <rect x="3.5" y="5" width="17" height="12" rx="3" stroke="currentColor" stroke-width="1.8"/>
-                    </svg>
-                  </span>
-                  <span class="pay-badge bg-white border border-orange-100" title="Mastercard" aria-label="Mastercard">
-                    <svg class="w-7 h-7" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-                      <circle cx="10" cy="12" r="5" fill="#EA001B" opacity="0.95"/>
-                      <circle cx="14" cy="12" r="5" fill="#FF5F00" opacity="0.95"/>
-                    </svg>
-                  </span>
+                  <span class="pay-badge pay-fps" title="FPS" aria-label="FPS">FPS</span>
+                  <span class="pay-badge pay-alipay" title="Alipay" aria-label="Alipay">Alipay</span>
+                  <span class="pay-badge pay-visa" title="Visa" aria-label="Visa">VISA</span>
+                  <span class="pay-badge pay-mastercard" title="Mastercard" aria-label="Mastercard"><span class="mc-circles"></span><span>Mastercard</span></span>
+                  <span class="qr-pill hidden sm:inline-flex">付款後即發 QR Code</span>
                 </div>
-                <p class="mt-2 text-xs text-green-700 font-black">支援 FPS、Alipay、Visa、Mastercard</p>
+                <p class="mt-2 text-xs text-green-700 font-black">支援 FPS、Alipay、Visa、Mastercard，付款後即發 QR Code</p>
               </div>
             </div>
           </div>
@@ -461,6 +540,26 @@
       </div>
     </section>
 
+    <section class="py-6 px-6 bg-white">
+      <div class="max-w-7xl mx-auto grid md:grid-cols-3 gap-4">
+        <div class="rounded-[2rem] border border-pink-100 bg-pink-50/70 p-6 shadow-sm">
+          <div class="text-xs font-black text-pink-600 mb-2">痛點 1</div>
+          <h2 class="text-2xl font-black text-zinc-950 mb-2">落機就要叫車</h2>
+          <p class="text-zinc-600 font-bold leading-relaxed">去泰國自由行，第一件事多數係開 Grab / Bolt。頁面直接講「落機即開網」，會比純講流量更有感。</p>
+        </div>
+        <div class="rounded-[2rem] border border-sky-100 bg-sky-50/70 p-6 shadow-sm">
+          <div class="text-xs font-black text-sky-600 mb-2">痛點 2</div>
+          <h2 class="text-2xl font-black text-zinc-950 mb-2">想快、想穩、想 5G</h2>
+          <p class="text-zinc-600 font-bold leading-relaxed">加強「全部方案都係 5G」同泰國熱門城市覆蓋感，令客人一眼見到係旅遊即用方案。</p>
+        </div>
+        <div class="rounded-[2rem] border border-green-100 bg-green-50/70 p-6 shadow-sm">
+          <div class="text-xs font-black text-green-600 mb-2">痛點 3</div>
+          <h2 class="text-2xl font-black text-zinc-950 mb-2">價格感要夠直接</h2>
+          <p class="text-zinc-600 font-bold leading-relaxed">HK$45 起配合「免插卡、付款即發 QR Code」，會比單純列價錢更容易轉化搜尋流量。</p>
+        </div>
+      </div>
+    </section>
+
     <section class="py-5 px-6 bg-zinc-950 text-white">
       <div class="max-w-7xl mx-auto grid grid-cols-2 md:grid-cols-5 gap-4 text-center">
         <div>
@@ -482,28 +581,10 @@
         <div class="col-span-2 md:col-span-1">
           <div class="text-lg lg:text-xl font-black">付款方便</div>
           <div class="mt-2 flex items-center justify-center gap-1.5" aria-label="FPS Alipay Visa Mastercard">
-            <span class="pay-badge bg-emerald-50 border border-emerald-100 text-emerald-600" title="FPS" aria-label="FPS">
-              <svg class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-                <path d="M13 2L4 14h6l-1 8 9-12h-6l1-8Z" fill="currentColor"/>
-              </svg>
-            </span>
-            <span class="pay-badge bg-sky-50 border border-sky-100 text-sky-600" title="Alipay" aria-label="Alipay">
-              <svg class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-                <rect x="4" y="4" width="16" height="16" rx="4" stroke="currentColor" stroke-width="1.8"/>
-                <path d="M7 8h4l2 8h4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
-              </svg>
-            </span>
-            <span class="pay-badge bg-indigo-50 border border-indigo-100 text-indigo-600" title="Visa" aria-label="Visa">
-              <svg class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-                <rect x="3.5" y="5" width="17" height="12" rx="3" stroke="currentColor" stroke-width="1.8"/>
-              </svg>
-            </span>
-            <span class="pay-badge bg-orange-50 border border-orange-100" title="Mastercard" aria-label="Mastercard">
-              <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-                <circle cx="10" cy="12" r="5" fill="#EA001B" opacity="0.95"/>
-                <circle cx="14" cy="12" r="5" fill="#FF5F00" opacity="0.95"/>
-              </svg>
-            </span>
+            <span class="pay-badge pay-fps" title="FPS" aria-label="FPS">FPS</span>
+            <span class="pay-badge pay-alipay" title="Alipay" aria-label="Alipay">Alipay</span>
+            <span class="pay-badge pay-visa" title="Visa" aria-label="Visa">VISA</span>
+            <span class="pay-badge pay-mastercard" title="Mastercard" aria-label="Mastercard"><span class="mc-circles"></span><span>Mastercard</span></span>
           </div>
         </div>
       </div>
@@ -517,7 +598,7 @@
             去泰國，<br class="sm:hidden" />揀啱日數就出發。
           </h2>
           <p class="text-zinc-500 text-lg max-w-3xl mx-auto font-bold leading-relaxed">
-            7日短途、10日自由行、15日深度遊、30日長住商務，全部用港幣定價，客人一眼睇清。
+            7日短途、10日自由行、15日深度遊、30日長住商務，全部用港幣定價，全部都係 5G，客人一眼睇清。
           </p>
         </div>
 
@@ -662,6 +743,80 @@
       </div>
     </section>
 
+    <section id="setup-guide" class="py-24 px-6 bg-gradient-to-b from-zinc-950 via-zinc-900 to-white text-white">
+      <div class="max-w-7xl mx-auto">
+        <div class="text-center mb-14">
+          <span class="inline-flex px-4 py-2 rounded-full bg-pink-500/15 text-pink-200 border border-pink-400/20 font-black text-sm mb-4">eSIM Setup</span>
+          <h2 class="text-4xl lg:text-5xl font-black mb-4">eSIM 設定教學</h2>
+          <p class="text-zinc-300 text-lg max-w-3xl mx-auto font-bold leading-relaxed">
+            建議出發前先安裝 eSIM，到泰國後先開啟數據漫遊及選用 TRUE eSIM 上網。
+          </p>
+        </div>
+
+        <div class="grid lg:grid-cols-2 gap-6 mb-8">
+          <div class="rounded-[2rem] bg-white text-zinc-900 border border-pink-100 shadow-2xl shadow-pink-900/10 p-7">
+            <div class="flex items-center justify-between gap-4 mb-6">
+              <div>
+                <span class="inline-flex px-3 py-1 rounded-full bg-pink-50 text-pink-700 text-xs font-black mb-3">iPhone</span>
+                <h3 class="text-3xl font-black text-zinc-950">iPhone 安裝方法</h3>
+              </div>
+              <div class="w-12 h-12 rounded-2xl bg-zinc-950 text-white grid place-items-center font-black">iOS</div>
+            </div>
+            <ol class="space-y-4 text-sm sm:text-base font-bold text-zinc-600 leading-relaxed">
+              <li>1. 打開「設定」>「流動服務」或「Mobile Service」。</li>
+              <li>2. 選擇「加入 eSIM」或「Add eSIM」。</li>
+              <li>3. 選擇「使用 QR Code」，掃描購買後收到的 eSIM QR Code。</li>
+              <li>4. 按指示加入 eSIM，名稱可改為「Thailand TRUE」。</li>
+              <li>5. 出發前先保持新 eSIM 關閉，到泰國後再開啟。</li>
+            </ol>
+          </div>
+
+          <div class="rounded-[2rem] bg-white text-zinc-900 border border-sky-100 shadow-2xl shadow-sky-900/10 p-7">
+            <div class="flex items-center justify-between gap-4 mb-6">
+              <div>
+                <span class="inline-flex px-3 py-1 rounded-full bg-sky-50 text-sky-700 text-xs font-black mb-3">Android</span>
+                <h3 class="text-3xl font-black text-zinc-950">Android 安裝方法</h3>
+              </div>
+              <div class="w-12 h-12 rounded-2xl bg-sky-500 text-white grid place-items-center font-black">5G</div>
+            </div>
+            <ol class="space-y-4 text-sm sm:text-base font-bold text-zinc-600 leading-relaxed">
+              <li>1. 打開「設定」>「網絡和互聯網」或「連線」。</li>
+              <li>2. 進入「SIM」/「SIM 管理員」/「流動網絡」。</li>
+              <li>3. 選擇「加入 eSIM」或「下載 SIM」。</li>
+              <li>4. 掃描購買後收到的 QR Code，按手機提示完成安裝。</li>
+              <li>5. 不同品牌名稱略有不同，如 Samsung、Pixel、小米可按相近選項操作。</li>
+            </ol>
+          </div>
+        </div>
+
+        <div class="grid lg:grid-cols-3 gap-6">
+          <div class="rounded-[2rem] bg-zinc-950 border border-white/10 p-7 shadow-xl">
+            <div class="w-12 h-12 rounded-2xl bg-green-500 text-white grid place-items-center font-black mb-5">ON</div>
+            <h3 class="text-2xl font-black mb-3">到泰國後啟用</h3>
+            <p class="text-zinc-400 font-bold leading-relaxed">
+              抵達泰國後，開啟 TRUE eSIM、選它作流動數據，並打開「數據漫遊」；落機即開網，叫車、睇地圖、搵酒店都即刻用得。
+            </p>
+          </div>
+
+          <div class="rounded-[2rem] bg-zinc-950 border border-white/10 p-7 shadow-xl">
+            <div class="w-12 h-12 rounded-2xl bg-pink-500 text-white grid place-items-center font-black mb-5">SIM</div>
+            <h3 class="text-2xl font-black mb-3">保留香港 SIM</h3>
+            <p class="text-zinc-400 font-bold leading-relaxed">
+              原本香港 SIM 可以繼續放在手機內，建議只把上網數據切換到 TRUE eSIM，方便保留香港號碼收 SMS。
+            </p>
+          </div>
+
+          <div class="rounded-[2rem] bg-zinc-950 border border-white/10 p-7 shadow-xl">
+            <div class="w-12 h-12 rounded-2xl bg-sky-500 text-white grid place-items-center font-black mb-5">QR</div>
+            <h3 class="text-2xl font-black mb-3">QR Code 注意</h3>
+            <p class="text-zinc-400 font-bold leading-relaxed">
+              QR Code 通常只可安裝一次。安裝後不要刪除 eSIM，除非已完成旅程或客服指示。
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <section id="faq" class="py-24 px-6 bg-gradient-to-b from-white to-pink-50 text-zinc-900">
       <div class="max-w-4xl mx-auto">
         <div class="text-center mb-12">
@@ -673,7 +828,7 @@
         <div class="space-y-4">
           <details open class="bg-white rounded-[1.5rem] border border-zinc-100 shadow-lg shadow-zinc-900/5 p-6">
             <summary class="cursor-pointer flex items-center justify-between gap-4 font-black text-lg">
-              泰國 TRUE eSIM 係咪無限流量？
+              泰國 TRUE 5G eSIM 係咪無限流量？
               <span class="text-pink-600">+</span>
             </summary>
             <p class="mt-4 text-zinc-500 font-bold leading-relaxed">係，全部方案都係 TRUE 5G eSIM。7日及10日方案為5G無限流量，高速用量後會降速；15日及30日方案為5G網絡全速不降速。</p>
@@ -685,6 +840,22 @@
               <span class="text-pink-600">+</span>
             </summary>
             <p class="mt-4 text-zinc-500 font-bold leading-relaxed">唔需要。eSIM 透過 QR Code 加入手機，唔使拆原本香港 SIM。</p>
+          </details>
+
+          <details class="bg-white rounded-[1.5rem] border border-zinc-100 shadow-lg shadow-zinc-900/5 p-6">
+            <summary class="cursor-pointer flex items-center justify-between gap-4 font-black text-lg">
+              使唔使實名登記？
+              <span class="text-pink-600">+</span>
+            </summary>
+            <p class="mt-4 text-zinc-500 font-bold leading-relaxed">完成網上購買後即可收到 QR Code，唔使去門市排隊換卡。實際使用如有手機或地區設定要求，請以結帳頁及客服通知為準。</p>
+          </details>
+
+          <details class="bg-white rounded-[1.5rem] border border-zinc-100 shadow-lg shadow-zinc-900/5 p-6">
+            <summary class="cursor-pointer flex items-center justify-between gap-4 font-black text-lg">
+              有冇泰國本地電話號碼？
+              <span class="text-pink-600">+</span>
+            </summary>
+            <p class="mt-4 text-zinc-500 font-bold leading-relaxed">呢個方案主打數據上網，不包泰國本地電話號碼；不過 15日及30日方案支援免費接聽電話和收短信，適合保留香港號碼又想照樣上網的客人。</p>
           </details>
 
           <details class="bg-white rounded-[1.5rem] border border-zinc-100 shadow-lg shadow-zinc-900/5 p-6">
@@ -751,7 +922,7 @@
           item_id: plans[variantId].sku,
           item_variant: variantId,
           item_name: plans[variantId].name,
-          item_category: 'Thailand eSIM',
+          item_category: 'Thailand TRUE 5G eSIM',
           currency: 'JPY',
           price: plans[variantId].price,
           quantity: 1
@@ -770,11 +941,13 @@
           gtag('event', 'add_to_cart', {
             currency: 'JPY',
             value: plan.price,
+            item_list_id: 'thailand_true_5g_esim_plans',
+            item_list_name: 'Thailand TRUE 5G eSIM plans',
             items: [{
               item_id: plan.sku,
               item_variant: variantId,
               item_name: plan.name,
-              item_category: 'Thailand eSIM',
+              item_category: 'Thailand TRUE 5G eSIM',
               price: plan.price,
               quantity: 1
             }]
