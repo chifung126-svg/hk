@@ -117,7 +117,7 @@
       border-radius: 28px;
       background:
         linear-gradient(180deg, transparent 48%, rgba(8,42,31,.78)),
-        url("japan-fuji-sakura-hero.png") center center/cover,
+        url("/jpesim/japan-fuji-sakura-hero.png") center center/cover,
         #cfe6ef;
       box-shadow: 0 14px 36px rgba(23, 32, 29, .1);
     }
@@ -263,7 +263,7 @@
       background: var(--soft);
       border-radius: 13px;
     }
-    .product-tabs span {
+    .product-tabs a {
       display: grid;
       place-items: center;
       min-height: 42px;
@@ -271,6 +271,7 @@
       border-radius: 9px;
       font-size: 11px;
       font-weight: 800;
+      cursor: pointer;
     }
     .product-tabs .active { color: var(--ink); background: #fff; box-shadow: 0 3px 12px rgba(23,32,29,.07); }
     .network-tab {
@@ -654,7 +655,7 @@
               <div><b>5日真無限 · 最受歡迎</b><span>KDDI au 當地網絡，HK$108 一次付清</span></div>
               <a href="#plan-picker">查看方案</a>
             </div>
-            <div class="product-tabs"><span class="active">套餐詳情</span><span>網絡及覆蓋</span></div>
+            <div class="product-tabs"><a class="active" href="#plan-picker">套餐詳情</a><a href="#network">網絡及覆蓋</a></div>
 
             <div class="divider"></div>
             <div class="field-label" id="plan-picker"><span>1. 選擇網絡</span><small>推薦 5G 真無限</small></div>
