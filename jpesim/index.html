@@ -569,6 +569,118 @@
     .step p { margin-top: 8px; color: var(--muted); font-size: 12px; }
     .step + .step::before { content: "→"; position: absolute; left: -20px; top: 48%; color: var(--green); font-size: 22px; font-weight: 900; }
 
+    .compat-guide {
+      display: grid;
+      grid-template-columns: .95fr 1.05fr;
+      gap: 18px;
+      align-items: stretch;
+    }
+    .compat-card {
+      padding: 30px;
+      border: 1px solid var(--line);
+      border-radius: 26px;
+      background: rgba(255,255,255,.94);
+      box-shadow: 0 18px 48px rgba(23,32,29,.06);
+    }
+    .compat-card.highlight {
+      background:
+        radial-gradient(circle at 92% 10%, rgba(37,211,102,.18), transparent 12rem),
+        linear-gradient(145deg, #fffdf0, #f6fffb 72%);
+      border-color: rgba(19,173,97,.22);
+    }
+    .compat-card h3 { margin: 0; font-size: 25px; letter-spacing: -.03em; }
+    .compat-card p { margin: 12px 0 0; color: var(--muted); font-size: 13px; line-height: 1.75; }
+    .dial-code {
+      display: inline-grid;
+      place-items: center;
+      margin: 22px 0 18px;
+      padding: 17px 24px;
+      border-radius: 18px;
+      color: #fff;
+      background: var(--ink);
+      box-shadow: 0 16px 34px rgba(23,32,29,.15);
+      font-size: 32px;
+      font-weight: 900;
+      letter-spacing: .08em;
+    }
+    .check-list {
+      display: grid;
+      gap: 12px;
+      margin: 18px 0 0;
+      padding: 0;
+      list-style: none;
+    }
+    .check-list li {
+      position: relative;
+      padding-left: 30px;
+      color: var(--muted);
+      font-size: 13px;
+      line-height: 1.65;
+    }
+    .check-list li::before {
+      content: "✓";
+      position: absolute;
+      left: 0;
+      top: 1px;
+      display: grid;
+      place-items: center;
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      color: var(--ink);
+      background: var(--green);
+      font-size: 12px;
+      font-weight: 900;
+    }
+    .brand-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 12px;
+      margin-top: 18px;
+    }
+    .phone-brand {
+      padding: 16px;
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      background: var(--soft);
+    }
+    .phone-brand b { display: block; font-size: 14px; }
+    .phone-brand span { display: block; margin-top: 6px; color: var(--muted); font-size: 11px; line-height: 1.55; }
+    .compat-warning {
+      grid-column: 1 / -1;
+      padding: 18px 20px;
+      border: 1px solid #eadf9b;
+      border-radius: 18px;
+      color: #62551e;
+      background: #fffbea;
+      font-size: 13px;
+      line-height: 1.75;
+    }
+    .compat-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      align-items: center;
+      margin-top: 22px;
+    }
+    .compat-whatsapp {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      padding: 12px 16px;
+      border-radius: 999px;
+      color: #07150c;
+      background: #25d366;
+      font-size: 13px;
+      font-weight: 900;
+    }
+    .compat-whatsapp img {
+      width: 18px;
+      height: 18px;
+      display: block;
+    }
+
     .reviews {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
@@ -752,6 +864,9 @@
       .award-rank b { font-size: 21px; }
       .steps { grid-template-columns: 1fr; }
       .step + .step::before { display: none; }
+      .compat-guide, .brand-grid { grid-template-columns: 1fr; }
+      .compat-card { padding: 22px; border-radius: 22px; }
+      .dial-code { width: 100%; font-size: 28px; }
       .reviews { grid-template-columns: 1fr; }
       .final-inner { align-items: flex-start; flex-direction: column; }
       .final a { width: 100%; }
@@ -782,7 +897,7 @@
   <header class="header">
     <nav class="wrap nav" aria-label="主要導覽">
       <a class="brand" href="#top"><span class="brand-mark">EG</span><span>EasyGoSim</span></a>
-      <div class="nav-links"><a href="#benefits">產品優勢</a><a href="#network">網絡</a><a href="#setup">安裝方法</a><a href="#reviews">客人評價</a><a href="#faq">FAQ</a></div>
+      <div class="nav-links"><a href="#benefits">產品優勢</a><a href="#network">網絡</a><a href="#setup">安裝方法</a><a href="#compatibility-guide">手機支援</a><a href="#reviews">客人評價</a><a href="#faq">FAQ</a></div>
       <a class="nav-help" href="https://wa.me/85246922013" target="_blank" rel="noopener">WhatsApp 客服</a>
     </nav>
   </header>
@@ -854,11 +969,11 @@
             </div>
             <div class="price-row">
               <div class="price"><small id="price-caption">5G 真無限 · 5日</small><strong><span>HK$</span><output id="price">108</output></strong></div>
-              <a class="buy" id="buy-link" data-plan="48748094750875" href="https://easygosim-checkout-backend.vercel.app/jpesim-airwallex-checkout?variant=48748094750875">立即購買 · 即時收 QR Code</a>
+              <a class="buy" id="buy-link" data-plan="48748094750875" href="https://checkout.easygosim.us/jpesim-airwallex-checkout?variant=48748094750875">立即購買 · 即時收 QR Code</a>
             </div>
             <div class="urgency-note">今日落單，付款後即時電郵發送 QR Code</div>
             <div class="payment-note">支援 FPS / Alipay / 信用卡</div>
-            <div class="compatibility"><span>購買前確認手機支援 eSIM</span><a href="https://wa.me/85246922013" target="_blank" rel="noopener">WhatsApp 查詢 →</a></div>
+            <div class="compatibility"><span>購買前確認手機支援 eSIM</span><a href="#compatibility-guide">3 秒檢查 →</a></div>
             <a class="whatsapp-cta" href="https://wa.me/85246922013" target="_blank" rel="noopener">
               <div>有問題？WhatsApp 客服查詢<span>按此即時聯絡我們</span></div>
               <b><img src="/jpesim/whatsapp-logo.png" alt="WhatsApp"></b>
@@ -927,6 +1042,39 @@
       </div>
     </section>
 
+    <section class="section" id="compatibility-guide">
+      <div class="wrap">
+        <header class="section-head"><span class="kicker">eSIM Check</span><h2>購買前，先確認手機支援 eSIM</h2><p>香港版手機型號比較複雜，同一部手機的香港行貨、水貨、日版、美版或台版都可能不同。最準確方法，是直接在手機檢查有沒有 EID。</p></header>
+        <div class="compat-guide">
+          <article class="compat-card highlight">
+            <h3>3 秒自行檢查：有 EID 就可以用 eSIM</h3>
+            <p>請在要使用 eSIM 的手機上操作：</p>
+            <div class="dial-code">*#06#</div>
+            <ul class="check-list">
+              <li>打開手機「電話 / 撥號」鍵盤。</li>
+              <li>輸入 <strong>*#06#</strong>，手機會彈出裝置資料。</li>
+              <li>如果畫面見到 <strong>EID</strong>，一般代表手機內置 eSIM，可以使用 eSIM 服務。</li>
+              <li>如果沒有 EID，或不確定手機版本，請先 WhatsApp 客服確認。</li>
+            </ul>
+            <div class="compat-actions">
+              <a class="compat-whatsapp" href="https://wa.me/85246922013" target="_blank" rel="noopener"><img src="/jpesim/whatsapp-logo.png" alt="">WhatsApp 客服幫你查</a>
+            </div>
+          </article>
+          <article class="compat-card">
+            <h3>常見支援品牌參考</h3>
+            <p>以下只作購買前參考，最終請以手機是否顯示 EID 為準。</p>
+            <div class="brand-grid">
+              <div class="phone-brand"><b>Apple iPhone</b><span>部分型號支援 eSIM；香港版 iPhone 有不少型號是雙實體 SIM，請以 EID 為準。</span></div>
+              <div class="phone-brand"><b>Samsung</b><span>部分 Galaxy S / Z 系列新型號支援 eSIM，不同地區版本可能不同。</span></div>
+              <div class="phone-brand"><b>Sony / Xiaomi / Honor</b><span>近年部分型號支援 eSIM，建議落單前先用 EID 方法確認。</span></div>
+              <div class="phone-brand"><b>OPPO / Motorola / Pixel</b><span>部分新型號或平行進口機支援 eSIM，請以手機內顯示 EID 為準。</span></div>
+            </div>
+          </article>
+          <div class="compat-warning"><strong>重要提醒：</strong>同一手機型號，不同地區版本可以有不同 eSIM 支援情況。如果你準備替家人或同行朋友購買多張 eSIM，請每一部手機都先檢查一次 EID。</div>
+        </div>
+      </div>
+    </section>
+
     <section class="section" id="reviews">
       <div class="wrap">
         <header class="section-head"><span class="kicker">Verified Reviews</span><h2>香港客人真實使用評價</h2><p>由第一次用 eSIM 的新手，到經常飛日本的旅客，都可以簡單、穩定地完成設定和上網。</p></header>
@@ -980,7 +1128,7 @@
       <div class="wrap">
         <header class="section-head"><span class="kicker">Before buying</span><h2>落單前常見問題</h2></header>
         <div class="faq">
-          <details open><summary>我的手機是否支援 eSIM？</summary><p>在手機設定中查看有沒有「加入 eSIM」或「加入流動方案」。同一手機型號的不同地區版本可能有差異，如不確定請先 WhatsApp 客服確認。</p></details>
+          <details open><summary>我的手機是否支援 eSIM？</summary><p>最快方法是在手機撥號鍵盤輸入 *#06#。如果畫面出現 EID，一般代表手機支援 eSIM。同一手機型號的不同地區版本可能有差異，如不確定請先 WhatsApp 客服確認。</p></details>
           <details><summary>「真無限」即係點？會唔會突然限速？</summary><p>4G、5G 方案都主打真無限上網，一般旅行用地圖、社交平台、睇片及通訊，毋須擔心用完指定 GB 後被固定降速。和所有流動網絡一樣，實際速度會受所在地、手機、覆蓋及繁忙程度影響；極端或異常使用仍可能受營運商網絡管理條款約束。</p></details>
           <details><summary>有沒有電話號碼及 SMS？</summary><p>沒有，本方案是 Data Only。WhatsApp、LINE、FaceTime 等網絡通訊服務可以照常使用。</p></details>
           <details><summary>應該幾時買和安裝？</summary><p>建議出發前 30 日內購買。由於 eSIM 安裝後會開始計算有效日數，請於出發當日有穩定 Wi-Fi 時才按指示安裝；到達日本後再切換數據使用。</p></details>
@@ -1031,7 +1179,7 @@
     <section class="final">
       <div class="wrap final-inner">
         <h2>由落機嗰刻開始，專心旅行，唔使專心慳數據。</h2>
-        <a data-plan="48748094750875" href="https://easygosim-checkout-backend.vercel.app/jpesim-airwallex-checkout?variant=48748094750875">5日真無限 · HK$108 →</a>
+        <a data-plan="48748094750875" href="https://checkout.easygosim.us/jpesim-airwallex-checkout?variant=48748094750875">5日真無限 · HK$108 →</a>
       </div>
     </section>
   </main>
@@ -1040,7 +1188,7 @@
 
   <div class="mobile-buy">
     <div class="mobile-price"><small id="mobile-caption">5G · 5日</small><b>HK$<output id="mobile-price">108</output></b></div>
-    <a id="mobile-link" data-plan="48748094750875" href="https://easygosim-checkout-backend.vercel.app/jpesim-airwallex-checkout?variant=48748094750875">立即購買 · 即時收 QR Code</a>
+    <a id="mobile-link" data-plan="48748094750875" href="https://checkout.easygosim.us/jpesim-airwallex-checkout?variant=48748094750875">立即購買 · 即時收 QR Code</a>
   </div>
 
   <script>
@@ -1062,7 +1210,7 @@
         var amount = option.dataset.price;
         var network = option.dataset.networkValue;
         var variant = option.dataset.variant;
-        var href = "https://easygosim-checkout-backend.vercel.app/jpesim-airwallex-checkout?variant=" + variant;
+        var href = "https://checkout.easygosim.us/jpesim-airwallex-checkout?variant=" + variant;
         price.textContent = amount;
         mobilePrice.textContent = amount;
         caption.textContent = network + " 真無限 · " + days + "日";
