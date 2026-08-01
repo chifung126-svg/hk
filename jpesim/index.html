@@ -567,6 +567,55 @@
     .step p { margin-top: 8px; color: var(--muted); font-size: 12px; }
     .step + .step::before { content: "→"; position: absolute; left: -20px; top: 48%; color: var(--green); font-size: 22px; font-weight: 900; }
 
+    .reviews {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+    }
+    .review-card {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+      min-height: 100%;
+      padding: 24px;
+      border: 1px solid var(--line);
+      border-radius: 24px;
+      background:
+        linear-gradient(145deg, rgba(255,255,255,.96), rgba(240,251,255,.9)),
+        #fff;
+      box-shadow: 0 16px 44px rgba(23,32,29,.06);
+    }
+    .review-stars {
+      color: #ffb400;
+      font-size: 17px;
+      letter-spacing: 1px;
+    }
+    .review-card h3 {
+      margin: 0;
+      font-size: 19px;
+      line-height: 1.32;
+      letter-spacing: -.03em;
+    }
+    .review-card p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 13px;
+      line-height: 1.82;
+    }
+    .review-buyer {
+      margin-top: auto;
+      padding-top: 12px;
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      font-size: 11px;
+      line-height: 1.55;
+    }
+    .review-buyer b {
+      display: block;
+      color: var(--ink);
+      font-size: 13px;
+    }
+
     .faq { max-width: 850px; margin: 0 auto; }
     details { border-top: 1px solid var(--line); }
     details:last-child { border-bottom: 1px solid var(--line); }
@@ -701,6 +750,7 @@
       .award-rank b { font-size: 21px; }
       .steps { grid-template-columns: 1fr; }
       .step + .step::before { display: none; }
+      .reviews { grid-template-columns: 1fr; }
       .final-inner { align-items: flex-start; flex-direction: column; }
       .final a { width: 100%; }
       .footer-row { flex-direction: column; }
@@ -730,7 +780,7 @@
   <header class="header">
     <nav class="wrap nav" aria-label="主要導覽">
       <a class="brand" href="#top"><span class="brand-mark">EG</span><span>EasyGoSim</span></a>
-      <div class="nav-links"><a href="#benefits">產品優勢</a><a href="#network">網絡</a><a href="#setup">安裝方法</a><a href="#faq">FAQ</a></div>
+      <div class="nav-links"><a href="#benefits">產品優勢</a><a href="#network">網絡</a><a href="#setup">安裝方法</a><a href="#reviews">客人評價</a><a href="#faq">FAQ</a></div>
       <a class="nav-help" href="https://wa.me/85246922013" target="_blank" rel="noopener">WhatsApp 客服</a>
     </nav>
   </header>
@@ -871,6 +921,55 @@
           <article class="step"><span class="step-no">01</span><h3>電郵收取 QR Code</h3><p>付款完成後，系統即時發送安裝資料。</p></article>
           <article class="step"><span class="step-no">02</span><h3>出發當日安裝 eSIM</h3><p>eSIM 安裝後會開始計算有效日數，建議出發當日有穩定 Wi-Fi 時按指示安裝。</p></article>
           <article class="step"><span class="step-no">03</span><h3>抵日後切換數據</h3><p>開啟新 eSIM，將流動數據切換至日本方案。</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="reviews">
+      <div class="wrap">
+        <header class="section-head"><span class="kicker">Verified Reviews</span><h2>香港客人真實使用評價</h2><p>由第一次用 eSIM 的新手，到經常飛日本的旅客，都可以簡單、穩定地完成設定和上網。</p></header>
+        <div class="reviews">
+          <article class="review-card">
+            <div class="review-stars">★★★★★</div>
+            <h3>狂出 IG Story 都唔會限速，堅係真無限！</h3>
+            <p>以前試過買坊間所謂嘅「無限卡」，點知每日過 1GB 就慢到龜速。今次試 EasyGoSim 個 5G 真無限方案，由朝到晚睇 Google Maps 搵路、狂 post IG Stories、晚上返酒店睇 YouTube 都無跌過速，速度極快，真係做到唔使就住就住！</p>
+            <div class="review-buyer"><b>Kevin L.</b>已認證買家 · 東京 5 天遊</div>
+          </article>
+
+          <article class="review-card">
+            <div class="review-stars">★★★★★</div>
+            <h3>第一次用 eSIM，好彩客服超好人！</h3>
+            <p>第一次轉用 eSIM 其實有啲擔心唔識 set。買之前 WhatsApp 問咗客服自己部機支唔支援，回覆極快又有耐性！出發當日照住個教學一步步做，掃個 QR Code 就搞掂，落機一轉 data 即刻上到網，強烈推薦畀新手！</p>
+            <div class="review-buyer"><b>Mrs. Chan</b>已認證買家 · 大阪一家大小遊</div>
+          </article>
+
+          <article class="review-card">
+            <div class="review-stars">★★★★★</div>
+            <h3>去到機場先記得買都切，一秒收 QR Code！</h3>
+            <p>大頭蝦去到機場等上機先發現自己未買上網卡！即刻用手機落單用 FPS 畀錢，真係一分鐘內 email 就收到 QR Code！等緊上機嗰陣已經裝好晒，落地一開機就報到平安，救咗我一命，下次一定再幫襯！</p>
+            <div class="review-buyer"><b>Fiona T.</b>已認證買家 · 福岡快閃 3 天</div>
+          </article>
+
+          <article class="review-card">
+            <div class="review-stars">★★★★★</div>
+            <h3>Ping 值極低！打機同視像通話超級順</h3>
+            <p>最怕買著啲要漫遊兜路嘅卡，上網好窒。見 EasyGoSim 寫明係日本當地 IP 就買嚟試。實測打機同用 FaceTime 同香港屋企人視像真係好順暢，完全無 lag。KDDI au 網絡果然收得好穩定。</p>
+            <div class="review-buyer"><b>Jason H.</b>已認證買家 · 東京深度遊</div>
+          </article>
+
+          <article class="review-card">
+            <div class="review-stars">★★★★★</div>
+            <h3>由市區到郊區都收得好，新幹線都無斷線！</h3>
+            <p>今次行程由東京玩到去河口湖睇富士山，再坐新幹線落大阪。原本擔心去郊區會收唔到，結果全程 KDDI au 網絡都好穩定，坐緊車都可以流暢睇片。HK$108 買到 5 日 5G 真無限，性價比極高！</p>
+            <div class="review-buyer"><b>阿欣</b>已認證買家 · 日本 8 天跨縣遊</div>
+          </article>
+
+          <article class="review-card">
+            <div class="review-stars">★★★★★</div>
+            <h3>用過 eSIM 返唔轉頭，唔使再拮針換卡！</h3>
+            <p>以前去旅行次次都要帶萬字夾喺飛機度換實體卡，又要驚唔見原本張香港卡，或者要孭住隻好重嘅 WiFi 蛋。轉用 EasyGoSim 之後真係返唔轉頭，部機可以 keep 住收香港 SMS，上網就用日本 data，極度方便！</p>
+            <div class="review-buyer"><b>Michael W.</b>已認證買家 · 經常飛日本的商務客</div>
+          </article>
         </div>
       </div>
     </section>
