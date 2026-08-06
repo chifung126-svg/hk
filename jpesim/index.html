@@ -912,8 +912,30 @@
       .mobile-buy .mobile-whatsapp { color: #06150c; background: #e7fff0; border: 1px solid rgba(37,211,102,.38); }
     }
   </style>
+  <!-- Meta Pixel Code -->
+  <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '342566046727358');
+    fbq('track', 'PageView');
+    fbq('track', 'ViewContent', {
+      content_ids: ['japan-esim-kddi'],
+      content_name: '日本 KDDI 4G / 5G 真無限 eSIM',
+      content_category: 'Travel eSIM',
+      content_type: 'product_group',
+      currency: 'HKD'
+    });
+  </script>
+  <!-- End Meta Pixel Code -->
 </head>
 <body>
+  <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=342566046727358&amp;ev=PageView&amp;noscript=1" alt=""></noscript>
   <div class="promo">日本出發前準備好 · 付款後即時電郵發送 QR Code</div>
   <header class="header">
     <nav class="wrap nav" aria-label="主要導覽">
