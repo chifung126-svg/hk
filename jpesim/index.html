@@ -8,6 +8,14 @@
   <link rel="apple-touch-icon" href="/logo.png">
   <meta name="description" content="日本 KDDI au 當地網絡、當地 IP、真無限數據。網上付款後即時電郵收取 eSIM QR Code。">
   <meta name="robots" content="index,follow">
+  <!-- Google tag (GA4) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-HX5YZGTCSX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-HX5YZGTCSX');
+  </script>
   <style>
     @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;600;700;800;900&display=swap");
     :root {
@@ -1262,6 +1270,10 @@
       var mobileLink = document.getElementById("mobile-link");
       var quotaInfo = document.getElementById("quota-info");
 
+      function track(eventName, params) {
+        if (typeof gtag === "function") gtag("event", eventName, params || {});
+      }
+
       function selectPlan(option) {
         options.forEach(function (item) { item.classList.toggle("active", item === option); });
         tabs.forEach(function (tab) { tab.classList.toggle("active", tab.dataset.network === option.dataset.networkValue); });
@@ -1282,7 +1294,19 @@
       }
 
       options.forEach(function (option) {
-        option.addEventListener("click", function () { selectPlan(option); });
+        option.addEventListener("click", function () {
+          selectPlan(option);
+          track("select_item", {
+            item_list_name: "japan_esim_plans",
+            items: [{
+              item_id: option.dataset.variant,
+              item_name: "日本 eSIM " + option.dataset.networkValue + " " + option.dataset.days + "日",
+              item_category: "eSIM",
+              price: Number(option.dataset.price),
+              quantity: 1
+            }]
+          });
+        });
       });
 
       function showNetwork(network) {
@@ -1307,6 +1331,19 @@
         var link = event.target.closest("[data-plan]");
         if (!link) return;
         try { sessionStorage.setItem("easygosim_selected_plan", link.dataset.plan); } catch (error) {}
+        if (link.matches("a[href*='checkout.easygosim.us']")) {
+          track("add_to_cart", {
+            currency: "HKD",
+            value: Number(price.textContent || 0),
+            items: [{ item_id: link.dataset.plan, item_name: "日本 eSIM", item_category: "eSIM", quantity: 1 }]
+          });
+        }
+      });
+
+      document.querySelectorAll("a[href*='wa.me']").forEach(function (link) {
+        link.addEventListener("click", function () {
+          track("contact", { method: "WhatsApp", page_type: "japan_esim" });
+        });
       });
     }());
   </script>
