@@ -386,18 +386,30 @@
       box-shadow: 0 0 0 5px rgba(19,173,97,.12);
     }
     .compatibility {
+      margin-top: 16px;
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      background: #fff;
+      font-size: 12px;
+    }
+    .compatibility summary {
       display: flex;
       align-items: center;
       justify-content: space-between;
-      gap: 18px;
-      margin-top: 16px;
+      gap: 14px;
       padding: 15px 17px;
-      border: 1px solid var(--line);
-      border-radius: 12px;
-      font-size: 12px;
-      font-weight: 700;
+      cursor: pointer;
+      font-weight: 800;
+      list-style: none;
     }
-    .compatibility a { color: var(--green-dark); text-decoration: underline; }
+    .compatibility summary::-webkit-details-marker { display: none; }
+    .compatibility summary::after { content: "+"; color: var(--green-dark); font-size: 20px; line-height: 1; }
+    .compatibility[open] summary::after { content: "−"; }
+    .compatibility-body { padding: 0 17px 16px; border-top: 1px solid var(--line); }
+    .compatibility-body p { margin-top: 13px; color: var(--muted); font-size: 11px; }
+    .compatibility-body strong { color: var(--ink); }
+    .compatibility-checks { display: grid; gap: 8px; margin-top: 12px; }
+    .compatibility-checks div { padding: 10px 12px; border-radius: 10px; background: var(--soft); color: #4f5b57; font-size: 10px; font-weight: 650; }
     .whatsapp-cta {
       display: flex;
       align-items: center;
@@ -1023,8 +1035,17 @@
               <a class="buy" id="buy-link" data-plan="48748094750875" href="https://checkout.easygosim.us/jpesim-airwallex-checkout?variant=48748094750875">立即購買 · 即時收 QR Code</a>
             </div>
             <div class="urgency-note">今日落單，付款後即時電郵發送 QR Code</div>
-            <div class="payment-note">支援 FPS / Alipay / 信用卡</div>
-            <div class="compatibility"><span>購買前確認手機支援 eSIM</span><a href="#compatibility-guide">3 秒檢查 →</a></div>
+            <div class="payment-note">✓ 免填地址，只需姓名及 Email｜安全信用卡付款</div>
+            <details class="compatibility">
+              <summary>唔肯定手機支唔支援 eSIM？10 秒頁內檢查</summary>
+              <div class="compatibility-body">
+                <p><strong>最快方法：</strong>在準備使用的手機撥號鍵盤輸入 <strong>*#06#</strong>。畫面見到 <strong>EID</strong>，一般代表手機支援 eSIM。</p>
+                <div class="compatibility-checks">
+                  <div><strong>iPhone：</strong>前往「設定 → 流動服務」，見到「加入 eSIM」即可使用。香港行貨與海外版本可能不同，請以 EID 為準。</div>
+                  <div><strong>Samsung：</strong>前往「設定 → 連接 → SIM 卡管理員」，見到「新增 eSIM」即可使用。</div>
+                </div>
+              </div>
+            </details>
             <a class="whatsapp-cta" href="https://wa.me/85246922013?text=你好，我喺Facebook見到日本eSIM，想查詢我部手機用唔用到，同埋想落單！" target="_blank" rel="noopener">
               <div>WhatsApp 專人落單 / 查詢機型<span>唔肯定手機支唔支援？客服幫你睇</span></div>
               <b><img src="/jpesim/whatsapp-logo.png" alt="WhatsApp"></b>
