@@ -84,5 +84,18 @@
       grid.appendChild(card);
     }());
   </script>
+  <script>
+    (function () {
+      const grid = document.querySelector('#destinations .destinations');
+      if (!grid || grid.querySelector('[data-destination="vietnam"]')) return;
+      const card = document.createElement('a');
+      card.className = 'destination vietnam';
+      card.dataset.destination = 'vietnam';
+      card.href = 'https://hk.easygosim.us/vietnam/';
+      card.style.setProperty('--destination-image', "url('https://images.unsplash.com/photo-1528127269322-539801943592?auto=format&fit=crop&w=1200&q=85')");
+      card.innerHTML = '<span class="flag">🇻🇳</span><h3>越南 eSIM</h3><p>Wintel MAX 及 Mobifone，多款 5 至 30 日方案。</p><span class="link">查看越南方案 →</span>';
+      grid.appendChild(card);
+    }());
+  </script>
 </body>
 </html>
