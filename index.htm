@@ -71,5 +71,18 @@
   </main>
   <footer class="footer"><div class="wrap footer-row"><span>© EasyGoSIM · 香港旅客旅遊 eSIM</span><span>日本・中國內地・泰國・韓國・台灣</span></div></footer>
   <div class="mobile-bar"><a href="#destinations">選擇目的地</a><a href="https://wa.me/85246922013">WhatsApp 支援</a></div>
+  <script>
+    (function () {
+      const grid = document.querySelector('#destinations .destinations');
+      if (!grid || grid.querySelector('[data-destination="uk"]')) return;
+      const card = document.createElement('a');
+      card.className = 'destination uk';
+      card.dataset.destination = 'uk';
+      card.href = 'https://hk.easygosim.us/uk/';
+      card.style.setProperty('--destination-image', "url('https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?auto=format&fit=crop&w=1200&q=85')");
+      card.innerHTML = '<span class="flag">🇬🇧</span><h3>Three UK 英國 eSIM</h3><p>30日方案，英國號碼及無限通話，40GB至無限上網。</p><span class="link">查看英國方案 →</span>';
+      grid.appendChild(card);
+    }());
+  </script>
 </body>
 </html>
