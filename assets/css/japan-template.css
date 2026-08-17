@@ -236,7 +236,8 @@ body.egs-japan-template .offer-banner {
 body.egs-japan-template .market-category,
 body.egs-japan-template .korea-category,
 body.egs-japan-template .series-tab,
-body.egs-japan-template .group-tab {
+body.egs-japan-template .group-tab,
+body.egs-japan-template .series button {
   min-height: 50px;
   padding: 10px 14px;
   border: 1px solid var(--line);
@@ -401,6 +402,12 @@ body.egs-japan-template .faq-grid {
 body.egs-japan-template .faq details {
   padding: 17px 0;
   border-bottom: 1px solid rgba(255, 255, 255, .18);
+}
+
+body.egs-japan-template .faq summary {
+  min-height: 48px !important;
+  display: flex !important;
+  align-items: center;
 }
 
 body.egs-japan-template .footer {
