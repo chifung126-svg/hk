@@ -110,6 +110,18 @@ main{display:flex;flex-direction:column}.hero{order:1}.home-trust{order:2}.secti
       grid.appendChild(card);
     }());
   </script>
+  <script>
+    (function () {
+      const destinationGrid = document.querySelector('#destinations .destinations');
+      const multiRegionSection = document.querySelector('#multi-region');
+      const multiRegionGrid = multiRegionSection && multiRegionSection.querySelector('.destinations');
+      if (!destinationGrid || !multiRegionGrid) return;
+      Array.from(multiRegionGrid.children).forEach(function (card) {
+        destinationGrid.appendChild(card);
+      });
+      multiRegionSection.remove();
+    }());
+  </script>
   <script>document.querySelector('#destinations .section-head p')?.remove();document.querySelector('#uk-esim .section-head p')?.remove();document.querySelector('#why .section-head p')?.remove();</script>
   <script src="/assets/js/site-unified.js" defer></script>
 </body>
