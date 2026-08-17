@@ -7,3 +7,8 @@ html{scroll-padding-top:84px}[id]{scroll-margin-top:84px}a,button,summary{-webki
 @media(max-width:370px){.egs-mobile-support,.egs-mobile-menu-toggle{width:44px!important;height:44px!important}header .brand img,header .brand-logo,.header .brand img,.header .brand-logo{width:auto!important;max-width:120px!important;height:auto!important}}
 @media(max-width:820px){html,body{max-width:100%;overflow-x:hidden}}
 .header .brand-logo,header .brand-logo{display:block;width:176px;max-width:48vw;height:auto}
+
+/* Japan has a price plus two actions in its source markup. Keep the compact
+   purchase action in the sticky bar and leave WhatsApp in the mobile header. */
+@media(max-width:820px){body.egs-japan-product .mobile-buy{display:grid!important;grid-template-columns:minmax(0,1fr) minmax(132px,42%)!important;align-items:center!important;gap:10px!important;padding:10px 12px calc(10px + env(safe-area-inset-bottom))!important}body.egs-japan-product .mobile-price{min-width:0}body.egs-japan-product .mobile-price small{max-width:100%!important}body.egs-japan-product .mobile-buy>a:not(.mobile-whatsapp){width:100%!important;min-width:0!important;padding-inline:10px!important}body.egs-japan-product .mobile-buy .mobile-whatsapp{display:none!important}}
+@media(max-width:370px){body.egs-japan-product .mobile-buy{grid-template-columns:minmax(0,1fr) minmax(118px,42%)!important;gap:8px!important;padding-inline:10px!important}}
