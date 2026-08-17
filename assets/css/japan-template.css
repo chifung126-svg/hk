@@ -1,0 +1,464 @@
+/* Destination-page visual system based on /jpesim/. Content and checkout data stay page-specific. */
+body.egs-japan-template {
+  --ink: #171717;
+  --muted: #676767;
+  --line: #e2e2e2;
+  --soft: #f5f7f8;
+  --cream: #fffbea;
+  --green: #46e58b;
+  --green-dark: #13ad61;
+  --coral: #e41e63;
+  --yellow: #fff200;
+  --white: #fff;
+  --max: 1200px;
+  --shadow: 0 18px 55px rgba(23, 32, 29, .09);
+  margin: 0;
+  color: var(--ink);
+  background: #fff;
+  font-family: "Noto Sans TC", "PingFang HK", "Microsoft JhengHei", sans-serif;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+body.egs-japan-template .wrap {
+  width: min(var(--max), calc(100% - 42px));
+  margin-inline: auto;
+}
+
+body.egs-japan-template .promo {
+  padding: 8px 18px;
+  color: var(--ink);
+  background: var(--yellow);
+  font-size: 12px;
+  font-weight: 800;
+  text-align: center;
+}
+
+body.egs-japan-template .header {
+  position: sticky;
+  top: 0;
+  z-index: 40;
+  border-bottom: 1px solid var(--line);
+  background: rgba(255, 255, 255, .94);
+  backdrop-filter: blur(16px);
+}
+
+body.egs-japan-template > header:not(.section-head),
+body.egs-japan-template main > header:not(.section-head) {
+  position: sticky;
+  top: 0;
+  z-index: 40;
+  border-bottom: 1px solid var(--line);
+  background: rgba(255, 255, 255, .94);
+  backdrop-filter: blur(16px);
+}
+
+body.egs-japan-template .header .nav {
+  display: flex;
+  align-items: center;
+  min-height: 70px;
+  gap: 28px;
+}
+
+body.egs-japan-template > header:not(.section-head) .nav,
+body.egs-japan-template main > header:not(.section-head) .nav {
+  display: flex;
+  align-items: center;
+  min-height: 70px;
+  gap: 28px;
+}
+
+body.egs-japan-template .header .brand,
+body.egs-japan-template .header .nav > a:first-child {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+}
+
+body.egs-japan-template .header .brand-logo {
+  display: block;
+  width: 176px;
+  max-width: 48vw;
+  height: auto;
+}
+
+body.egs-japan-template .header .nav-links,
+body.egs-japan-template .header .navlinks {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+  margin-left: auto;
+  color: #4f5b57;
+  font-size: 13px;
+  font-weight: 800;
+}
+
+body.egs-japan-template .header .nav-help,
+body.egs-japan-template .header .help,
+body.egs-japan-template > header .support,
+body.egs-japan-template main > header .support {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 44px;
+  padding: 10px 16px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  color: var(--ink);
+  background: #fff;
+  font-size: 12px;
+}
+
+body.egs-japan-template .product,
+body.egs-japan-template .hero {
+  padding: 50px 0 70px;
+  background:
+    radial-gradient(circle at 8% 14%, color-mix(in srgb, var(--accent, var(--green)) 18%, transparent), transparent 18%),
+    linear-gradient(180deg, #e8f6ff 0, #f7fcff 100%);
+}
+
+body.egs-japan-template .product-grid,
+body.egs-japan-template .hero-grid {
+  display: grid;
+  grid-template-columns: .82fr 1.18fr;
+  gap: 42px;
+  align-items: start;
+}
+
+body.egs-japan-template .product-grid > *,
+body.egs-japan-template .hero-grid > * { min-width: 0; }
+
+body.egs-japan-template .visual-column {
+  position: sticky;
+  top: 115px;
+}
+
+body.egs-japan-template .photo,
+body.egs-japan-template .visual {
+  position: relative;
+  min-height: 660px;
+  overflow: hidden;
+  padding: 28px;
+  color: #fff;
+  border-radius: 28px;
+  box-shadow: var(--shadow);
+}
+
+body.egs-japan-template .photo-copy,
+body.egs-japan-template .visual-copy {
+  position: absolute;
+  z-index: 2;
+  right: 28px;
+  bottom: 28px;
+  left: 28px;
+}
+
+body.egs-japan-template .photo-copy b,
+body.egs-japan-template .visual-copy strong {
+  display: block;
+  margin: 0;
+  font-size: 24px;
+  line-height: 1.2;
+  letter-spacing: -.03em;
+}
+
+body.egs-japan-template .photo-copy span,
+body.egs-japan-template .visual-copy p {
+  display: block;
+  margin: 8px 0 0;
+  color: rgba(255, 255, 255, .78);
+  font-size: 12px;
+}
+
+body.egs-japan-template .panel,
+body.egs-japan-template .product-panel,
+body.egs-japan-template .hero-panel {
+  min-width: 0;
+  overflow: hidden;
+  padding: 34px;
+  border: 1px solid #d9e2df;
+  border-radius: 26px;
+  background: #fff;
+  box-shadow: 0 12px 38px rgba(23, 32, 29, .07);
+}
+
+body.egs-japan-template .panel h1,
+body.egs-japan-template .product-panel h1,
+body.egs-japan-template .hero-panel h1 {
+  margin: 0;
+  font-size: clamp(34px, 4vw, 56px);
+  line-height: 1.08;
+  letter-spacing: -.06em;
+}
+
+body.egs-japan-template .subhead,
+body.egs-japan-template .panel > p,
+body.egs-japan-template .product-panel > p,
+body.egs-japan-template .hero-panel > p {
+  color: var(--muted);
+  font-size: 15px;
+}
+
+body.egs-japan-template .trust-row,
+body.egs-japan-template .trust {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 22px 0;
+}
+
+body.egs-japan-template .trust-pill,
+body.egs-japan-template .trust > span {
+  flex: 0 0 auto;
+  max-width: 100%;
+  padding: 7px 10px;
+  border: 0;
+  border-radius: 999px;
+  color: var(--ink);
+  background: var(--soft);
+  font-size: 11px;
+  font-weight: 800;
+  white-space: normal;
+}
+
+body.egs-japan-template .offer-banner {
+  display: grid;
+  grid-template-columns: 42px 1fr;
+  gap: 13px;
+  align-items: center;
+  margin-top: 22px;
+  padding: 15px;
+  color: #fff;
+  background: #2783c4;
+  border-radius: 14px;
+}
+
+body.egs-japan-template .market-category,
+body.egs-japan-template .korea-category,
+body.egs-japan-template .series-tab,
+body.egs-japan-template .group-tab {
+  min-height: 50px;
+  padding: 10px 14px;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  color: var(--muted);
+  background: #fff;
+  font-size: 12px;
+  font-weight: 850;
+  cursor: pointer;
+}
+
+body.egs-japan-template .market-category.active,
+body.egs-japan-template .korea-category.active,
+body.egs-japan-template .series-tab.active,
+body.egs-japan-template .group-tab.active {
+  border-color: var(--green-dark);
+  color: #0b6d43;
+  background: #edfff7;
+  box-shadow: 0 6px 18px rgba(19, 173, 97, .12);
+}
+
+body.egs-japan-template .market-day,
+body.egs-japan-template .korea-day,
+body.egs-japan-template .day,
+body.egs-japan-template .pick {
+  min-height: 46px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  color: var(--muted);
+  background: #fff;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+body.egs-japan-template .market-day.active,
+body.egs-japan-template .korea-day.active,
+body.egs-japan-template .day.active,
+body.egs-japan-template .pick.active {
+  border-color: var(--green-dark);
+  color: #0b6d43;
+  background: #edfff7;
+}
+
+body.egs-japan-template .market-detail,
+body.egs-japan-template .plan-summary,
+body.egs-japan-template .selected-plan {
+  margin-top: 16px;
+  padding: 15px;
+  border-radius: 14px;
+  background: var(--cream);
+}
+
+body.egs-japan-template .buy,
+body.egs-japan-template [id$="buy-link"] {
+  min-height: 58px;
+  padding: 14px 20px;
+  border: 0;
+  border-radius: 12px;
+  color: var(--ink);
+  background: var(--green);
+  box-shadow: 0 10px 24px rgba(19, 173, 97, .16);
+  font-size: 14px;
+  font-weight: 900;
+}
+
+body.egs-japan-template .proof-strip,
+body.egs-japan-template > .proof,
+body.egs-japan-template main > .proof {
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  background: #fff;
+}
+
+body.egs-japan-template .proof-grid,
+body.egs-japan-template .trust-row:has(.trust-card),
+body.egs-japan-template .proof:has(.proof-card) {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0;
+}
+
+body.egs-japan-template .proof,
+body.egs-japan-template .proof-card,
+body.egs-japan-template .trust-card {
+  padding: 24px 19px;
+  border: 0;
+  border-right: 1px solid var(--line);
+  border-radius: 0;
+  background: #fff;
+}
+
+body.egs-japan-template .section,
+body.egs-japan-template .brand-section {
+  padding: 94px 0;
+}
+
+body.egs-japan-template .section.soft {
+  background: var(--soft);
+}
+
+body.egs-japan-template .section-head,
+body.egs-japan-template .section .head {
+  display: block;
+  max-width: 730px;
+  margin: 0 auto 48px;
+  text-align: center;
+}
+
+body.egs-japan-template .section h2,
+body.egs-japan-template .brand-section h2 {
+  margin: 9px 0 0;
+  font-size: clamp(32px, 4vw, 52px);
+  line-height: 1.12;
+  letter-spacing: -.06em;
+}
+
+body.egs-japan-template .benefits,
+body.egs-japan-template .features,
+body.egs-japan-template .cards,
+body.egs-japan-template .steps {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+body.egs-japan-template .benefit,
+body.egs-japan-template .feature,
+body.egs-japan-template .card,
+body.egs-japan-template .step {
+  padding: 28px;
+  border: 0;
+  border-radius: 22px;
+  background: #fff;
+  box-shadow: 0 10px 35px rgba(23, 32, 29, .06);
+}
+
+body.egs-japan-template .benefit:nth-child(2),
+body.egs-japan-template .feature:nth-child(2),
+body.egs-japan-template .card:nth-child(2) {
+  background: var(--cream);
+}
+
+body.egs-japan-template .benefit:nth-child(3),
+body.egs-japan-template .feature:nth-child(3),
+body.egs-japan-template .card:nth-child(3) {
+  color: #fff;
+  background: #163d32;
+}
+
+body.egs-japan-template .faq {
+  padding: 82px 0;
+  color: #fff;
+  background: #163d32;
+}
+
+body.egs-japan-template .faq-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 55px;
+}
+
+body.egs-japan-template .faq details {
+  padding: 17px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, .18);
+}
+
+body.egs-japan-template .footer {
+  padding: 28px 0;
+  color: var(--muted);
+  background: #fff;
+  font-size: 11px;
+}
+
+body.egs-japan-template .footer-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+}
+
+@media (max-width: 900px) {
+  body.egs-japan-template .product-grid,
+  body.egs-japan-template .hero-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  body.egs-japan-template .visual-column { position: static; }
+  body.egs-japan-template .photo,
+  body.egs-japan-template .visual { min-height: 420px; }
+  body.egs-japan-template .faq-grid { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 620px) {
+  body.egs-japan-template .wrap { width: calc(100% - 28px); }
+  body.egs-japan-template .header .nav { min-height: 60px; }
+  body.egs-japan-template > header:not(.section-head) .nav,
+  body.egs-japan-template main > header:not(.section-head) .nav { min-height: 60px; }
+  body.egs-japan-template .product,
+  body.egs-japan-template .hero { padding: 28px 0 44px; }
+  body.egs-japan-template .product-grid,
+  body.egs-japan-template .hero-grid { gap: 16px; }
+  body.egs-japan-template .visual-column { display: block; }
+  body.egs-japan-template .photo,
+  body.egs-japan-template .visual { min-height: 300px; padding: 20px; border-radius: 20px; }
+  body.egs-japan-template .photo-copy,
+  body.egs-japan-template .visual-copy { right: 20px; bottom: 18px; left: 20px; }
+  body.egs-japan-template .panel,
+  body.egs-japan-template .product-panel,
+  body.egs-japan-template .hero-panel { padding: 24px 18px; border-radius: 20px; }
+  body.egs-japan-template .panel h1,
+  body.egs-japan-template .product-panel h1,
+  body.egs-japan-template .hero-panel h1 { font-size: 34px; }
+  body.egs-japan-template .proof-grid,
+  body.egs-japan-template .trust-row:has(.trust-card),
+  body.egs-japan-template .proof:has(.proof-card) { grid-template-columns: 1fr; }
+  body.egs-japan-template .section,
+  body.egs-japan-template .brand-section { padding: 70px 0; }
+  body.egs-japan-template .section-head,
+  body.egs-japan-template .section .head { margin-bottom: 34px; text-align: left; }
+  body.egs-japan-template .benefits,
+  body.egs-japan-template .features,
+  body.egs-japan-template .cards,
+  body.egs-japan-template .steps { grid-template-columns: 1fr; }
+  body.egs-japan-template .footer-row { flex-direction: column; }
+}
