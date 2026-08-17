@@ -1,0 +1,16 @@
+{
+  "cleanUrls": true,
+  "trailingSlash": true,
+  "redirects": [
+    { "source": "/market-sites", "destination": "/", "permanent": true },
+    { "source": "/market-sites/china", "destination": "/china/", "permanent": true },
+    { "source": "/market-sites/thailand", "destination": "/thailand/", "permanent": true },
+    { "source": "/market-sites/korea", "destination": "/korea/", "permanent": true },
+    { "source": "/market-sites/taiwan", "destination": "/taiwan/", "permanent": true },
+    { "source": "/market-sites/europe", "destination": "/europe/", "permanent": true },
+    { "source": "/cnesim", "destination": "/china/", "permanent": true },
+    { "source": "/thaiesim", "destination": "/thailand/", "permanent": true },
+    { "source": "/krjpesim", "destination": "/korea/", "permanent": true },
+    { "source": "/partners.html", "destination": "/jpesim/partners.html", "permanent": true }
+  ]
+}

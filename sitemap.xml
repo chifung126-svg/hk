@@ -2,10 +2,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url><loc>https://hk.easygosim.us/</loc></url>
   <url><loc>https://hk.easygosim.us/jpesim/</loc></url>
-  <url><loc>https://hk.easygosim.us/market-sites/china/</loc></url>
-  <url><loc>https://hk.easygosim.us/market-sites/thailand/</loc></url>
-  <url><loc>https://hk.easygosim.us/market-sites/korea/</loc></url>
-  <url><loc>https://hk.easygosim.us/market-sites/taiwan/</loc></url>
-  <url><loc>https://hk.easygosim.us/uk/</loc></url>
+  <url><loc>https://hk.easygosim.us/china/</loc></url>
+  <url><loc>https://hk.easygosim.us/thailand/</loc></url>
+  <url><loc>https://hk.easygosim.us/korea/</loc></url>
+  <url><loc>https://hk.easygosim.us/taiwan/</loc></url>
   <url><loc>https://hk.easygosim.us/vietnam/</loc></url>
+  <url><loc>https://hk.easygosim.us/europe/</loc></url>
+  <url><loc>https://hk.easygosim.us/world/</loc></url>
+  <url><loc>https://hk.easygosim.us/uk/</loc></url>
+  <url><loc>https://hk.easygosim.us/jpesim/partners.html</loc></url>
+  <url><loc>https://hk.easygosim.us/privacy/</loc></url>
+  <url><loc>https://hk.easygosim.us/terms/</loc></url>
+  <url><loc>https://hk.easygosim.us/refund/</loc></url>
 </urlset>
