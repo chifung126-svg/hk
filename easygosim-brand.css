@@ -15,6 +15,10 @@ img[src$="logo.png"][alt^="EasyGo"] {
     display: flex !important;
   }
 
+  .header .egs-checkout-note {
+    display: none !important;
+  }
+
   img.brand-logo,
   img[src$="easygosim-logo.png"][alt^="EasyGo"],
   img[src$="logo.png"][alt^="EasyGo"] {
