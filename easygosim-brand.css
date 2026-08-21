@@ -10,13 +10,13 @@ img[src$="logo.png"][alt^="EasyGo"] {
   object-position: center !important;
 }
 
+.header .egs-checkout-note {
+  display: none !important;
+}
+
 @media (max-width: 620px) {
   body .header .navlinks {
     display: flex !important;
-  }
-
-  .header .egs-checkout-note {
-    display: none !important;
   }
 
   img.brand-logo,
