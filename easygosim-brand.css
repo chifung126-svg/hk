@@ -11,6 +11,10 @@ img[src$="logo.png"][alt^="EasyGo"] {
 }
 
 @media (max-width: 620px) {
+  body .header .navlinks {
+    display: flex !important;
+  }
+
   img.brand-logo,
   img[src$="easygosim-logo.png"][alt^="EasyGo"],
   img[src$="logo.png"][alt^="EasyGo"] {
