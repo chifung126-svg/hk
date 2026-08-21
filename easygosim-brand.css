@@ -1,0 +1,20 @@
+/* Canonical EasyGoSIM icon sizing for every Hong Kong page. */
+img.brand-logo,
+img[src$="easygosim-logo.png"][alt^="EasyGo"],
+img[src$="logo.png"][alt^="EasyGo"] {
+  display: block !important;
+  width: 48px !important;
+  height: 48px !important;
+  max-width: none !important;
+  object-fit: contain !important;
+  object-position: center !important;
+}
+
+@media (max-width: 620px) {
+  img.brand-logo,
+  img[src$="easygosim-logo.png"][alt^="EasyGo"],
+  img[src$="logo.png"][alt^="EasyGo"] {
+    width: 44px !important;
+    height: 44px !important;
+  }
+}
