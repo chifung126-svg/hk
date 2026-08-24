@@ -1216,42 +1216,42 @@
             <div class="review-stars">★★★★★</div>
             <h3>北海道自駕遊必備</h3>
             <p>喺富良野同美瑛嗰啲山區都收到 4G。</p>
-            <div class="review-buyer"><b>yuenling</b> · 舊網站客人評論</div>
+            <div class="review-buyer"><b>yuenling</b></div>
           </article>
 
           <article class="review-card">
             <div class="review-stars">★★★★★</div>
             <h3>出發前一晚買都趕得切</h3>
             <p>畀完錢 1 分鐘已經收到 email，即刻裝落手機，落機開 data 就可以即刻報平安。</p>
-            <div class="review-buyer"><b>tommyy</b> · 舊網站客人評論</div>
+            <div class="review-buyer"><b>tommyy</b></div>
           </article>
 
           <article class="review-card">
             <div class="review-stars">★★★★★</div>
             <h3>大阪環球影城都用得順</h3>
             <p>今次去大阪環球影城，入面人山人海都冇影響網速，用 app 抽整理券好順暢！</p>
-            <div class="review-buyer"><b>agnest</b> · 舊網站客人評論</div>
+            <div class="review-buyer"><b>agnest</b></div>
           </article>
 
           <article class="review-card">
             <div class="review-stars">★★★★★</div>
             <h3>東京、大阪、京都都未試過大死機</h3>
             <p>買過幾次唔同牌子嘅 eSIM，呢間算係最穩陣，值得推薦。</p>
-            <div class="review-buyer"><b>stephen.l</b> · 舊網站客人評論</div>
+            <div class="review-buyer"><b>stephen.l</b></div>
           </article>
 
           <article class="review-card">
             <div class="review-stars">★★★★★</div>
             <h3>沖繩自駕導航穩定</h3>
             <p>去沖繩自駕，由南到北導航都冇斷線，性價比極高。</p>
-            <div class="review-buyer"><b>fionaaa</b> · 舊網站客人評論</div>
+            <div class="review-buyer"><b>fionaaa</b></div>
           </article>
 
           <article class="review-card">
             <div class="review-stars">★★★★★</div>
             <h3>去白川鄉前先知道郊區覆蓋差異</h3>
             <p>市區連線好順，但搭 JR 去偏僻少少的縣份有時會斷一斷；出發前知道覆蓋差異就更好安排。</p>
-            <div class="review-buyer"><b>tommyy</b> · 舊網站客人評論</div>
+            <div class="review-buyer"><b>tommyy</b></div>
           </article>
         </div>
       </div>
@@ -1457,7 +1457,7 @@
           var rating = Math.max(1, Math.min(5, Number(review.rating) || 5));
           var stars = "★★★★★".slice(0, rating);
           var reply = review.merchant_reply ? '<div class="merchant-reply"><b>EasyGoSim 回覆</b><p>' + escapeHtml(review.merchant_reply) + '</p></div>' : "";
-          return '<article class="review-card"><div class="review-stars" aria-label="' + rating + ' 星">' + stars + '</div><h3>' + escapeHtml(review.name || "已驗證會員") + '</h3><p>' + escapeHtml(review.body) + '</p><div class="review-buyer"><b>' + escapeHtml(review.name || "已驗證會員") + '</b>' + escapeHtml(review.source_label ? " · " + review.source_label : "") + '</div>' + reply + '</article>';
+          return '<article class="review-card"><div class="review-stars" aria-label="' + rating + ' 星">' + stars + '</div><h3>' + escapeHtml(review.name || "已驗證會員") + '</h3><p>' + escapeHtml(review.body) + '</p><div class="review-buyer"><b>' + escapeHtml(review.name || "已驗證會員") + '</b></div>' + reply + '</article>';
         }).join("");
       }
 
