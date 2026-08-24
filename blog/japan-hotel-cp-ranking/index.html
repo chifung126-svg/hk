@@ -45,7 +45,23 @@
     .egs-article-page .cta a{border-radius:12px;box-shadow:0 8px 20px rgba(19,173,97,.16)}
     .egs-article-page .footer-links{display:flex;flex-wrap:wrap;align-items:center;gap:4px 14px}
     .egs-article-page .footer-links a{min-height:44px;display:inline-flex;align-items:center}
-    @media(max-width:620px){.article-wrap{width:min(100% - 26px,920px);padding-top:22px}.article-lead{font-size:16px}.hero-image{border-radius:18px}article{font-size:16px}.tier{gap:12px}.tier strong{font-size:16px}.egs-article-page .promo{padding:7px 10px;font-size:11px}.egs-article-page .header .wrap,.egs-article-page footer .wrap{width:calc(100% - 28px)}}
+    /* Match the Japan eSIM guide article template. */
+    .egs-article-page{background:linear-gradient(180deg,#fff 0,#fff8f7 100%);font-family:"Noto Sans TC","PingFang HK","Microsoft JhengHei",sans-serif;line-height:1.8}
+    .egs-article-page .header{position:sticky;top:0;z-index:20;border-bottom:1px solid var(--line);background:rgba(255,255,255,.94);backdrop-filter:blur(16px)}
+    .egs-article-page .header .nav{display:flex;align-items:center;justify-content:space-between;width:min(1160px,calc(100% - 36px));min-height:68px;margin:auto}
+    .egs-article-page .article-wrap{width:min(920px,calc(100% - 32px));margin:32px auto 70px;padding:clamp(24px,5vw,58px);border:1px solid var(--line);border-radius:24px;background:#fff;box-shadow:0 18px 55px #10182812}
+    .egs-article-page .crumb{margin:0 0 22px}
+    .egs-article-page h1{font-size:clamp(30px,5vw,50px);line-height:1.2;letter-spacing:-.05em}
+    .egs-article-page .article-lead{margin:25px 0;padding:18px 20px;border:1px solid #b8ead0;border-radius:14px;background:#edfff7;color:#101828;font-size:15px;line-height:1.75;font-weight:800}
+    .egs-article-page .hero-image{border-radius:18px;box-shadow:0 18px 45px rgba(16,24,40,.1)}
+    .egs-article-page article{font-size:14px;line-height:1.8}
+    .egs-article-page article h2{margin:42px 0 14px;padding-left:13px;border-left:4px solid #087a40;font-size:clamp(22px,3vw,30px);line-height:1.3}
+    .egs-article-page article h3{font-size:18px}
+    .egs-article-page article p,.egs-article-page article li{font-size:14px;color:#344054}
+    .egs-article-page .notice{border-color:#b8ead0;background:#edfff7;color:#344054}
+    .egs-article-page .cta{margin-top:35px;padding:24px;border-radius:17px}
+    .egs-article-page .footer{text-align:center;color:var(--muted);font-size:11px}
+    @media(max-width:620px){.article-wrap{width:min(100% - 24px,920px);padding-top:22px}.article-lead{font-size:15px}.hero-image{border-radius:14px}article{font-size:14px}.tier{gap:12px}.tier strong{font-size:16px}.egs-article-page .promo{padding:7px 10px;font-size:11px}.egs-article-page .header .wrap,.egs-article-page footer .wrap{width:calc(100% - 28px)}}
   </style>
   <script type="application/ld+json">
   {"@context":"https://schema.org","@type":"Article","headline":"日本酒店 CP值排名｜東橫INN、APA、Dormy Inn 邊間最抵住？","description":"整理日本常見連鎖酒店 CP值及性價比排名，並分享東京、大阪、京都訂房比較重點。","inLanguage":"zh-Hant-HK","author":{"@type":"Organization","name":"EasyGoSIM"},"publisher":{"@type":"Organization","name":"EasyGoSIM"},"mainEntityOfPage":"https://hk.easygosim.us/blog/japan-hotel-cp-ranking/","image":"https://hk.easygosim.us/assets/japan/japan-hotel-cp-ranking-original.png","datePublished":"2026-08-24","dateModified":"2026-08-24"}
@@ -85,6 +101,6 @@
       <div class="cta"><h2>去日本旅行，先準備好上網</h2><p>訂好酒店後，出發前在穩定 Wi-Fi 下安裝日本 eSIM，抵達後切換流動數據，查地圖、交通及酒店資料更方便。</p><a href="/jpesim/">查看日本 eSIM 方案 →</a></div>
     </article>
   </main>
-  <footer><div class="wrap footer-row"><span>© EasyGoSIM · 日本旅遊攻略</span><nav class="footer-links egs-policy-links" aria-label="網站政策與支援"><a href="/privacy/">私隱政策</a><a href="/terms/">服務條款</a><a href="/refund/">退款政策</a><a href="/jpesim/partners/">合作招募</a><a href="https://wa.me/85246922013" target="_blank" rel="noopener noreferrer">WhatsApp 客服</a></nav></div></footer>
+  <footer class="footer"><div class="wrap footer-row"><span>© EasyGoSIM · 日本旅遊攻略</span><nav class="footer-links egs-policy-links" aria-label="網站政策與支援"><a href="/privacy/">私隱政策</a><a href="/terms/">服務條款</a><a href="/refund/">退款政策</a><a href="/jpesim/partners/">合作招募</a><a href="https://wa.me/85246922013" target="_blank" rel="noopener noreferrer">WhatsApp 客服</a></nav></div></footer>
 </body>
 </html>
