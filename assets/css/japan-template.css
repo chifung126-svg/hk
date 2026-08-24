@@ -20,6 +20,97 @@ body.egs-japan-template {
   -webkit-font-smoothing: antialiased;
 }
 
+/* Shared country-page finishing layer: keep each market's content and data
+   logic, while bringing legacy product blocks into the Japan page system. */
+body.egs-japan-template .offer,
+body.egs-japan-template .offer-card,
+body.egs-japan-template .plan-info,
+body.egs-japan-template .destination-note,
+body.egs-japan-template .korea-detail,
+body.egs-japan-template .vn-detail,
+body.egs-japan-template .market-detail {
+  border: 1px solid #d9e2df;
+  border-radius: 14px;
+  background: var(--cream);
+  color: var(--ink);
+}
+
+body.egs-japan-template .offer,
+body.egs-japan-template .offer-card {
+  display: grid;
+  grid-template-columns: 42px minmax(0, 1fr);
+  gap: 13px;
+  align-items: center;
+  margin-top: 22px;
+  padding: 15px;
+}
+
+body.egs-japan-template .plan-info {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 8px;
+  margin-top: 16px;
+  padding: 14px;
+}
+
+body.egs-japan-template .plan-info > div {
+  min-height: 42px;
+  padding: 10px;
+  border-radius: 10px;
+  background: #fff;
+  color: var(--muted);
+  font-size: 11px;
+  line-height: 1.45;
+}
+
+body.egs-japan-template .destination-note {
+  margin-top: 14px;
+  padding: 13px 15px;
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 1.7;
+}
+
+body.egs-japan-template .payment-note {
+  margin: 12px 0 0;
+  color: var(--muted);
+  font-size: 11px;
+  line-height: 1.6;
+}
+
+body.egs-japan-template .field-label,
+body.egs-japan-template .selector-label,
+body.egs-japan-template .label {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 12px;
+  margin: 20px 0 9px;
+  color: var(--ink);
+  font-size: 13px;
+  font-weight: 900;
+}
+
+body.egs-japan-template .field-label small,
+body.egs-japan-template .selector-label small,
+body.egs-japan-template .label small {
+  color: var(--muted);
+  font-size: 10px;
+  font-weight: 700;
+}
+
+@media (max-width: 620px) {
+  body.egs-japan-template .plan-info { grid-template-columns: 1fr; }
+  body.egs-japan-template .offer,
+  body.egs-japan-template .offer-card { grid-template-columns: 34px minmax(0, 1fr); }
+  body.egs-japan-template .field-label,
+  body.egs-japan-template .selector-label,
+  body.egs-japan-template .label { display: block; }
+  body.egs-japan-template .field-label small,
+  body.egs-japan-template .selector-label small,
+  body.egs-japan-template .label small { display: block; margin-top: 3px; }
+}
+
 body.egs-japan-template .wrap {
   width: min(var(--max), calc(100% - 42px));
   margin-inline: auto;
