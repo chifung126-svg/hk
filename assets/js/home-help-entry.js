@@ -10,7 +10,7 @@
   }
   if(nav&&!nav.querySelector('.home-content-menu')){
     const menu=document.createElement('details');menu.className='home-content-menu';
-    menu.innerHTML='<summary>內容中心</summary><div class="home-content-menu-panel"><a href="/help/">Help Center</a><a href="/setup/">iPhone／Android 安裝</a><a href="/help/troubleshooting/">網絡排障 FAQ</a><a href="/blog/japan-esim-guide/">日本 eSIM 指南</a><a href="/blog/mainland-short-trip-esim-guide/">中國內地短途指南</a></div>';
+    menu.innerHTML='<summary>內容中心</summary><div class="home-content-menu-panel"><a href="/help/">Help Center</a><a href="/setup/">iPhone／Android 安裝</a><a href="/help/troubleshooting/">網絡排障 FAQ</a><a href="/blog/japan-esim-guide/">日本 eSIM 指南</a><a href="/blog/japan-hotel-cp-ranking/">日本酒店 CP值排名</a><a href="/blog/mainland-short-trip-esim-guide/">中國內地短途指南</a></div>';
     nav.insertBefore(menu,nav.querySelector('.help')||null)
   }
   const member=nav?.querySelector('a[href*="checkout.easygosim.us/account"]');
