@@ -772,6 +772,29 @@
     }
 
     .faq { max-width: 850px; margin: 0 auto; }
+    .seo-details { max-width: 900px; margin: 0 auto; }
+    .seo-details > summary {
+      list-style: none;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      min-height: 54px;
+      padding: 14px 18px;
+      border: 1px solid rgba(16,24,40,.1);
+      border-radius: 14px;
+      background: #fff;
+      color: var(--ink);
+      cursor: pointer;
+      font-weight: 900;
+    }
+    .seo-details > summary::-webkit-details-marker { display: none; }
+    .seo-details > summary::after { content: "＋"; color: var(--green-deep); font-size: 20px; }
+    .seo-details[open] > summary::after { content: "−"; }
+    .seo-details .seo-article { margin-top: 24px; }
+    @media (max-width: 680px) {
+      .seo-details > summary { min-height: 50px; padding: 13px 15px; font-size: 14px; }
+    }
     details { border-top: 1px solid var(--line); }
     details:last-child { border-bottom: 1px solid var(--line); }
     summary { display: flex; justify-content: space-between; gap: 18px; padding: 22px 0; cursor: pointer; list-style: none; font-size: 15px; font-weight: 800; }
@@ -1251,7 +1274,10 @@
     </section>
 
     <section class="section seo-section" id="japan-esim-guide">
-      <div class="wrap seo-article">
+      <div class="wrap">
+        <details class="seo-details">
+          <summary>想了解更多日本 eSIM 資訊</summary>
+          <div class="seo-article">
         <span class="kicker">Japan eSIM Guide</span>
         <h2>日本 eSIM 推薦：KDDI au 5G 真無限上網，旅行由落機開始穩定連線</h2>
         <p class="seo-lead">準備出發去日本旅行？去旅行最怕就是上網速度慢、地圖 load 不出、或者用到一半突然被限速。EasyGoSim 專為香港旅客提供日本 eSIM 上網方案，使用 KDDI au 5G/4G 當地網絡及日本當地 IP，讓你由東京到大阪、由購物到打卡，都可以專心旅行，唔使專心慳數據。</p>
@@ -1286,7 +1312,9 @@
             <p>無論你是快閃東京、關西親子遊、北海道滑雪，還是九州自駕旅行，日本 eSIM 都可以幫你減少換卡和租 Wi-Fi 蛋的麻煩。出發前準備好，上機前安裝好，到埗後切換數據，旅程一開始就可以即刻導航、搵餐廳、聯絡同行朋友同打卡報平安。</p>
           </article>
         </div>
-        <a class="seo-cta" href="#plan-picker">查看日本 eSIM 真無限方案，即時獲取 QR Code</a>
+            <a class="seo-cta" href="#plan-picker">查看日本 eSIM 真無限方案，即時獲取 QR Code</a>
+          </div>
+        </details>
       </div>
     </section>
 
