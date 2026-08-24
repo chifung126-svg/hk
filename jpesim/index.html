@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8"><link rel="icon" type="image/png" href="https://hk.easygosim.us/easygosim-logo.png"><link rel="shortcut icon" type="image/png" href="https://hk.easygosim.us/easygosim-logo.png"><link rel="apple-touch-icon" href="https://hk.easygosim.us/easygosim-logo.png">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>日本 KDDI eSIM｜5G 真無限 5日 HK$108｜EasyGoSim</title>
+  <title>日本 eSIM 旅遊卡｜KDDI／SoftBank／Docomo 網絡比較｜5G 真無限 - EasyGoSIM</title>
   <meta name="twitter:image" content="https://hk.easygosim.us/jpesim/japan-fuji-sakura-hero.png">
 
   <meta name="description" content="日本旅遊上網卡推薦｜EasyGoSim 日本 KDDI au 4G／5G 真無限 eSIM，免用香港門號漫遊、免換實體卡，適合旅遊數據卡需求。付款後即時電郵收 QR Code。">
@@ -210,7 +210,7 @@
       background: #fff;
     }
     .flag::after { content: ""; width: 20px; height: 20px; border-radius: 50%; background: #e62935; }
-    h1 { font-size: clamp(38px, 4.4vw, 58px); line-height: 1.1; letter-spacing: -.055em; }
+    h1 { font-size: clamp(34px, 3.8vw, 52px); line-height: 1.12; letter-spacing: -.05em; }
     .subhead { margin-top: 12px; color: var(--muted); font-size: 15px; }
     .trust-row {
       display: flex;
@@ -881,7 +881,7 @@
       .benefits { grid-template-columns: 1fr; }
     }
     @media (max-width: 680px) {
-      body { padding-bottom: 88px; }
+      body { padding-bottom: 104px; }
       .wrap { width: min(var(--max), calc(100% - 26px)); }
       .promo { font-size: 10px; }
       .nav { min-height: 61px; }
@@ -893,9 +893,14 @@
       .photo::before { font-size: 50px; }
       .photo-copy { left: 20px; bottom: 18px; }
       .network-badge { left: 16px; top: 16px; }
-      .panel { padding: 24px 18px; border-radius: 20px; }
-      .title-price { align-items: center; }
-      .from-price b { font-size: 20px; }
+      .panel { padding: 22px 16px; border-radius: 20px; }
+      .title-price { display: block; }
+      .flag-title { align-items: flex-start; gap: 11px; }
+      .flag { flex: 0 0 38px; width: 38px; height: 38px; }
+      .flag::after { width: 17px; height: 17px; }
+      h1 { max-width: 100%; font-size: 32px; line-height: 1.16; letter-spacing: -.045em; }
+      .from-price { margin-top: 12px; padding-top: 0; text-align: left; }
+      .from-price b { font-size: 22px; }
       .offer-banner { grid-template-columns: 38px 1fr; }
       .offer-icon { width: 38px; height: 38px; }
       .offer-banner a { display: none; }
@@ -939,7 +944,7 @@
         right: 0;
         bottom: 0;
         display: grid;
-        grid-template-columns: auto 1fr 1fr;
+        grid-template-columns: minmax(0, 1fr) minmax(132px, .9fr);
         gap: 8px;
         align-items: center;
         padding: 10px 13px calc(10px + env(safe-area-inset-bottom));
@@ -949,6 +954,9 @@
       }
       .mobile-price small { display: block; color: var(--muted); font-size: 9px; }
       .mobile-price b { font-size: 20px; }
+      .mobile-price { min-width: 0; }
+      .mobile-price small { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+      .mobile-buy .mobile-whatsapp { display: none; }
       .mobile-buy a { display: grid; place-items: center; min-height: 52px; color: var(--ink); background: var(--green); border-radius: 11px; font-size: 12px; font-weight: 900; line-height: 1.15; text-align: center; }
       .mobile-buy .mobile-whatsapp { color: #06150c; background: #e7fff0; border: 1px solid rgba(37,211,102,.38); }
     }
@@ -1005,7 +1013,7 @@
 
           <section class="panel" aria-label="日本 eSIM 套餐選擇">
             <div class="title-price">
-              <div class="flag-title"><span class="flag" aria-label="日本國旗"></span><h1>日本 eSIM</h1></div>
+              <div class="flag-title"><span class="flag" aria-label="日本國旗"></span><h1>日本旅遊 eSIM 流量卡</h1></div>
               <div class="from-price"><small>方案低至</small><b>HK$55</b></div>
             </div>
             <p class="subhead">KDDI au 當地網絡 · 日本當地 IP · 真無限數據</p>
@@ -1129,6 +1137,10 @@
       </div>
     </section>
 
+    <section class="section soft" id="network-compare">
+      <div class="wrap"><div style="padding:24px;border:1px solid #b8ead0;border-radius:16px;background:#edfff7"><span class="kicker">Japan Network Guide</span><h2 style="margin:8px 0">日本 eSIM 網絡比較：KDDI、SoftBank、Docomo</h2><p>完整比較日本主要網絡、地區覆蓋、4G／5G、FUP 及選購注意事項，請閱讀獨立指南。</p><a href="/blog/japan-esim-guide/" target="_blank" rel="noopener noreferrer" style="display:inline-flex;min-height:48px;align-items:center;padding:11px 16px;border-radius:10px;background:#46e58b;color:#101828;font-weight:900;text-decoration:none">開啟日本 eSIM 網絡比較指南 →</a></div></div>
+    </section>
+
     <section class="section soft" id="setup">
       <div class="wrap">
         <header class="section-head"><span class="kicker">Easy setup</span><h2>付款後，三步準備好日本上網</h2></header>
@@ -1226,10 +1238,14 @@
       <div class="wrap">
         <header class="section-head"><span class="kicker">Before buying</span><h2>落單前常見問題</h2></header>
         <div class="faq">
-          <details open><summary>我的手機是否支援 eSIM？</summary><p>最快方法是在手機撥號鍵盤輸入 *#06#。如果畫面出現 EID，一般代表手機支援 eSIM。同一手機型號的不同地區版本可能有差異。如不確定，<a href="https://wa.me/85246922013?text=你好，我想查詢我部手機是否支援日本eSIM，可以幫我檢查嗎？" target="_blank" rel="noopener noreferrer">按此 WhatsApp 截圖給客服免費檢查</a>。</p></details>
+          <details open><summary>我的手機是否支援 eSIM？</summary><p>請先查看<a href="#compatibility-guide">手機支援檢查</a>，或閱讀<a href="/help/compatibility/">完整兼容性指南</a>；不確定時可 WhatsApp 客服確認。</p></details>
           <details><summary>「真無限」即係點？會唔會突然限速？</summary><p>4G、5G 方案都主打真無限上網，一般旅行用地圖、社交平台、睇片及通訊，毋須擔心用完指定 GB 後被固定降速。和所有流動網絡一樣，實際速度會受所在地、手機、覆蓋及繁忙程度影響；極端或異常使用仍可能受營運商網絡管理條款約束。</p></details>
           <details><summary>有沒有電話號碼及 SMS？</summary><p>沒有，本方案是 Data Only。WhatsApp、LINE、FaceTime 等網絡通訊服務可以照常使用。</p></details>
-          <details><summary>應該幾時買和安裝？</summary><p>建議出發前 30 日內購買。由於 eSIM 安裝後會開始計算有效日數，請於出發當日有穩定 Wi-Fi 時才按指示安裝；到達日本後再切換數據使用。</p></details>
+          <details><summary>日本 eSIM 可以分享熱點嗎？</summary><p>熱點分享能力可能受手機型號、系統及營運商方案限制；本頁沒有把熱點分享列為所有方案的保證功能。需要分享給同行裝置，請購買前向客服核對所選方案。</p></details>
+          <details><summary>真無限有沒有公平使用政策（FUP）或速度限制？</summary><p>真無限不等於固定速度保證。實際速度會受 KDDI au 覆蓋、地點、裝置及網絡繁忙程度影響；極端或異常使用亦可能受營運商網絡管理條款約束。請以所選方案條款為準。</p></details>
+          <details><summary>東京、大阪、北海道都可以用嗎？</summary><p>方案覆蓋日本；東京、大阪及北海道的實際連線會受室內、山區、交通路線及當地網絡覆蓋影響。出發前請確認手機支援 eSIM，抵達後按安裝指南切換數據。</p></details>
+          <details><summary>4G／5G 速度是否固定？</summary><p>方案支援 4G／5G 網絡架構，但手機型號、地點、訊號及繁忙程度會影響實際速度。頁面所列 5G 不代表每一刻或每一地點都會連接 5G。</p></details>
+          <details><summary>應該幾時買和安裝？</summary><p>建議出發前準備，並按<a href="/help/installation/">安裝指南</a>在穩定 Wi-Fi 下操作；啟用日數以所選方案條款為準。</p></details>
         </div>
       </div>
     </section>
@@ -1252,12 +1268,12 @@
 
           <article>
             <h3>真正真無限上網，唔使一路計住數據</h3>
-            <p>旅行時最掃興，就是用地圖、睇餐廳、傳相片、開視像通話時突然變慢。EasyGoSim 日本 eSIM 方案主打真無限上網，一般旅遊使用毋須時刻計住每日用量，特別適合會經常導航、分享相片、查交通、睇影片或多人同行的旅客。</p>
+            <p>EasyGoSim 日本 eSIM 方案主打真無限上網，適合導航、分享相片、查交通及多人同行。實際速度及公平使用政策請以方案條款為準。</p>
           </article>
 
           <article>
             <h3>付款後即時電郵收 QR Code</h3>
-            <p>完成付款後，系統會即時電郵發送 eSIM 安裝 QR Code。建議出發前 30 日內購買，並於出發當日、有穩定 Wi-Fi 時才按指示安裝，因為 eSIM 安裝後會開始計算有效日數。抵達日本後，只需在手機設定切換流動數據至日本 eSIM，即可開始上網。</p>
+            <p>完成付款後，系統會即時電郵發送 eSIM 安裝 QR Code。安裝步驟及啟用時機請參考<a href="/help/installation/">iPhone／Android 安裝指南</a>；抵達日本後再切換流動數據至日本 eSIM。</p>
           </article>
 
           <article>
@@ -1329,6 +1345,8 @@
         var network = option.dataset.networkValue;
         var variant = option.dataset.variant;
         var href = "https://checkout.easygosim.us/jpesim-airwallex-checkout?variant=" + variant;
+        var marketingRef = new URLSearchParams(window.location.search).get("marketing_ref");
+        if (marketingRef) href += "&marketing_ref=" + encodeURIComponent(marketingRef);
         price.textContent = amount;
         mobilePrice.textContent = amount;
         caption.textContent = network + " 真無限 · " + days + "日";
