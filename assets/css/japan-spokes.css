@@ -1,0 +1,9 @@
+body.egs-japan-product .egs-japan-spoke{padding:24px 0!important;background:#fff!important}
+body.egs-japan-product .egs-japan-spoke+.egs-japan-spoke{padding-top:0!important}
+body.egs-japan-product .egs-japan-spoke .egs-spoke-card{display:grid;grid-template-columns:150px minmax(0,1fr) auto;align-items:center;gap:18px;padding:20px 22px;border:1px solid #d9e2df;border-radius:18px;background:#f4fff9;box-shadow:0 8px 22px rgba(16,24,40,.04)}
+body.egs-japan-product .egs-japan-spoke .egs-spoke-card>span{color:#087a40;font-size:10px;font-weight:950;letter-spacing:.1em}
+body.egs-japan-product .egs-japan-spoke .egs-spoke-card h2{margin:0;font-size:22px;line-height:1.25;letter-spacing:-.04em}
+body.egs-japan-product .egs-japan-spoke .egs-spoke-card p{margin:5px 0 0;color:#667085;font-size:12px;line-height:1.6}
+body.egs-japan-product .egs-japan-spoke .egs-spoke-card a{display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:0 14px;border-radius:11px;background:#46e58b;color:#101828;font-size:11px;font-weight:950;white-space:nowrap}
+body.egs-japan-product .egs-japan-spoke .egs-spoke-card a:hover{background:#13ad61}
+@media(max-width:620px){body.egs-japan-product .egs-japan-spoke{padding:14px 0!important}body.egs-japan-product .egs-japan-spoke .egs-spoke-card{display:block;padding:17px 15px;border-radius:16px}body.egs-japan-product .egs-japan-spoke .egs-spoke-card h2{margin-top:7px;font-size:21px}body.egs-japan-product .egs-japan-spoke .egs-spoke-card p{font-size:12px}body.egs-japan-product .egs-japan-spoke .egs-spoke-card a{width:100%;margin-top:13px}}
