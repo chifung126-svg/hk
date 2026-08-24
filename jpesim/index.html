@@ -792,8 +792,11 @@
     .seo-details > summary::after { content: "＋"; color: var(--green-deep); font-size: 20px; }
     .seo-details[open] > summary::after { content: "−"; }
     .seo-details .seo-article { margin-top: 24px; }
+    .review-summary { display: inline-flex; align-items: center; gap: 9px; margin-top: 12px; padding: 9px 13px; border: 1px solid #b8ead0; border-radius: 999px; background: #edfff7; color: #087a40; font-size: 15px; font-weight: 900; }
+    .review-summary small { color: var(--muted); font-size: 12px; font-weight: 800; }
     @media (max-width: 680px) {
       .seo-details > summary { min-height: 50px; padding: 13px 15px; font-size: 14px; }
+      .review-summary { margin-top: 10px; font-size: 14px; }
     }
     details { border-top: 1px solid var(--line); }
     details:last-child { border-bottom: 1px solid var(--line); }
@@ -1210,7 +1213,7 @@
 
     <section class="section" id="reviews">
       <div class="wrap">
-        <header class="section-head"><span class="kicker">Verified Reviews</span><h2>香港客人真實使用評價</h2><p>已完成付款的客人分享實際日本 eSIM 使用體驗。</p></header>
+        <header class="section-head"><div><span class="kicker">已驗證會員評論</span><h2>會員實際使用評價</h2><div class="review-summary" aria-label="會員評論平均評分"><span id="review-average">★ 4.5</span><small id="review-count">(19 則)</small></div></div></header>
         <div class="reviews">
           <article class="review-card">
             <div class="review-stars">★★★★★</div>
@@ -1451,8 +1454,10 @@
         var container = document.querySelector("#reviews .reviews");
         if (!container || !payload || !Array.isArray(payload.reviews) || !payload.reviews.length) return;
         var summary = payload.summary || {};
-        var heading = document.querySelector("#reviews .section-head p");
-        if (heading && Number(summary.count) > 0) heading.textContent = "已完成付款的客人分享實際使用體驗，共 " + Number(summary.count) + " 則評價。";
+        var average = document.getElementById("review-average");
+        var count = document.getElementById("review-count");
+        if (average && Number(summary.count) > 0) average.textContent = "★ " + Number(summary.average || 0).toFixed(1);
+        if (count && Number(summary.count) > 0) count.textContent = "(" + Number(summary.count) + " 則)";
         container.innerHTML = payload.reviews.slice(0, 6).map(function (review) {
           var rating = Math.max(1, Math.min(5, Number(review.rating) || 5));
           var stars = "★★★★★".slice(0, rating);
