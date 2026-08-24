@@ -1037,7 +1037,7 @@
           <section class="panel" aria-label="日本 eSIM 套餐選擇">
             <div class="title-price">
               <div class="flag-title"><span class="flag" aria-label="日本國旗"></span><h1>日本旅遊 eSIM 流量卡</h1></div>
-              <div class="from-price"><small>方案低至</small><b>HK$55</b></div>
+              <div class="from-price"><small>方案低至</small><b id="from-price-value">HK$55</b></div>
             </div>
             <p class="subhead">KDDI au 當地網絡 · 日本當地 IP · 真無限數據</p>
             <div class="trust-row">
@@ -1360,6 +1360,7 @@
       var buyLink = document.getElementById("buy-link");
       var mobileLink = document.getElementById("mobile-link");
       var quotaInfo = document.getElementById("quota-info");
+      var fromPrice = document.getElementById("from-price-value");
 
       function track(eventName, params) {
         if (typeof gtag === "function") gtag("event", eventName, params || {});
@@ -1386,21 +1387,25 @@
         mobileLink.dataset.plan = variant;
       }
 
-      options.forEach(function (option) {
-        option.addEventListener("click", function () {
-          selectPlan(option);
-          track("select_item", {
-            item_list_name: "japan_esim_plans",
-            items: [{
-              item_id: option.dataset.variant,
-              item_name: "日本 eSIM " + option.dataset.networkValue + " " + option.dataset.days + "日",
-              item_category: "eSIM",
-              price: Number(option.dataset.price),
-              quantity: 1
-            }]
+      function bindOptions() {
+        options = document.querySelectorAll(".day-option");
+        options.forEach(function (option) {
+          option.addEventListener("click", function () {
+            selectPlan(option);
+            track("select_item", {
+              item_list_name: "japan_esim_plans",
+              items: [{
+                item_id: option.dataset.variant,
+                item_name: "日本 eSIM " + option.dataset.networkValue + " " + option.dataset.days + "日",
+                item_category: "eSIM",
+                price: Number(option.dataset.price),
+                quantity: 1
+              }]
+            });
           });
         });
-      });
+      }
+      bindOptions();
 
       function showNetwork(network) {
         var firstVisible = null;
@@ -1419,6 +1424,27 @@
           showNetwork(tab.dataset.network);
         });
       });
+
+      function renderLivePlans(skus) {
+        var container = document.querySelector(".day-options");
+        if (!container || !Array.isArray(skus) || !skus.length) return;
+        var lowest = skus.reduce(function (min, sku) { return Number(sku.price) < Number(min.price) ? sku : min; }, skus[0]);
+        if (fromPrice && lowest) fromPrice.textContent = String(lowest.currency || "HKD") === "HKD" ? "HK$" + lowest.price : String(lowest.currency || "") + " " + lowest.price;
+        container.innerHTML = skus.map(function (sku) {
+          var currency = String(sku.currency || "HKD").toUpperCase() === "HKD" ? "HK$" : String(sku.currency || "");
+          var network = String(sku.network || "").toUpperCase();
+          var name = String(sku.name || "日本 eSIM").replace(/[<>]/g, "");
+          return '<button class="day-option" type="button" data-days="' + Number(sku.days) + '" data-price="' + Number(sku.price) + '" data-variant="' + String(sku.sku_id).replace(/[^A-Za-z0-9_-]/g, "") + '" data-network-value="' + network + '" title="' + name + '"><b>' + Number(sku.days) + '日</b><span>' + currency + Number(sku.price) + '</span></button>';
+        }).join("");
+        bindOptions();
+        var activeNetwork = document.querySelector(".network-tab.active");
+        showNetwork(activeNetwork ? activeNetwork.dataset.network : "5G");
+      }
+
+      fetch("https://checkout.easygosim.us/api/skus?country=JP", { cache: "no-store" })
+        .then(function (res) { if (!res.ok) throw new Error("sku request failed"); return res.json(); })
+        .then(function (payload) { renderLivePlans(payload.skus); })
+        .catch(function () { /* Keep the embedded fallback plans when the catalogue is unavailable. */ });
 
       document.addEventListener("click", function (event) {
         var link = event.target.closest("[data-plan]");
