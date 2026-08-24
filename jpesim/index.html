@@ -1441,10 +1441,35 @@
         showNetwork(activeNetwork ? activeNetwork.dataset.network : "5G");
       }
 
+      function escapeHtml(value) {
+        return String(value == null ? "" : value).replace(/[&<>"']/g, function (char) {
+          return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[char];
+        });
+      }
+
+      function renderLiveReviews(payload) {
+        var container = document.querySelector("#reviews .reviews");
+        if (!container || !payload || !Array.isArray(payload.reviews) || !payload.reviews.length) return;
+        var summary = payload.summary || {};
+        var heading = document.querySelector("#reviews .section-head p");
+        if (heading && Number(summary.count) > 0) heading.textContent = "已完成付款的客人分享實際使用體驗，共 " + Number(summary.count) + " 則評價。";
+        container.innerHTML = payload.reviews.slice(0, 6).map(function (review) {
+          var rating = Math.max(1, Math.min(5, Number(review.rating) || 5));
+          var stars = "★★★★★".slice(0, rating);
+          var reply = review.merchant_reply ? '<div class="merchant-reply"><b>EasyGoSim 回覆</b><p>' + escapeHtml(review.merchant_reply) + '</p></div>' : "";
+          return '<article class="review-card"><div class="review-stars" aria-label="' + rating + ' 星">' + stars + '</div><h3>' + escapeHtml(review.name || "已驗證會員") + '</h3><p>' + escapeHtml(review.body) + '</p><div class="review-buyer"><b>' + escapeHtml(review.name || "已驗證會員") + '</b>' + escapeHtml(review.source_label ? " · " + review.source_label : "") + '</div>' + reply + '</article>';
+        }).join("");
+      }
+
       fetch("https://checkout.easygosim.us/api/skus?country=JP", { cache: "no-store" })
         .then(function (res) { if (!res.ok) throw new Error("sku request failed"); return res.json(); })
         .then(function (payload) { renderLivePlans(payload.skus); })
         .catch(function () { /* Keep the embedded fallback plans when the catalogue is unavailable. */ });
+
+      fetch("https://checkout.easygosim.us/api/reviews?product=jpesim", { cache: "no-store" })
+        .then(function (res) { if (!res.ok) throw new Error("review request failed"); return res.json(); })
+        .then(renderLiveReviews)
+        .catch(function () { /* Keep the embedded fallback reviews when the API is unavailable. */ });
 
       document.addEventListener("click", function (event) {
         var link = event.target.closest("[data-plan]");
