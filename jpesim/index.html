@@ -727,6 +727,18 @@
       grid-template-columns: repeat(3, 1fr);
       gap: 18px;
     }
+    .reviews-section {
+      padding-top: 54px;
+      padding-bottom: 72px;
+      background: linear-gradient(180deg, rgba(240,251,255,.72), rgba(255,255,255,0));
+    }
+    .reviews-section .section-head {
+      margin-bottom: 24px;
+    }
+    .reviews-section .section-head h2 {
+      margin-top: 8px;
+      font-size: clamp(30px, 4vw, 44px);
+    }
     .review-card {
       display: flex;
       flex-direction: column;
@@ -1211,9 +1223,9 @@
       </div>
     </section>
 
-    <section class="section" id="reviews">
+    <section class="section reviews-section" id="reviews">
       <div class="wrap">
-        <header class="section-head"><div><span class="kicker">已驗證會員評論</span><h2>會員實際使用評價</h2><div class="review-summary" aria-label="會員評論平均評分"><span id="review-average">★ 4.5</span><small id="review-count">(19 則)</small></div></div></header>
+        <header class="section-head"><div><span class="kicker">已驗證會員評論</span><h2>會員評價</h2><div class="review-summary" aria-label="會員評論平均評分"><span id="review-average">★ 4.5</span><small id="review-count">(19 則)</small></div></div></header>
         <div class="reviews">
           <article class="review-card">
             <div class="review-stars">★★★★★</div>
