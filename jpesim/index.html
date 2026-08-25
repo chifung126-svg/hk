@@ -1441,10 +1441,16 @@
 
       function renderLivePlans(skus) {
         var container = document.querySelector(".day-options");
-        if (!container || !Array.isArray(skus) || !skus.length) return;
-        var lowest = skus.reduce(function (min, sku) { return Number(sku.price) < Number(min.price) ? sku : min; }, skus[0]);
+        // This page is the KDDI product page. SoftBank daily-data SKUs share
+        // the JP/5G catalogue response but belong to a different product
+        // family and must not appear in this selector.
+        var pageSkus = Array.isArray(skus)
+          ? skus.filter(function (sku) { return String(sku.group || "").toUpperCase() !== "2GB_DAY"; })
+          : [];
+        if (!container || !pageSkus.length) return;
+        var lowest = pageSkus.reduce(function (min, sku) { return Number(sku.price) < Number(min.price) ? sku : min; }, pageSkus[0]);
         if (fromPrice && lowest) fromPrice.textContent = String(lowest.currency || "HKD") === "HKD" ? "HK$" + lowest.price : String(lowest.currency || "") + " " + lowest.price;
-        container.innerHTML = skus.map(function (sku) {
+        container.innerHTML = pageSkus.map(function (sku) {
           var currency = String(sku.currency || "HKD").toUpperCase() === "HKD" ? "HK$" : String(sku.currency || "");
           var network = String(sku.network || "").toUpperCase();
           var name = String(sku.name || "日本 eSIM").replace(/[<>]/g, "");
