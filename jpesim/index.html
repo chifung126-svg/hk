@@ -1423,6 +1423,10 @@
         options.forEach(function (option) {
           var matches = option.dataset.networkValue === network;
           option.hidden = !matches;
+          // Some mobile browsers/cache layers do not repaint the HTML
+          // `hidden` state consistently after the live catalogue replaces
+          // the option list. Keep an explicit display state as a fallback.
+          option.style.display = matches ? "" : "none";
           if (matches && !firstVisible) firstVisible = option;
           if (matches && network === "5G" && option.dataset.days === "5") preferred = option;
         });
