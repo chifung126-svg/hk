@@ -124,6 +124,20 @@ main{display:flex;flex-direction:column}.hero{order:1}.home-trust{order:2}.secti
   <script>
     (function () {
       const grid = document.querySelector('#destinations .destinations');
+      const japan = grid && grid.querySelector('.destination.jp');
+      if (!grid || !japan || grid.querySelector('[data-destination="japan-softbank"]')) return;
+      const card = document.createElement('a');
+      card.className = 'destination japan-softbank';
+      card.dataset.destination = 'japan-softbank';
+      card.href = 'https://hk.easygosim.us/jpesim-softbank/';
+      card.style.setProperty('--destination-image', "url('https://images.unsplash.com/photo-1528360983277-13d401cdc186?auto=format&fit=crop&w=1200&q=85')");
+      card.innerHTML = '<span class="flag">🇯🇵</span><h3>日本 SoftBank eSIM</h3><p>每日 2GB 高速，3 至 15 日方案，SoftBank 當地網絡。</p><span class="link">查看 SoftBank 方案 →</span>';
+      japan.insertAdjacentElement('afterend', card);
+    }());
+  </script>
+  <script>
+    (function () {
+      const grid = document.querySelector('#destinations .destinations');
       if (!grid || grid.querySelector('[data-destination="vietnam"]')) return;
       const card = document.createElement('a');
       card.className = 'destination vietnam';
