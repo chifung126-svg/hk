@@ -2,18 +2,70 @@
   "cleanUrls": true,
   "trailingSlash": true,
   "redirects": [
-    { "source": "/", "destination": "https://www.easygosim.com/esim/", "permanent": true },
-    { "source": "/partners.html", "destination": "https://www.easygosim.com/esim/jpesim/partners/", "permanent": true },
-    { "source": "/partners/", "destination": "https://www.easygosim.com/esim/jpesim/partners/", "permanent": true },
-    { "source": "/market-sites/china/:path*", "destination": "https://www.easygosim.com/esim/china/:path*", "permanent": true },
-    { "source": "/market-sites/thailand/:path*", "destination": "https://www.easygosim.com/esim/thailand/:path*", "permanent": true },
-    { "source": "/market-sites/korea/:path*", "destination": "https://www.easygosim.com/esim/korea/:path*", "permanent": true },
-    { "source": "/market-sites/taiwan/:path*", "destination": "https://www.easygosim.com/esim/taiwan/:path*", "permanent": true },
-    { "source": "/market-sites/europe/:path*", "destination": "https://www.easygosim.com/esim/europe/:path*", "permanent": true },
-    { "source": "/cnesim/:path*", "destination": "https://www.easygosim.com/esim/china/:path*", "permanent": true },
-    { "source": "/thaiesim/:path*", "destination": "https://www.easygosim.com/esim/thailand/:path*", "permanent": true },
-    { "source": "/krjpesim/:path*", "destination": "https://www.easygosim.com/esim/korea/:path*", "permanent": true },
-    { "source": "/jpesim-softbank/:path*", "destination": "https://www.easygosim.com/esim/jpesim-softbank/:path*", "permanent": true },
-    { "source": "/:path*", "destination": "https://www.easygosim.com/esim/:path*", "permanent": true }
+    {
+      "source": "/",
+      "destination": "https://www.easygosim.com/esim/",
+      "statusCode": 301
+    },
+    {
+      "source": "/partners.html",
+      "destination": "https://www.easygosim.com/esim/jpesim/partners/",
+      "permanent": true
+    },
+    {
+      "source": "/partners/",
+      "destination": "https://www.easygosim.com/esim/jpesim/partners/",
+      "permanent": true
+    },
+    {
+      "source": "/market-sites/china/:path*",
+      "destination": "https://www.easygosim.com/esim/china/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/market-sites/thailand/:path*",
+      "destination": "https://www.easygosim.com/esim/thailand/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/market-sites/korea/:path*",
+      "destination": "https://www.easygosim.com/esim/korea/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/market-sites/taiwan/:path*",
+      "destination": "https://www.easygosim.com/esim/taiwan/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/market-sites/europe/:path*",
+      "destination": "https://www.easygosim.com/esim/europe/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/cnesim/:path*",
+      "destination": "https://www.easygosim.com/esim/china/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/thaiesim/:path*",
+      "destination": "https://www.easygosim.com/esim/thailand/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/krjpesim/:path*",
+      "destination": "https://www.easygosim.com/esim/korea/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/jpesim-softbank/:path*",
+      "destination": "https://www.easygosim.com/esim/jpesim-softbank/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/(.*)",
+      "destination": "https://www.easygosim.com/esim/$1",
+      "statusCode": 301
+    }
   ]
 }
